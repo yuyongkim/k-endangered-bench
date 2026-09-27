@@ -1,0 +1,147 @@
+{
+  "description": "Classification of the renamed entries that the diff step reports between the annex in force before 2022-12-09 and the pinned annex, and of the two taxa that appear as one addition and one removal. The ministry's press release lists additions, removals and regrades only, so none of these entries is validated against it. Classified by the authors with AI assistance (v21 revision, 2026-09-26), keyed by the scientific name in the pinned annex. Classes: spelling = a Korean name or the spelling or ending of a scientific name changes, the taxon does not; subgenus = a subgenus is added in parentheses; nomenclatural = the same taxon under another name (genus transfer, new combination or change of rank of the same populations); concept = the designated unit changes (Korean populations reassigned to another species after a split, a species described for them, a re-identification, or a subspecies widened to its species). Accepted names checked against the GBIF Backbone on 2026-09-26. v1.0.6: optional field subclass. For spelling: korean_name_only (the scientific name is unchanged; the diff step reports the entry because it keys rows on the Korean and the scientific name together) or scientific_name_spelling (epithet ending, rank abbreviation). For nomenclatural: rank_change where the rank of the same populations changes (two entries).",
+  "classes": [
+    "spelling",
+    "subgenus",
+    "nomenclatural",
+    "concept"
+  ],
+  "renamed": {
+    "Plecotus ognevi": {
+      "from": "Plecotus auritus",
+      "class": "concept",
+      "note": "Korean populations assigned to P. ognevi after the split of P. auritus"
+    },
+    "Dryophytes suweonensis": {
+      "from": "Hyla suweonensis",
+      "class": "nomenclatural",
+      "note": "genus transfer; since v1.0.6 the IUCN relation is uncertain (southern populations described as D. flaviventris, Borzee et al. 2020)"
+    },
+    "Hynobius yangi": {
+      "from": "Hynobius yangi",
+      "class": "spelling",
+      "note": "Korean name 고리도룡뇽 -> 고리도롱뇽",
+      "subclass": "korean_name_only"
+    },
+    "Cicindela (Abroscelis) anchoralis": {
+      "from": "Cicindela anchoralis",
+      "class": "subgenus"
+    },
+    "Chrysochroa (Chrysochroa) coreana": {
+      "from": "Chrysochroa coreana",
+      "class": "subgenus"
+    },
+    "Callipogon (Eoxenus) relictus": {
+      "from": "Callipogon relictus",
+      "class": "subgenus"
+    },
+    "Acoptolabrus mirabilissimus mirabilissimus": {
+      "from": "Damaster mirabilissimus mirabilissimus",
+      "class": "nomenclatural",
+      "note": "genus placement"
+    },
+    "Cybister (Cybister) chinensis": {
+      "from": "Cybister chinensis",
+      "class": "subgenus"
+    },
+    "Gymnopleurus (Gymnopleurus) mopsus": {
+      "from": "Gymnopleurus mopsus",
+      "class": "subgenus"
+    },
+    "Copris (Copris) tripartitus": {
+      "from": "Copris tripartitus",
+      "class": "subgenus"
+    },
+    "Bombus (Megabombus) koreanus": {
+      "from": "Bombus koreanus",
+      "class": "subgenus"
+    },
+    "Acoptolabrus changeonleei": {
+      "from": "Damaster changeonleei",
+      "class": "nomenclatural",
+      "note": "genus placement"
+    },
+    "Osmoderma caeleste": {
+      "from": "Osmoderma opicum",
+      "class": "concept",
+      "note": "Korean populations re-identified as O. caeleste"
+    },
+    "Charonia lampas": {
+      "from": "Charonia lampas sauliae",
+      "class": "concept",
+      "note": "subspecies widened to the species"
+    },
+    "Aculamprotula coreana": {
+      "from": "Lamprotula coreana",
+      "class": "nomenclatural",
+      "note": "genus transfer"
+    },
+    "Clithon retropictum": {
+      "from": "Clithon retropictus",
+      "class": "spelling",
+      "note": "epithet ending",
+      "subclass": "scientific_name_spelling"
+    },
+    "Ellisella ceratophyta": {
+      "from": "Verrucella stellata",
+      "class": "concept",
+      "note": "re-identification under another genus and epithet"
+    },
+    "Austruca lactea": {
+      "from": "Uca lactea",
+      "class": "nomenclatural",
+      "note": "genus transfer"
+    },
+    "Leontopodium coreanum var. hallaisanense": {
+      "from": "Leontopodium hallaisanense",
+      "class": "nomenclatural",
+      "note": "species reduced to a variety; same populations",
+      "subclass": "rank_change"
+    },
+    "Neottianthe cucullata": {
+      "from": "Gymnadenia cucullata",
+      "class": "nomenclatural",
+      "note": "genus transfer"
+    },
+    "Trientalis europaea subsp. arctica": {
+      "from": "Trientalis europaea ssp. arctica",
+      "class": "spelling",
+      "note": "rank abbreviation",
+      "subclass": "scientific_name_spelling"
+    },
+    "Kuhlhasseltia nakaiana": {
+      "from": "Vexillabium yakusimensis var. nakaianum",
+      "class": "nomenclatural",
+      "note": "new combination at species rank; variety raised to species (change of rank)",
+      "subclass": "rank_change"
+    },
+    "Scrophularia takesimensis": {
+      "from": "Scrophularia takesimensis",
+      "class": "spelling",
+      "note": "Korean name 섬개현삼 -> 섬현삼",
+      "subclass": "korean_name_only"
+    },
+    "Halenia coreana": {
+      "from": "Halenia corniculata",
+      "class": "concept",
+      "note": "Korean populations treated as a separate species"
+    },
+    "Arctous rubra": {
+      "from": "Arctous alpinus var. japonicus",
+      "class": "concept",
+      "note": "re-identification; the IUCN relation of A. rubra is uncertain in this release"
+    }
+  },
+  "addition_plus_removal": {
+    "Omphalotus guepiniiformis": {
+      "from": "Lampteromyces japonicus",
+      "class": "nomenclatural",
+      "note": "the same fungus transferred to Omphalotus (GBIF Backbone: L. japonicus is a synonym of O. guepiniiformis); Korean name 화경버섯 -> 화경솔밭버섯"
+    },
+    "Nannophya koreana": {
+      "from": "Nannophya pygmaea",
+      "class": "concept",
+      "note": "the Korean populations described as a new species, N. koreana Bae, 2020 (Bae et al. 2020, J Species Res 9:1-10, doi:10.12651/JSR.2020.9.1.001); the unit narrows to Korea"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_comment": "Single source of truth for the pinned copy of Annex 1. common/annex.py reads this file; common/bench_schema.py, common/statute_list.py, common/statute.py, the paper02_bench scripts and the release packaging take the amendment date, file names and SHA256 from it. When Annex 1 is amended, add the new PDF to data/statute/ and edit only this file (re-verification steps: paper02_bench/README.md).",
+  "instrument": "Enforcement Rule of the Wildlife Protection and Management Act, Annex 1 (List of Endangered Wildlife)",
+  "instrument_ko": "야생생물 보호 및 관리에 관한 법률 시행규칙 별표 1 (멸종위기 야생생물)",
+  "amended": "2022-12-09",
+  "amendment_marker": "<개정 2022. 12. 9.>",
+  "amending_ordinance": "Ministry of Environment Ordinance No. 1010 (환경부령 제1010호), promulgated and in force 2022-12-09",
+  "file": "야생생물법_시행규칙_별표1_개정20221209.pdf",
+  "archive_name": "annex1_wildlife_act_enforcement_rule_amended_2022-12-09.pdf",
+  "bytes": 321781,
+  "sha256": "4f75d4f8f92b8d7381b345cd89757672fc2e869bb75264eec2ab580a579945b4",
+  "expected_totals": {
+    "I급": 68,
+    "II급": 214
+  },
+  "expected_totals_source": "Ministry of Environment (Biodiversity Division), press release of 9 December 2022, '멸종위기 야생생물, 267종에서 282종으로 개정', attached PDF (https://www.korea.kr/common/download.do?fileId=197531828&tblKey=GMN; copy data/statute/moe_press_release_2022-12-09_endangered_wildlife_282.pdf, SHA256 19c7f5912d64d5aef5799d2b62ddc80824be018189f57b633d931db2d66efab5), page 3: 'I급 68종과 Ⅱ급 214종 등 최종 282종', and the table by group on page 4. Transcribed changes: data/statute/amendment_2022_expected_changes.json.",
+  "previous_list": "data/statute/designated_species_v1.0.2.json",
+  "law_go_kr": {
+    "law_id": "009890",
+    "annex_number": "0001",
+    "annex_branch": "00"
+  },
+  "pre_amendment_annex": "data/statute/annex1_before_2022-12-09_amended_2021-09-16.pdf (validation of the diff step: paper02_bench/scripts/validate_annex_diff.py)"
+}

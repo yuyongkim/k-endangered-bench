@@ -1,0 +1,477 @@
+{
+ "note": "Hand lookups behind the hand decisions (COUNTERPARTS, CONCEPT_OVERRIDES). They produce no record value; the check compares the values written in the code and the paper with the responses. Raw IUCN responses are not shipped.",
+ "cache_mode": "frozen",
+ "taxa": [
+  {
+   "query": "Dryophytes flaviventris",
+   "requests": [
+    {
+     "path": "/taxa/scientific_name",
+     "name": "Dryophytes flaviventris",
+     "retrieved_utc": "2026-09-26T16:57:57+00:00",
+     "found": true,
+     "response_sha256": "66067ec8e1af05138e6e110a940e4497da5510933c9306f89d61c814365674ac"
+    },
+    {
+     "path": "/assessment/188099200",
+     "retrieved_utc": "2026-09-26T16:57:58+00:00",
+     "response_sha256": "725bb5a910f013dd35f58dbf291e951ef973ce1e7009966bdfdb014cfc7dc008"
+    }
+   ],
+   "values": {
+    "sis_taxon_id": 184673273,
+    "assessment_id": 188099200,
+    "category": "EN",
+    "year_published": 2023,
+    "scope": "Global",
+    "KR": true,
+    "KP": false,
+    "range_korea": {
+     "KR": "Extant"
+    },
+    "range_n_locations": 1
+   },
+   "expected": {
+    "assessment_id": 188099200,
+    "category": "EN",
+    "KR": true
+   },
+   "ok": true
+  },
+  {
+   "query": "Dryophytes suweonensis",
+   "requests": [
+    {
+     "path": "/taxa/scientific_name",
+     "name": "Dryophytes suweonensis",
+     "retrieved_utc": "2026-08-26T12:52:34+00:00",
+     "found": true,
+     "response_sha256": "8030e060360651269deac159f0aa77aef6bd0a28d736c9d4de26fa16317bd453"
+    },
+    {
+     "path": "/assessment/258842200",
+     "retrieved_utc": "2026-08-26T12:52:56+00:00",
+     "response_sha256": "b83bcffa2242f67a5ee263cb08eb805592e2e1070c243eb65a7ceca69bdf8e8e"
+    }
+   ],
+   "values": {
+    "sis_taxon_id": 55670,
+    "assessment_id": 258842200,
+    "category": "EN",
+    "year_published": 2024,
+    "scope": "Global",
+    "KR": true,
+    "KP": true,
+    "range_korea": {
+     "KP": "Extant",
+     "KR": "Extant"
+    },
+    "range_n_locations": 2
+   },
+   "expected": {
+    "assessment_id": 258842200,
+    "category": "EN",
+    "KR": true
+   },
+   "ok": true
+  },
+  {
+   "query": "Phoxinus tumensis",
+   "requests": [
+    {
+     "path": "/taxa/scientific_name",
+     "name": "Phoxinus tumensis",
+     "retrieved_utc": "2026-09-26T16:57:59+00:00",
+     "found": true,
+     "response_sha256": "b915f02088e3ee3ecd471344a801ef1668f700a3065da659b29f0443d8e2177a"
+    },
+    {
+     "path": "/assessment/160668500",
+     "retrieved_utc": "2026-09-26T16:58:00+00:00",
+     "response_sha256": "5b656bbb587a837535a6bea76f812fcd06128fd3e195bb4a1bc139ccc01fce1e"
+    }
+   ],
+   "values": {
+    "sis_taxon_id": 160668496,
+    "assessment_id": 160668500,
+    "category": "LC",
+    "year_published": 2022,
+    "scope": "Global",
+    "KR": false,
+    "KP": true,
+    "range_korea": {
+     "KP": "Extant"
+    },
+    "range_n_locations": 7
+   },
+   "expected": {
+    "assessment_id": 160668500,
+    "category": "LC",
+    "KP": true,
+    "KR": false
+   },
+   "ok": true
+  },
+  {
+   "query": "Phoxinus ujmonensis",
+   "requests": [
+    {
+     "path": "/taxa/scientific_name",
+     "name": "Phoxinus ujmonensis",
+     "retrieved_utc": "2026-09-26T16:58:01+00:00",
+     "found": true,
+     "response_sha256": "1f0c65851f832b4c25c5b5c0a16b36219402de210a65526f928cefcba8042cfe"
+    },
+    {
+     "path": "/assessment/159708330",
+     "retrieved_utc": "2026-09-26T16:58:02+00:00",
+     "response_sha256": "d3f2fa0162a5954c0de5f214c0da417fe9a3c0c10156dfd6729205246e68a3b1"
+    }
+   ],
+   "values": {
+    "sis_taxon_id": 159708294,
+    "assessment_id": 159708330,
+    "category": "LC",
+    "year_published": 2022,
+    "scope": "Global",
+    "KR": false,
+    "KP": false,
+    "range_korea": {},
+    "range_n_locations": 8
+   },
+   "expected": {
+    "category": "LC",
+    "year_published": 2022,
+    "KR": false,
+    "KP": false
+   },
+   "ok": true
+  },
+  {
+   "query": "Strix nivicolum",
+   "requests": [
+    {
+     "path": "/taxa/scientific_name",
+     "name": "Strix nivicolum",
+     "retrieved_utc": "2026-09-26T07:13:43+00:00",
+     "found": true,
+     "response_sha256": "976fe86480498367165c3434d2e3f4aba7e7ae2edcb6d2404d57a443d981f82a"
+    },
+    {
+     "path": "/assessment/264106602",
+     "retrieved_utc": "2026-09-26T07:13:44+00:00",
+     "response_sha256": "7acd109731ac5c27fbea3d2aa78a20228987ffe36f4d7c460943bd5e7447b21c"
+    }
+   ],
+   "values": {
+    "sis_taxon_id": 22725477,
+    "assessment_id": 264106602,
+    "category": "LC",
+    "year_published": 2024,
+    "scope": "Global",
+    "KR": true,
+    "KP": true,
+    "range_korea": {
+     "KP": "Extant",
+     "KR": "Extant"
+    },
+    "range_n_locations": 13
+   },
+   "expected": {
+    "assessment_id": 264106602,
+    "category": "LC",
+    "KR": true,
+    "KP": true
+   },
+   "ok": true
+  }
+ ],
+ "absent": [
+  {
+   "query": "Strix nivicolum ma",
+   "requests": [
+    {
+     "path": "/taxa/scientific_name",
+     "name": "Strix nivicolum ma",
+     "retrieved_utc": "2026-09-26T16:58:03+00:00",
+     "found": false
+    }
+   ],
+   "expected": {
+    "found": false
+   },
+   "ok": true
+  }
+ ],
+ "countries": [
+  {
+   "country": "KR",
+   "pages_read": 72,
+   "rows_read": 7044,
+   "genus": "Phoxinus",
+   "taxa": [
+    {
+     "name": "Phoxinus phoxinus",
+     "assessments": [
+      {
+       "assessment_id": 6795552,
+       "year_published": "2010",
+       "latest": false,
+       "scopes": [
+        "Europe"
+       ],
+       "red_list_category_code": "LC"
+      },
+      {
+       "assessment_id": 6795882,
+       "year_published": "2008",
+       "latest": false,
+       "scopes": [
+        "Global"
+       ],
+       "red_list_category_code": "LC"
+      },
+      {
+       "assessment_id": 136577711,
+       "year_published": "2010",
+       "latest": false,
+       "scopes": [
+        "Europe"
+       ],
+       "red_list_category_code": "LC"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "country": "KP",
+   "pages_read": 54,
+   "rows_read": 5266,
+   "genus": "Phoxinus",
+   "taxa": [
+    {
+     "name": "Phoxinus phoxinus",
+     "assessments": [
+      {
+       "assessment_id": 6795552,
+       "year_published": "2010",
+       "latest": false,
+       "scopes": [
+        "Europe"
+       ],
+       "red_list_category_code": "LC"
+      },
+      {
+       "assessment_id": 6795882,
+       "year_published": "2008",
+       "latest": false,
+       "scopes": [
+        "Global"
+       ],
+       "red_list_category_code": "LC"
+      },
+      {
+       "assessment_id": 6796227,
+       "year_published": "1996",
+       "latest": false,
+       "scopes": [
+        "Global"
+       ],
+       "red_list_category_code": "LR/lc"
+      },
+      {
+       "assessment_id": 136577711,
+       "year_published": "2010",
+       "latest": false,
+       "scopes": [
+        "Europe"
+       ],
+       "red_list_category_code": "LC"
+      }
+     ]
+    },
+    {
+     "name": "Phoxinus tumensis",
+     "assessments": [
+      {
+       "assessment_id": 160668500,
+       "year_published": "2022",
+       "latest": true,
+       "scopes": [
+        "Global"
+       ],
+       "red_list_category_code": "LC"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "synonym_source": {
+  "query": "Dryophytes suweonensis",
+  "requests": [
+   {
+    "url": "https://api.gbif.org/v1/species/10923699",
+    "retrieved_utc": "2026-09-26T21:42:38+00:00",
+    "response_sha256": "5480b18618cf3b3b2b07870b6bb9a1f876350e40c62d041bdd7f81d2c4e86231"
+   },
+   {
+    "url": "https://api.gbif.org/v1/dataset/7ddf754f-d193-4cc9-b351-99906754a03b",
+    "retrieved_utc": "2026-09-26T21:42:42+00:00",
+    "response_sha256": "3fc6327d077fb57507d7f9276667211ec720d14e7d8bbcbb65c9694fd6e82ad5"
+   },
+   {
+    "url": "https://api.checklistbank.org/dataset/9910/nameusage/search?q=Dryophytes%20suweonensis&limit=5",
+    "retrieved_utc": "2026-09-26T21:42:43+00:00",
+    "response_sha256": "5a08a2f76fc4250aea647853da4fa83fe559499d5f1551ad7398ecb9a40a6a01"
+   },
+   {
+    "url": "https://api.checklistbank.org/dataset/9910/sector/1506",
+    "retrieved_utc": "2026-09-26T21:42:44+00:00",
+    "response_sha256": "6450f0b2d75dd444d7437b791e9c7c1d32ff5154f84506807fcb86cef672003e"
+   },
+   {
+    "url": "https://api.checklistbank.org/dataset/3LR/nameusage/search?q=Dryophytes%20suweonensis&limit=5",
+    "retrieved_utc": "2026-09-26T21:42:45+00:00",
+    "response_sha256": "72e624c7e8bf4a56f966eb25fbf3325013e38d2cea875ffd8490a1be8cc9708c"
+   },
+   {
+    "url": "https://api.checklistbank.org/dataset/9910",
+    "retrieved_utc": "2026-09-27T02:57:56+00:00",
+    "response_sha256": "499ea22ef7714d85c8fc4e91f9ceb18691d260d30683df8cc965638fb81a611f"
+   },
+   {
+    "url": "https://api.checklistbank.org/dataset?releasedFrom=3&limit=100",
+    "retrieved_utc": "2026-09-27T02:57:58+00:00",
+    "response_sha256": "fd4e673d05576d2cc362836a5aca0f8168096f78817b85196a9614a0714b72f3"
+   },
+   {
+    "url": "https://www.itis.gov/ITISWebService/jsonservice/getFullRecordFromTSN?tsn=1095373",
+    "retrieved_utc": "2026-09-26T21:42:46+00:00",
+    "response_sha256": "db3e5da0254b00879d0e1f5e240a30078323661e1c943e4b3c5ab45613792625"
+   }
+  ],
+  "values": {
+   "gbif_backbone": {
+    "usage_key": 10923699,
+    "status": "SYNONYM",
+    "accepted": "Dryophytes immaculatus (Boettger, 1888)",
+    "constituent_key": "7ddf754f-d193-4cc9-b351-99906754a03b",
+    "constituent_title": "Catalogue of Life",
+    "constituent_doi_current_registry": "10.48580/dgyy9"
+   },
+   "col_2023": {
+    "checklistbank_dataset": 9910,
+    "status": "synonym",
+    "accepted": "Dryophytes immaculatus",
+    "sector": 1506,
+    "sector_source_dataset": 2144,
+    "link": null,
+    "release": {
+     "version": "Annual Checklist 2023",
+     "alias": "COL23",
+     "issued": "2023-06-27",
+     "doi": "10.48580/dfsr",
+     "col_releases_of_backbone_year_before_backbone": [
+      {
+       "issued": "2023-06-27",
+       "checklistbank_dataset": 9910,
+       "doi": "10.48580/dfsr",
+       "version": "Annual Checklist 2023"
+      }
+     ]
+    }
+   },
+   "col_latest": {
+    "checklistbank_dataset": 316321,
+    "status": "accepted",
+    "accepted": null,
+    "sector": 1506,
+    "sector_source_dataset": null,
+    "link": "https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=1095373"
+   },
+   "itis": {
+    "tsn": 1095373,
+    "usage": "valid",
+    "sources": [
+     "Amphibian Species of the World 6.2 2025-09-15",
+     "Amphibian Species of the World: an Online Reference v6"
+    ]
+   }
+  },
+  "note": "The GBIF Backbone (2023-08-28) lists D. suweonensis as a synonym of D. immaculatus. The usage comes from its constituent Catalogue of Life, which the Backbone metadata name without a version. The only Catalogue of Life release of 2023 issued before that Backbone is the Annual Checklist 2023 (ChecklistBank dataset 9910, issued 2023-06-27, DOI 10.48580/dfsr; col_2023.release), in which the name is a synonym of D. immaculatus in the sector whose source is ITIS (ChecklistBank dataset 2144). The ITIS record read here is the current one (valid, citing Amphibian Species of the World v6 and 6.2); which reference ITIS cited for the synonymy in 2023 is not recoverable. A synonymy of the two names had been proposed by Dufresnes et al. 2016 (BMC Evol Biol 16:253); we do not know that ITIS followed it. constituent_doi_current_registry is the DOI of the Catalogue of Life version the GBIF registry shows at the time of the query, not of the version the 2023 Backbone used. The current ITIS usage and the latest Catalogue of Life release are recorded in col_latest and itis.",
+  "ok": true
+ },
+ "country_check": {
+  "phoxinus_current_KR": [],
+  "phoxinus_current_KP": [
+   "Phoxinus tumensis"
+  ],
+  "phoxinus_superseded_only_KR": [
+   "Phoxinus phoxinus"
+  ],
+  "phoxinus_superseded_only_KP": [
+   "Phoxinus phoxinus"
+  ],
+  "phoxinus_superseded_detail": [
+   {
+    "country": "KR",
+    "superseded": [
+     {
+      "assessment_id": 6795552,
+      "year_published": 2010,
+      "scope": "Europe",
+      "red_list_category_code": "LC"
+     },
+     {
+      "assessment_id": 6795882,
+      "year_published": 2008,
+      "scope": "Global",
+      "red_list_category_code": "LC"
+     },
+     {
+      "assessment_id": 136577711,
+      "year_published": 2010,
+      "scope": "Europe",
+      "red_list_category_code": "LC"
+     }
+    ],
+    "ok": true
+   },
+   {
+    "country": "KP",
+    "superseded": [
+     {
+      "assessment_id": 6795552,
+      "year_published": 2010,
+      "scope": "Europe",
+      "red_list_category_code": "LC"
+     },
+     {
+      "assessment_id": 6795882,
+      "year_published": 2008,
+      "scope": "Global",
+      "red_list_category_code": "LC"
+     },
+     {
+      "assessment_id": 6796227,
+      "year_published": 1996,
+      "scope": "Global",
+      "red_list_category_code": "LR/lc"
+     },
+     {
+      "assessment_id": 136577711,
+      "year_published": 2010,
+      "scope": "Europe",
+      "red_list_category_code": "LC"
+     }
+    ],
+    "ok": true
+   }
+  ],
+  "note": "Endpoint: IUCN Red List API v4 /countries/{code}, all pages. Superseded entries are assessments of Phoxinus phoxinus in its former broad sense, made before the split of the Eurasian minnow. Observed: the KR list returns the Global assessment of 2008 (LC) and two European regional assessments of 2010 (LC); the KP list returns the same three and the Global assessment of 1996 (LR/lc, a category of the pre-3.1 system, legacy_category = true), which the KR list omits. The endpoint's rule for including an assessment is not documented. 'No current Phoxinus assessment for KR' refers to this list only; of the current Phoxinus assessments, the range countries were read for P. tumensis and P. ujmonensis only (taxa).",
+  "ok": true
+ },
+ "all_ok": true
+}

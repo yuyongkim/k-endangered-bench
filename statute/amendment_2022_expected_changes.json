@@ -1,0 +1,167 @@
+{
+  "_comment": "Expected content of the 9 December 2022 amendment of Annex 1, transcribed from the Ministry of Environment press release (the primary ministry document announcing the amendment), and the pre-amendment Annex 1. Used by paper02_bench/scripts/validate_annex_diff.py to validate the diff step of the re-verification procedure. Transcribed by the authors with AI assistance from the PDF text (pdfplumber) and checked against the PDF's tables.",
+  "press_release": {
+    "issuer": "Ministry of Environment, Nature Conservation Bureau, Biodiversity Division (환경부 자연보전국 생물다양성과)",
+    "title": "멸종위기 야생생물, 267종에서 282종으로 개정",
+    "date": "2022-12-09",
+    "page_url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156541526",
+    "attachment_url": "https://www.korea.kr/common/download.do?fileId=197531828&tblKey=GMN",
+    "file": "data/statute/moe_press_release_2022-12-09_endangered_wildlife_282.pdf",
+    "sha256": "19c7f5912d64d5aef5799d2b62ddc80824be018189f57b633d931db2d66efab5",
+    "bytes": 264672,
+    "retrieved_utc": "2026-09-26T07:16:00+00:00",
+    "quoted": "I급 68종과 Ⅱ급 214종 등 최종 282종 ... [Ⅰ급] 60종→68종 ... [Ⅱ급] 207종→214종",
+    "licence": "Korea Open Government License (KOGL) Type 1, attribution (as marked on the korea.kr page)"
+  },
+  "pre_amendment_annex": {
+    "version": "Enforcement Rule as amended by Ministry of Environment Ordinance No. 942 (환경부령 제942호), promulgated and in force 2021-09-16; law.go.kr MST 235675",
+    "annex_marker": "<개정 2021. 9. 16.>",
+    "url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=107653023",
+    "file": "data/statute/annex1_before_2022-12-09_amended_2021-09-16.pdf",
+    "sha256": "f7de4c2052e0070a43d83065385973e244e660e2a191faa8a0aa5357a9958ca3",
+    "bytes": 124465,
+    "retrieved_utc": "2026-09-26T07:13:00+00:00"
+  },
+  "totals_by_group": {
+    "포유류": {
+      "before": [
+        12,
+        8
+      ],
+      "after": [
+        14,
+        6
+      ]
+    },
+    "조류": {
+      "before": [
+        14,
+        49
+      ],
+      "after": [
+        16,
+        53
+      ]
+    },
+    "양서류·파충류": {
+      "before": [
+        2,
+        6
+      ],
+      "after": [
+        2,
+        6
+      ]
+    },
+    "어류": {
+      "before": [
+        11,
+        16
+      ],
+      "after": [
+        11,
+        18
+      ]
+    },
+    "곤충류": {
+      "before": [
+        6,
+        20
+      ],
+      "after": [
+        8,
+        21
+      ]
+    },
+    "무척추동물": {
+      "before": [
+        4,
+        28
+      ],
+      "after": [
+        4,
+        28
+      ]
+    },
+    "육상식물": {
+      "before": [
+        11,
+        77
+      ],
+      "after": [
+        13,
+        79
+      ]
+    },
+    "해조류": {
+      "before": [
+        0,
+        2
+      ],
+      "after": [
+        0,
+        2
+      ]
+    },
+    "고등균류": {
+      "before": [
+        0,
+        1
+      ],
+      "after": [
+        0,
+        1
+      ]
+    }
+  },
+  "totals": {
+    "before": {
+      "I급": 60,
+      "II급": 207
+    },
+    "after": {
+      "I급": 68,
+      "II급": 214
+    }
+  },
+  "new": [
+    "뿔제비갈매기",
+    "큰뒷부리도요",
+    "쇠제비갈매기",
+    "청호반새",
+    "붉은가슴흰죽지",
+    "시베리아흰두루미",
+    "둑중개",
+    "어름치",
+    "새미",
+    "윤조롱박딱정벌레",
+    "홍줄나비",
+    "불나방",
+    "나도여로",
+    "눈썹고사리",
+    "선모시대",
+    "한라장구채",
+    "나도범의귀",
+    "장백제비꽃",
+    "물석송"
+  ],
+  "removed": [
+    "백조어",
+    "솔붓꽃",
+    "황근",
+    "개병풍"
+  ],
+  "upgraded_II_to_I": [
+    "무산쇠족제비",
+    "물범",
+    "고니",
+    "느시",
+    "닻무늬길앞잡이",
+    "큰홍띠점박이푸른부전나비",
+    "제주고사리삼",
+    "탐라란"
+  ],
+  "downgraded_I_to_II": [
+    "매"
+  ]
+}

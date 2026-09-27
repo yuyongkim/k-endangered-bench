@@ -1,0 +1,1 @@
+{"_ts": 1787406965.9176524, "_key": "occfacet|2426645|30", "value": {"offset": 0, "limit": 0, "endOfRecords": false, "count": 489, "results": [], "facets": [{"field": "COUNTRY", "counts": [{"name": "KR", "count": 453}, {"name": "CN", "count": 26}, {"name": "KP", "count": 9}]}]}}

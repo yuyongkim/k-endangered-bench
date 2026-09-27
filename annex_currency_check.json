@@ -1,0 +1,310 @@
+{
+  "checked_between_utc": [
+    "2026-09-26T17:07:57+00:00",
+    "2026-09-26T17:08:08+00:00"
+  ],
+  "pinned": {
+    "amended": "2022-12-09",
+    "marker": "<개정 2022. 12. 9.>",
+    "sha256": "4f75d4f8f92b8d7381b345cd89757672fc2e869bb75264eec2ab580a579945b4",
+    "file": "야생생물법_시행규칙_별표1_개정20221209.pdf"
+  },
+  "current_version": {
+    "mst": "286031",
+    "promulgated": "20260512",
+    "number": "00039",
+    "in_force": "20260512"
+  },
+  "versions_listed": 41,
+  "versions_since_pinned_amendment": [
+    {
+      "mst": "246025",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "일부개정",
+      "ordinance": "환경부령 제 01010호",
+      "promulgated": "2022.12.9",
+      "in_force": "2022.12.9",
+      "status": "연혁",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=122222423"
+    },
+    {
+      "mst": "247751",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "타법개정",
+      "ordinance": "환경부령 제 01020호",
+      "promulgated": "2023.1.5",
+      "in_force": "2023.1.5",
+      "status": "연혁",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=123751501"
+    },
+    {
+      "mst": "248897",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "일부개정",
+      "ordinance": "환경부령 제 01024호",
+      "promulgated": "2023.3.14",
+      "in_force": "2023.3.14",
+      "status": "연혁",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=126102117"
+    },
+    {
+      "mst": "251797",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "일부개정",
+      "ordinance": "환경부령 제 01039호",
+      "promulgated": "2023.6.9",
+      "in_force": "2023.6.11",
+      "status": "연혁",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=128930143"
+    },
+    {
+      "mst": "256955",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "일부개정",
+      "ordinance": "환경부령 제 01067호",
+      "promulgated": "2023.12.14",
+      "in_force": "2023.12.14",
+      "status": "연혁",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=135383809"
+    },
+    {
+      "mst": "262761",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "일부개정",
+      "ordinance": "환경부령 제 01093호",
+      "promulgated": "2024.5.17",
+      "in_force": "2024.5.19",
+      "status": "연혁",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=140489671"
+    },
+    {
+      "mst": "263283",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "타법개정",
+      "ordinance": "환경부령 제 01098호",
+      "promulgated": "2024.6.18",
+      "in_force": "2024.6.18",
+      "status": "연혁",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=141310525"
+    },
+    {
+      "mst": "263555",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "일부개정",
+      "ordinance": "환경부령 제 01102호",
+      "promulgated": "2024.6.28",
+      "in_force": "2024.6.28",
+      "status": "연혁",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=141886425"
+    },
+    {
+      "mst": "268923",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "일부개정",
+      "ordinance": "환경부령 제 01149호",
+      "promulgated": "2025.1.24",
+      "in_force": "2025.1.24",
+      "status": "연혁",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=148722035"
+    },
+    {
+      "mst": "278959",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "타법개정",
+      "ordinance": "기후에너지환경부령 제 00001호",
+      "promulgated": "2025.10.1",
+      "in_force": "2025.10.1",
+      "status": "연혁",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=158965973"
+    },
+    {
+      "mst": "280311",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "일부개정",
+      "ordinance": "기후에너지환경부령 제 00010호",
+      "promulgated": "2025.12.12",
+      "in_force": "2025.12.14",
+      "status": "연혁",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=159070981"
+    },
+    {
+      "mst": "286031",
+      "title": "야생생물 보호 및 관리에 관한 법률 시행규칙",
+      "kind": "일부개정",
+      "ordinance": "기후에너지환경부령 제 00039호",
+      "promulgated": "2026.5.12",
+      "in_force": "2026.5.12",
+      "status": "현행",
+      "marker": "<개정 2022. 12. 9.>",
+      "text_sha256": "355ecc985378d3e0c2069f943a4e41a09edac18a0269b461e4fb98c6d8d54c71",
+      "pdf_link": "/LSW/flDownload.do?flSeq=164119067"
+    }
+  ],
+  "annex1_markers_since": [
+    "<개정 2022. 12. 9.>"
+  ],
+  "annex1_text_variants_since": 1,
+  "current_annex1_pdf": {
+    "sha256": "562f73965183e519ffe6608843a2bb6ce07b693d778befb7457132e2c59c7ff1",
+    "bytes": 321781,
+    "byte_identical_to_pinned": false,
+    "extracted_text_sha256": "2ad17c47f2bc819a0949ca7d2f913df30a59b7d4e28279944589c474bb5c83b9",
+    "pinned_extracted_text_sha256": "2ad17c47f2bc819a0949ca7d2f913df30a59b7d4e28279944589c474bb5c83b9",
+    "extracted_text_identical": true,
+    "parsed_rows_identical": true,
+    "parsed_rows": 282,
+    "download_url": "/LSW/flDownload.do?flSeq=164119067",
+    "saved_as": "annex1_in_force_MST286031_562f73965183.pdf"
+  },
+  "conclusion": "Annex 1 unchanged since the pinned amendment",
+  "requests": [
+    {
+      "url": "https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=law&type=XML&query=%EC%95%BC%EC%83%9D%EC%83%9D%EB%AC%BC+%EB%B3%B4%ED%98%B8+%EB%B0%8F+%EA%B4%80%EB%A6%AC%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99",
+      "requested_utc": "2026-09-26T17:07:57+00:00",
+      "http_status": 200,
+      "bytes": 1184,
+      "sha256": "e561fc30a780655d5a08cc0f16d38a6735a78d6e3db2f0dd5520bff79a85d87e"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=lsHistory&type=HTML&query=%EC%95%BC%EC%83%9D%EC%83%9D%EB%AC%BC+%EB%B3%B4%ED%98%B8+%EB%B0%8F+%EA%B4%80%EB%A6%AC%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&page=1",
+      "requested_utc": "2026-09-26T17:07:57+00:00",
+      "http_status": 200,
+      "bytes": 20372,
+      "sha256": "78c5168a32282588558cafeec5ff11bd7aadd31f5b8a7e7da115a37f3f5ea890"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=lsHistory&type=HTML&query=%EC%95%BC%EC%83%9D%EC%83%9D%EB%AC%BC+%EB%B3%B4%ED%98%B8+%EB%B0%8F+%EA%B4%80%EB%A6%AC%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&page=2",
+      "requested_utc": "2026-09-26T17:07:58+00:00",
+      "http_status": 200,
+      "bytes": 20588,
+      "sha256": "24c0f8e4ec0f0af0ed44c8d77e251c31f3bb4f46f85a8328e894de13a55b0e26"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=lsHistory&type=HTML&query=%EC%95%BC%EC%83%9D%EC%83%9D%EB%AC%BC+%EB%B3%B4%ED%98%B8+%EB%B0%8F+%EA%B4%80%EB%A6%AC%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&page=3",
+      "requested_utc": "2026-09-26T17:07:58+00:00",
+      "http_status": 200,
+      "bytes": 9632,
+      "sha256": "618bfa9e7c85d8f7003722a6da32308d8fbda6fc050ab342672a517e048dfa05"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=lsHistory&type=HTML&query=%EC%95%BC%EC%83%9D%EC%83%9D%EB%AC%BC+%EB%B3%B4%ED%98%B8+%EB%B0%8F+%EA%B4%80%EB%A6%AC%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&page=4",
+      "requested_utc": "2026-09-26T17:07:58+00:00",
+      "http_status": 200,
+      "bytes": 9311,
+      "sha256": "a2079ca4a086bc5e39179655106f86cc7f55f5e43827532fae68291953765c3f"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=246025&type=XML",
+      "requested_utc": "2026-09-26T17:07:58+00:00",
+      "http_status": 200,
+      "bytes": 1681248,
+      "sha256": "d8b1718ee3d9794f8b3cfd71559bc75f72cfdbd73ff1e7c24a9422ce96f038b6"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=247751&type=XML",
+      "requested_utc": "2026-09-26T17:07:58+00:00",
+      "http_status": 200,
+      "bytes": 1673102,
+      "sha256": "07e95c7897fd95b870c9ceb82bc4d01e5235daa57df154a41c9ce14c1ad1cda2"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=248897&type=XML",
+      "requested_utc": "2026-09-26T17:07:59+00:00",
+      "http_status": 200,
+      "bytes": 1699448,
+      "sha256": "c118b03b03afa405857d3dd6fdbe248bc620102277207ee0a334e6a1b3d89bea"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=251797&type=XML",
+      "requested_utc": "2026-09-26T17:08:00+00:00",
+      "http_status": 200,
+      "bytes": 1714446,
+      "sha256": "deee6272f645fc8d38aec709fa818863b34c17fa0129a48d5e1e6e3c0302b36e"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=256955&type=XML",
+      "requested_utc": "2026-09-26T17:08:00+00:00",
+      "http_status": 200,
+      "bytes": 1787671,
+      "sha256": "6245c83997e0d0602db6825f041c7fd62dc7e4d8a217181919055361d3839b94"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=262761&type=XML",
+      "requested_utc": "2026-09-26T17:08:00+00:00",
+      "http_status": 200,
+      "bytes": 1899218,
+      "sha256": "9d6bbfbcb985826ede4dcbf5678373d427311e79e35ef45c251ed583cb1ec405"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=263283&type=XML",
+      "requested_utc": "2026-09-26T17:08:01+00:00",
+      "http_status": 200,
+      "bytes": 1882976,
+      "sha256": "2d08225bc7883fbac204660b5100c1a93aaf82f87f963f72dbd62aa592bf9265"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=263555&type=XML",
+      "requested_utc": "2026-09-26T17:08:01+00:00",
+      "http_status": 200,
+      "bytes": 1960489,
+      "sha256": "7b03503e0f57e820c6f195228800a96dbe7c58a55753d6823b145eea4cb2525b"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=268923&type=XML",
+      "requested_utc": "2026-09-26T17:08:02+00:00",
+      "http_status": 200,
+      "bytes": 1987150,
+      "sha256": "d0b085aa96be2164c4a07e42866419aa22b6ee1a596f75fff504047450288ee8"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=278959&type=XML",
+      "requested_utc": "2026-09-26T17:08:02+00:00",
+      "http_status": 200,
+      "bytes": 2002882,
+      "sha256": "c9bae6f66c8713f5cd7dc94a75d4a023fdf5d8dbca109ef75bcd7c9c77d8112f"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=280311&type=XML",
+      "requested_utc": "2026-09-26T17:08:03+00:00",
+      "http_status": 200,
+      "bytes": 2295482,
+      "sha256": "cc0f063b8cf7c95a6572098d188ddf09d4e28d2fa7bd94b8153a091dcdb5b1e7"
+    },
+    {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=286031&type=XML",
+      "requested_utc": "2026-09-26T17:08:03+00:00",
+      "http_status": 200,
+      "bytes": 2277834,
+      "sha256": "4c24523b18cc81c0d50094cf0e41624557b3999a77e035009656c45040506784"
+    },
+    {
+      "url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164119067",
+      "requested_utc": "2026-09-26T17:08:04+00:00",
+      "http_status": 200,
+      "bytes": 321781,
+      "sha256": "562f73965183e519ffe6608843a2bb6ce07b693d778befb7457132e2c59c7ff1"
+    }
+  ]
+}

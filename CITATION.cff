@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "K-EndangeredBench: A Benchmark Dataset and Build Pipeline for Evaluating AI-Generated Content on Korean Endangered Species"
+version: "1.0.9"
+date-released: "2026-09-27"
+license: CC-BY-NC-4.0
+doi: "10.5281/zenodo.22969956"
+url: "https://doi.org/10.5281/zenodo.22969956"
+authors:
+  - family-names: Hong
+    given-names: Ji Sun
+    affiliation: "H-grae Co., Ltd. (BonV Lab)"
+    orcid: "https://orcid.org/0009-0001-7544-8972"
+    email: "hongji5@gmail.com"
+  - family-names: Kim
+    given-names: Yuyong
+    affiliation: "H-grae Co., Ltd.; University of Wisconsin-Madison"
+    orcid: "https://orcid.org/0009-0006-4842-666X"
+    email: "ykim288@wisc.edu"
+keywords:
+  - biodiversity
+  - endangered species
+  - Korea
+  - IUCN Red List
+  - GBIF
+  - LLM factuality

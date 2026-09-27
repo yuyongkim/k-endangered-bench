@@ -1,0 +1,32 @@
+{
+  "title": "K-EndangeredBench: A Benchmark Dataset and Build Pipeline for Evaluating AI-Generated Content on Korean Endangered Species",
+  "upload_type": "dataset",
+  "description": "Record set pairing Korean national endangered-species designations (Class I/II under Annex 1 of the Enforcement Rule of the Wildlife Protection and Management Act, as amended 2022-12-09) with IUCN Red List categories, GBIF taxonomic and occurrence facts, and BonV Lab ecology-card narratives, for measuring factual accuracy and hallucination in AI-generated science education content. Includes the 282-taxon statutory census in the same schema.",
+  "creators": [
+    {
+      "name": "Hong, Ji Sun",
+      "affiliation": "H-grae Co., Ltd. (BonV Lab)",
+      "orcid": "0009-0001-7544-8972"
+    },
+    {
+      "name": "Kim, Yuyong",
+      "affiliation": "H-grae Co., Ltd.; University of Wisconsin-Madison",
+      "orcid": "0009-0006-4842-666X"
+    }
+  ],
+  "license": "cc-by-nc-4.0",
+  "keywords": [
+    "biodiversity",
+    "endangered species",
+    "Korea",
+    "IUCN Red List",
+    "GBIF",
+    "LLM factuality",
+    "hallucination",
+    "science education"
+  ],
+  "access_right": "open",
+  "language": "kor",
+  "version": "1.0.9",
+  "doi": "10.5281/zenodo.22969956"
+}

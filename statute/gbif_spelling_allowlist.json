@@ -1,0 +1,13 @@
+{
+  "_comment": "Reviewed GBIF FUZZY matches that differ from the designated name only in spelling, a hyphen or a gender ending. Used only when KEB_GBIF_SPELLING_ALLOWLIST points to this file (off by default; the release is built without it). Reviewed 2026-09-26 against the GBIF Backbone names printed in census_tables.md.",
+  "entries": [
+    {"designated_binomial": "Gobiobotia nakdongensis", "gbif_canonical_name": "Gobiobotia naktongensis", "difference": "romanisation spelling (Mori 1935 spelling naktongensis)"},
+    {"designated_binomial": "Pseudopungtungia tenuicorpa", "gbif_canonical_name": "Pseudopungtungia tenuicorpus", "difference": "epithet ending"},
+    {"designated_binomial": "Nacospatangus alta", "gbif_canonical_name": "Nacospatangus altus", "difference": "gender ending"},
+    {"designated_binomial": "Plumarella adhaerens", "gbif_canonical_name": "Plumarella adhaerans", "difference": "spelling"},
+    {"designated_binomial": "Metanarthecium luteo-viride", "gbif_canonical_name": "Metanarthecium luteoviride", "difference": "hyphen"},
+    {"designated_binomial": "Lethocerus deyrolli", "gbif_canonical_name": "Lethocerus deyrollei", "difference": "spelling"},
+    {"designated_binomial": "Acoptolabrus changeonleei", "gbif_canonical_name": "Acoptolabrus changgeonleei", "difference": "spelling"},
+    {"designated_binomial": "Lethenteron japonicus", "gbif_canonical_name": "Lethenteron japonicum", "difference": "gender ending"}
+  ]
+}

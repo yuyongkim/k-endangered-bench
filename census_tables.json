@@ -1,0 +1,720 @@
+{
+  "release_version": "1.0.9",
+  "census": {
+    "n": 282,
+    "grade": {
+      "I급": 68,
+      "II급": 214
+    },
+    "statute_rank": {
+      "subspecies": 13,
+      "species": 261,
+      "variety": 8
+    },
+    "with_category": 151,
+    "scope": {
+      "Global": 145,
+      "Europe": 6
+    },
+    "without_category": 131,
+    "match_status": {
+      "matched_at_species_rank": 13,
+      "matched": 124,
+      "matched_via_synonym": 13,
+      "not_assessed": 70,
+      "name_unresolved": 60,
+      "via_unaccepted_gbif_match": 2
+    },
+    "without_category_by_status": {
+      "not_assessed": 70,
+      "name_unresolved": 60,
+      "via_unaccepted_gbif_match": 1
+    },
+    "not_assessed_by_relation": {
+      "same": 65,
+      "broader": 3,
+      "different_taxon": 1,
+      "uncertain": 1
+    },
+    "concept_relation": {
+      "broader": 17,
+      "same": 195,
+      "different_taxon": 3,
+      "uncertain": 7,
+      "None": 60
+    },
+    "mismatch_type": {
+      "not_comparable": 159,
+      "korea_stricter": 92,
+      "aligned": 19,
+      "iucn_stricter": 12
+    },
+    "mismatch_type_any_concept": {
+      "korea_stricter": 104,
+      "aligned": 19,
+      "iucn_stricter": 13,
+      "not_comparable": 146
+    },
+    "not_comparable_reasons": {
+      "species_rank_assessment": 12,
+      "different_taxon": 2,
+      "relation_uncertain": 1,
+      "no_category": 131,
+      "match_outside_gate": 1,
+      "regional_only": 6,
+      "dd_or_ne": 3,
+      "merged_synonym": 1,
+      "range_excludes_korea": 2
+    },
+    "outdated_among_categories": 38,
+    "outdated_among_comparable": 22,
+    "gbif_gate": {
+      "EXACT/SPECIES/True": 267,
+      "FUZZY/SPECIES/False": 8,
+      "HIGHERRANK/GENUS/False": 7
+    },
+    "range_includes_korea": {
+      "True": 138,
+      "False": 13,
+      "None": 131
+    },
+    "range_excludes_korea_global": [
+      {
+        "statute_name": "Strix aluco",
+        "iucn_name": "Strix aluco",
+        "category": "LC",
+        "relation": "different_taxon",
+        "status": "matched"
+      },
+      {
+        "statute_name": "Phoxinus phoxinus",
+        "iucn_name": "Phoxinus phoxinus",
+        "category": "LC",
+        "relation": "different_taxon",
+        "status": "matched"
+      },
+      {
+        "statute_name": "Lethenteron japonicus",
+        "iucn_name": "Lethenteron camtschaticum",
+        "category": "LC",
+        "relation": "uncertain",
+        "status": "via_unaccepted_gbif_match"
+      },
+      {
+        "statute_name": "Ellobium chinense",
+        "iucn_name": "Ellobium chinense",
+        "category": "DD",
+        "relation": "uncertain",
+        "status": "matched"
+      },
+      {
+        "statute_name": "Brasenia schreberi",
+        "iucn_name": "Brasenia schreberi",
+        "category": "LC",
+        "relation": "uncertain",
+        "status": "matched"
+      },
+      {
+        "statute_name": "Utricularia yakusimensis",
+        "iucn_name": "Utricularia uliginosa",
+        "category": "LC",
+        "relation": "uncertain",
+        "status": "matched_via_synonym"
+      },
+      {
+        "statute_name": "Michelia compressa",
+        "iucn_name": "Magnolia compressa",
+        "category": "DD",
+        "relation": "uncertain",
+        "status": "matched_via_synonym"
+      }
+    ],
+    "any_concept_composition": {
+      "species_rank": 12,
+      "same": 123,
+      "merge": 1
+    }
+  },
+  "not_same_concept": [
+    {
+      "statute_name": "Strix aluco",
+      "iucn_name": "Strix aluco",
+      "relation": "different_taxon",
+      "status": "matched",
+      "category": "LC"
+    },
+    {
+      "statute_name": "Dryophytes suweonensis",
+      "iucn_name": "Dryophytes suweonensis",
+      "relation": "uncertain",
+      "status": "matched",
+      "category": "EN"
+    },
+    {
+      "statute_name": "Phoxinus phoxinus",
+      "iucn_name": "Phoxinus phoxinus",
+      "relation": "different_taxon",
+      "status": "matched",
+      "category": "LC"
+    },
+    {
+      "statute_name": "Lethenteron japonicus",
+      "iucn_name": "Lethenteron camtschaticum",
+      "relation": "uncertain",
+      "status": "via_unaccepted_gbif_match",
+      "category": "LC"
+    },
+    {
+      "statute_name": "Acoptolabrus leechi yooni",
+      "iucn_name": "Carabus leechi",
+      "relation": "broader",
+      "status": "not_assessed",
+      "category": null
+    },
+    {
+      "statute_name": "Ellobium chinense",
+      "iucn_name": "Ellobium chinense",
+      "relation": "uncertain",
+      "status": "matched",
+      "category": "DD"
+    },
+    {
+      "statute_name": "Glaux maritima var. obtusifolia",
+      "iucn_name": "Lysimachia maritima",
+      "relation": "broader",
+      "status": "matched_at_species_rank",
+      "category": "LC"
+    },
+    {
+      "statute_name": "Kirengeshoma koreana",
+      "iucn_name": "Kirengeshoma palmata",
+      "relation": "broader",
+      "status": "matched_via_synonym",
+      "category": "EN"
+    },
+    {
+      "statute_name": "Habenaria flagellifera",
+      "iucn_name": "Peristylus densus",
+      "relation": "broader",
+      "status": "not_assessed",
+      "category": null
+    },
+    {
+      "statute_name": "Brasenia schreberi",
+      "iucn_name": "Brasenia schreberi",
+      "relation": "uncertain",
+      "status": "matched",
+      "category": "LC"
+    },
+    {
+      "statute_name": "Utricularia yakusimensis",
+      "iucn_name": "Utricularia uliginosa",
+      "relation": "uncertain",
+      "status": "matched_via_synonym",
+      "category": "LC"
+    },
+    {
+      "statute_name": "Lycoris chinensis var. sinuolata",
+      "iucn_name": "Lycoris uydoensis",
+      "relation": "different_taxon",
+      "status": "not_assessed",
+      "category": null
+    },
+    {
+      "statute_name": "Michelia compressa",
+      "iucn_name": "Magnolia compressa",
+      "relation": "uncertain",
+      "status": "matched_via_synonym",
+      "category": "DD"
+    },
+    {
+      "statute_name": "Pedicularis hallaisanensis",
+      "iucn_name": "Pedicularis verticillata",
+      "relation": "broader",
+      "status": "not_assessed",
+      "category": null
+    },
+    {
+      "statute_name": "Arctous rubra",
+      "iucn_name": "Arctous erythrocarpa",
+      "relation": "uncertain",
+      "status": "not_assessed",
+      "category": null
+    }
+  ],
+  "fuzzy_within_name_unresolved": {
+    "n": 5,
+    "records": [
+      {
+        "statute_name": "Gobiobotia nakdongensis",
+        "gbif_match": "Gobiobotia naktongensis Mori, 1935"
+      },
+      {
+        "statute_name": "Pseudopungtungia tenuicorpa",
+        "gbif_match": "Pseudopungtungia tenuicorpus Jeon & Choi, 1980"
+      },
+      {
+        "statute_name": "Lethocerus deyrolli",
+        "gbif_match": "Kirkaldyia deyrollei (Vuillefroy, 1864)"
+      },
+      {
+        "statute_name": "Nacospatangus alta",
+        "gbif_match": "Nacospatangus altus (A.Agassiz, 1864)"
+      },
+      {
+        "statute_name": "Plumarella adhaerens",
+        "gbif_match": "Plumarella adhaerans Nutting, 1912"
+      }
+    ]
+  },
+  "placement_sensitivity": [
+    {
+      "class_I": "CR (6)",
+      "class_II": "VU (4)",
+      "bench_same_taxon": {
+        "korea_stricter": 6,
+        "aligned": 1,
+        "iucn_stricter": 1,
+        "n": 8,
+        "divergent": 7,
+        "divergent_pct": 88
+      },
+      "bench_any_concept": {
+        "korea_stricter": 8,
+        "aligned": 1,
+        "iucn_stricter": 1,
+        "n": 10,
+        "divergent": 9,
+        "divergent_pct": 90
+      },
+      "census_same_taxon": {
+        "korea_stricter": 92,
+        "aligned": 19,
+        "iucn_stricter": 12,
+        "n": 123,
+        "divergent": 104,
+        "divergent_pct": 85
+      },
+      "census_any_concept": {
+        "korea_stricter": 104,
+        "aligned": 19,
+        "iucn_stricter": 13,
+        "n": 136,
+        "divergent": 117,
+        "divergent_pct": 86
+      }
+    },
+    {
+      "class_I": "EN (5)",
+      "class_II": "VU (4)",
+      "bench_same_taxon": {
+        "korea_stricter": 6,
+        "aligned": 1,
+        "iucn_stricter": 1,
+        "n": 8,
+        "divergent": 7,
+        "divergent_pct": 88
+      },
+      "bench_any_concept": {
+        "korea_stricter": 8,
+        "aligned": 1,
+        "iucn_stricter": 1,
+        "n": 10,
+        "divergent": 9,
+        "divergent_pct": 90
+      },
+      "census_same_taxon": {
+        "korea_stricter": 84,
+        "aligned": 23,
+        "iucn_stricter": 16,
+        "n": 123,
+        "divergent": 100,
+        "divergent_pct": 81
+      },
+      "census_any_concept": {
+        "korea_stricter": 95,
+        "aligned": 24,
+        "iucn_stricter": 17,
+        "n": 136,
+        "divergent": 112,
+        "divergent_pct": 82
+      }
+    },
+    {
+      "class_I": "CR (6)",
+      "class_II": "EN (5)",
+      "bench_same_taxon": {
+        "korea_stricter": 7,
+        "aligned": 1,
+        "iucn_stricter": 0,
+        "n": 8,
+        "divergent": 7,
+        "divergent_pct": 88
+      },
+      "bench_any_concept": {
+        "korea_stricter": 9,
+        "aligned": 1,
+        "iucn_stricter": 0,
+        "n": 10,
+        "divergent": 9,
+        "divergent_pct": 90
+      },
+      "census_same_taxon": {
+        "korea_stricter": 107,
+        "aligned": 11,
+        "iucn_stricter": 5,
+        "n": 123,
+        "divergent": 112,
+        "divergent_pct": 91
+      },
+      "census_any_concept": {
+        "korea_stricter": 119,
+        "aligned": 12,
+        "iucn_stricter": 5,
+        "n": 136,
+        "divergent": 124,
+        "divergent_pct": 91
+      }
+    },
+    {
+      "class_I": "EN (5)",
+      "class_II": "NT (3)",
+      "bench_same_taxon": {
+        "korea_stricter": 6,
+        "aligned": 0,
+        "iucn_stricter": 2,
+        "n": 8,
+        "divergent": 8,
+        "divergent_pct": 100
+      },
+      "bench_any_concept": {
+        "korea_stricter": 8,
+        "aligned": 0,
+        "iucn_stricter": 2,
+        "n": 10,
+        "divergent": 10,
+        "divergent_pct": 100
+      },
+      "census_same_taxon": {
+        "korea_stricter": 73,
+        "aligned": 19,
+        "iucn_stricter": 31,
+        "n": 123,
+        "divergent": 104,
+        "divergent_pct": 85
+      },
+      "census_any_concept": {
+        "korea_stricter": 84,
+        "aligned": 20,
+        "iucn_stricter": 32,
+        "n": 136,
+        "divergent": 116,
+        "divergent_pct": 85
+      }
+    },
+    {
+      "class_I": "VU (4)",
+      "class_II": "NT (3)",
+      "bench_same_taxon": {
+        "korea_stricter": 4,
+        "aligned": 2,
+        "iucn_stricter": 2,
+        "n": 8,
+        "divergent": 6,
+        "divergent_pct": 75
+      },
+      "bench_any_concept": {
+        "korea_stricter": 5,
+        "aligned": 3,
+        "iucn_stricter": 2,
+        "n": 10,
+        "divergent": 7,
+        "divergent_pct": 70
+      },
+      "census_same_taxon": {
+        "korea_stricter": 64,
+        "aligned": 20,
+        "iucn_stricter": 39,
+        "n": 123,
+        "divergent": 103,
+        "divergent_pct": 84
+      },
+      "census_any_concept": {
+        "korea_stricter": 73,
+        "aligned": 22,
+        "iucn_stricter": 41,
+        "n": 136,
+        "divergent": 114,
+        "divergent_pct": 84
+      }
+    },
+    {
+      "class_I": "5.5",
+      "class_II": "3.5",
+      "bench_same_taxon": {
+        "korea_stricter": 6,
+        "aligned": 0,
+        "iucn_stricter": 2,
+        "n": 8,
+        "divergent": 8,
+        "divergent_pct": 100
+      },
+      "bench_any_concept": {
+        "korea_stricter": 8,
+        "aligned": 0,
+        "iucn_stricter": 2,
+        "n": 10,
+        "divergent": 10,
+        "divergent_pct": 100
+      },
+      "census_same_taxon": {
+        "korea_stricter": 92,
+        "aligned": 0,
+        "iucn_stricter": 31,
+        "n": 123,
+        "divergent": 123,
+        "divergent_pct": 100
+      },
+      "census_any_concept": {
+        "korea_stricter": 104,
+        "aligned": 0,
+        "iucn_stricter": 32,
+        "n": 136,
+        "divergent": 136,
+        "divergent_pct": 100
+      }
+    }
+  ],
+  "placement_ranges": {
+    "bench_same_taxon": {
+      "integer_min_pct": 75,
+      "integer_max_pct": 100,
+      "integer_min": 6,
+      "integer_max": 8,
+      "non_integer_pct": 100,
+      "non_integer": 8
+    },
+    "bench_any_concept": {
+      "integer_min_pct": 70,
+      "integer_max_pct": 100,
+      "integer_min": 7,
+      "integer_max": 10,
+      "non_integer_pct": 100,
+      "non_integer": 10
+    },
+    "census_same_taxon": {
+      "integer_min_pct": 81,
+      "integer_max_pct": 91,
+      "integer_min": 100,
+      "integer_max": 112,
+      "non_integer_pct": 100,
+      "non_integer": 123
+    },
+    "census_any_concept": {
+      "integer_min_pct": 82,
+      "integer_max_pct": 91,
+      "integer_min": 112,
+      "integer_max": 124,
+      "non_integer_pct": 100,
+      "non_integer": 136
+    }
+  },
+  "token_free": {
+    "status": {
+      "matched_via_gbif": 142,
+      "no_global_category_via_gbif": 125,
+      "name_unresolved_via_gbif": 15
+    },
+    "both_global": 139,
+    "agree": 138,
+    "disagree": [
+      {
+        "statute_name": "Dryophytes suweonensis",
+        "api_category": "EN",
+        "token_free_category": "LC"
+      }
+    ],
+    "same_assessment_id": 129,
+    "assessment_id_differs": {
+      "no_doi_in_checklist_citation": [
+        "Lynx lynx",
+        "Grus japonensis",
+        "Anser cygnoides",
+        "Locustella pleskei",
+        "Grus leucogeranus",
+        "Aquila clanga"
+      ],
+      "different_assessment_cited": [
+        {
+          "statute_name": "Pteromys volans aluco",
+          "api": 115144995,
+          "token_free": 22270935,
+          "api_match_status": "matched_at_species_rank"
+        },
+        {
+          "statute_name": "Dryophytes suweonensis",
+          "api": 258842200,
+          "token_free": 63861493,
+          "api_match_status": "matched"
+        },
+        {
+          "statute_name": "Mauremys reevesii",
+          "api": 97431862,
+          "token_free": 6783291,
+          "api_match_status": "matched"
+        },
+        {
+          "statute_name": "Mankyua chejuense",
+          "api": 98368257,
+          "token_free": 72136464,
+          "api_match_status": "matched"
+        }
+      ]
+    },
+    "token_free_relation_not_same": [
+      {
+        "statute_name": "Canis lupus coreanus",
+        "iucn_name": "Canis lupus",
+        "relation": "broader",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Cervus nippon hortulorum",
+        "iucn_name": "Cervus nippon",
+        "relation": "broader",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Ursus thibetanus ussuricus",
+        "iucn_name": "Ursus thibetanus",
+        "relation": "broader",
+        "category": "VU"
+      },
+      {
+        "statute_name": "Vulpes vulpes peculiosa",
+        "iucn_name": "Vulpes vulpes",
+        "relation": "broader",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Panthera pardus orientalis",
+        "iucn_name": "Panthera pardus",
+        "relation": "broader",
+        "category": "VU"
+      },
+      {
+        "statute_name": "Panthera tigris altaica",
+        "iucn_name": "Panthera tigris",
+        "relation": "broader",
+        "category": "EN"
+      },
+      {
+        "statute_name": "Pteromys volans aluco",
+        "iucn_name": "Pteromys volans",
+        "relation": "broader",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Strix aluco",
+        "iucn_name": "Strix aluco",
+        "relation": "different_taxon",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Dryophytes suweonensis",
+        "iucn_name": "Dryophytes immaculatus",
+        "relation": "different_taxon",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Phoxinus phoxinus",
+        "iucn_name": "Phoxinus phoxinus",
+        "relation": "different_taxon",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Brachymystax lenok tsinlingensis",
+        "iucn_name": "Brachymystax lenok",
+        "relation": "broader",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Leontopodium coreanum var. hallaisanense",
+        "iucn_name": "Leontopodium coreanum",
+        "relation": "broader",
+        "category": "DD"
+      },
+      {
+        "statute_name": "Nymphaea tetragona var. minima",
+        "iucn_name": "Nymphaea tetragona",
+        "relation": "broader",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Glaux maritima var. obtusifolia",
+        "iucn_name": "Lysimachia maritima",
+        "relation": "broader",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Drosera peltata var. nipponica",
+        "iucn_name": "Drosera peltata",
+        "relation": "broader",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Kirengeshoma koreana",
+        "iucn_name": "Kirengeshoma palmata",
+        "relation": "broader",
+        "category": "EN"
+      },
+      {
+        "statute_name": "Ranunculus trichophyllus var. kadzusensis",
+        "iucn_name": "Ranunculus trichophyllus",
+        "relation": "broader",
+        "category": "LC"
+      },
+      {
+        "statute_name": "Utricularia yakusimensis",
+        "iucn_name": "Utricularia uliginosa",
+        "relation": "broader",
+        "category": "LC"
+      }
+    ],
+    "api_global_without_token_free": [
+      "Larus saundersi",
+      "Larus relictus",
+      "Sterna albifrons",
+      "Lethenteron japonicus",
+      "Euryale ferox",
+      "Ceratopteris thalictroides"
+    ],
+    "token_free_without_api_category": [
+      {
+        "statute_name": "Odontobutis obscura",
+        "token_free_category": "LC",
+        "api_match_status": "not_assessed"
+      },
+      {
+        "statute_name": "Kichulchoia brevifasciata",
+        "token_free_category": "VU",
+        "api_match_status": "name_unresolved"
+      },
+      {
+        "statute_name": "Iksookimia pumila",
+        "token_free_category": "EN",
+        "api_match_status": "name_unresolved"
+      }
+    ]
+  },
+  "token_free_16": {
+    "api_global": 12,
+    "same_category_when_api_global": 12,
+    "no_token_free_category": [
+      "Apis mellifera",
+      "Taraxacum officinale",
+      "Eisenia fetida",
+      "Pieris rapae"
+    ]
+  }
+}

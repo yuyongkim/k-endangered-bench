@@ -1,0 +1,693 @@
+{
+  "description": "Diff step of the re-verification procedure run on the 2022 amendment: the annex in force before 2022-12-09 against the pinned annex, compared with the Ministry of Environment press release of 2022-12-09.",
+  "inputs": {
+    "before": {
+      "version": "Enforcement Rule as amended by Ministry of Environment Ordinance No. 942 (환경부령 제942호), promulgated and in force 2021-09-16; law.go.kr MST 235675",
+      "annex_marker": "<개정 2021. 9. 16.>",
+      "url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=107653023",
+      "file": "data/statute/annex1_before_2022-12-09_amended_2021-09-16.pdf",
+      "sha256": "f7de4c2052e0070a43d83065385973e244e660e2a191faa8a0aa5357a9958ca3",
+      "bytes": 124465,
+      "retrieved_utc": "2026-09-26T07:13:00+00:00"
+    },
+    "after": {
+      "file": "data/statute/야생생물법_시행규칙_별표1_개정20221209.pdf",
+      "sha256": "4f75d4f8f92b8d7381b345cd89757672fc2e869bb75264eec2ab580a579945b4"
+    },
+    "press_release": {
+      "issuer": "Ministry of Environment, Nature Conservation Bureau, Biodiversity Division (환경부 자연보전국 생물다양성과)",
+      "title": "멸종위기 야생생물, 267종에서 282종으로 개정",
+      "date": "2022-12-09",
+      "page_url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156541526",
+      "attachment_url": "https://www.korea.kr/common/download.do?fileId=197531828&tblKey=GMN",
+      "file": "data/statute/moe_press_release_2022-12-09_endangered_wildlife_282.pdf",
+      "sha256": "19c7f5912d64d5aef5799d2b62ddc80824be018189f57b633d931db2d66efab5",
+      "bytes": 264672,
+      "retrieved_utc": "2026-09-26T07:16:00+00:00",
+      "quoted": "I급 68종과 Ⅱ급 214종 등 최종 282종 ... [Ⅰ급] 60종→68종 ... [Ⅱ급] 207종→214종",
+      "licence": "Korea Open Government License (KOGL) Type 1, attribution (as marked on the korea.kr page)"
+    }
+  },
+  "file_checks": {
+    "pre_amendment_sha256_matches_record": true,
+    "press_release_sha256_matches_record": true
+  },
+  "parsed_rows": {
+    "before": 266,
+    "before_recovered": [
+      {
+        "no": null,
+        "taxon": "고등균류",
+        "grade": "II급",
+        "korean_name": "화경버섯",
+        "scientific_name": "Lampteromyces japonicus",
+        "recovered": "row without a row number"
+      }
+    ],
+    "after": 282
+  },
+  "totals_expected": {
+    "before": {
+      "I급": 60,
+      "II급": 207
+    },
+    "after": {
+      "I급": 68,
+      "II급": 214
+    }
+  },
+  "totals_parsed": {
+    "before": {
+      "I급": 60,
+      "II급": 207
+    },
+    "after": {
+      "I급": 68,
+      "II급": 214
+    }
+  },
+  "totals_by_group": {
+    "포유류": {
+      "expected_before": [
+        12,
+        8
+      ],
+      "parsed_before": [
+        12,
+        8
+      ],
+      "parsed_before_with_recovered": [
+        12,
+        8
+      ],
+      "expected_after": [
+        14,
+        6
+      ],
+      "parsed_after": [
+        14,
+        6
+      ]
+    },
+    "조류": {
+      "expected_before": [
+        14,
+        49
+      ],
+      "parsed_before": [
+        14,
+        49
+      ],
+      "parsed_before_with_recovered": [
+        14,
+        49
+      ],
+      "expected_after": [
+        16,
+        53
+      ],
+      "parsed_after": [
+        16,
+        53
+      ]
+    },
+    "양서류·파충류": {
+      "expected_before": [
+        2,
+        6
+      ],
+      "parsed_before": [
+        2,
+        6
+      ],
+      "parsed_before_with_recovered": [
+        2,
+        6
+      ],
+      "expected_after": [
+        2,
+        6
+      ],
+      "parsed_after": [
+        2,
+        6
+      ]
+    },
+    "어류": {
+      "expected_before": [
+        11,
+        16
+      ],
+      "parsed_before": [
+        11,
+        16
+      ],
+      "parsed_before_with_recovered": [
+        11,
+        16
+      ],
+      "expected_after": [
+        11,
+        18
+      ],
+      "parsed_after": [
+        11,
+        18
+      ]
+    },
+    "곤충류": {
+      "expected_before": [
+        6,
+        20
+      ],
+      "parsed_before": [
+        6,
+        20
+      ],
+      "parsed_before_with_recovered": [
+        6,
+        20
+      ],
+      "expected_after": [
+        8,
+        21
+      ],
+      "parsed_after": [
+        8,
+        21
+      ]
+    },
+    "무척추동물": {
+      "expected_before": [
+        4,
+        28
+      ],
+      "parsed_before": [
+        4,
+        28
+      ],
+      "parsed_before_with_recovered": [
+        4,
+        28
+      ],
+      "expected_after": [
+        4,
+        28
+      ],
+      "parsed_after": [
+        4,
+        28
+      ]
+    },
+    "육상식물": {
+      "expected_before": [
+        11,
+        77
+      ],
+      "parsed_before": [
+        11,
+        77
+      ],
+      "parsed_before_with_recovered": [
+        11,
+        77
+      ],
+      "expected_after": [
+        13,
+        79
+      ],
+      "parsed_after": [
+        13,
+        79
+      ]
+    },
+    "해조류": {
+      "expected_before": [
+        0,
+        2
+      ],
+      "parsed_before": [
+        0,
+        2
+      ],
+      "parsed_before_with_recovered": [
+        0,
+        2
+      ],
+      "expected_after": [
+        0,
+        2
+      ],
+      "parsed_after": [
+        0,
+        2
+      ]
+    },
+    "고등균류": {
+      "expected_before": [
+        0,
+        1
+      ],
+      "parsed_before": [
+        0,
+        0
+      ],
+      "parsed_before_with_recovered": [
+        0,
+        1
+      ],
+      "expected_after": [
+        0,
+        1
+      ],
+      "parsed_after": [
+        0,
+        1
+      ]
+    }
+  },
+  "diff_as_parsed": {
+    "new": [
+      "나도범의귀",
+      "나도여로",
+      "눈썹고사리",
+      "둑중개",
+      "물석송",
+      "불나방",
+      "붉은가슴흰죽지",
+      "뿔제비갈매기",
+      "새미",
+      "선모시대",
+      "쇠제비갈매기",
+      "시베리아흰두루미",
+      "어름치",
+      "윤조롱박딱정벌레",
+      "장백제비꽃",
+      "청호반새",
+      "큰뒷부리도요",
+      "한국꼬마잠자리",
+      "한라장구채",
+      "홍줄나비",
+      "화경솔밭버섯"
+    ],
+    "removed": [
+      "개병풍",
+      "꼬마잠자리",
+      "백조어",
+      "솔붓꽃",
+      "황근"
+    ],
+    "upgraded_II_to_I": [
+      "고니",
+      "느시",
+      "닻무늬길앞잡이",
+      "무산쇠족제비",
+      "물범",
+      "제주고사리삼",
+      "큰홍띠점박이푸른부전나비",
+      "탐라란"
+    ],
+    "downgraded_I_to_II": [
+      "매"
+    ]
+  },
+  "comparison_as_parsed": {
+    "new": {
+      "expected": 19,
+      "diff_step": 21,
+      "matched": 19,
+      "only_in_diff_step": [
+        "한국꼬마잠자리",
+        "화경솔밭버섯"
+      ],
+      "only_in_press_release": []
+    },
+    "removed": {
+      "expected": 4,
+      "diff_step": 5,
+      "matched": 4,
+      "only_in_diff_step": [
+        "꼬마잠자리"
+      ],
+      "only_in_press_release": []
+    },
+    "upgraded_II_to_I": {
+      "expected": 8,
+      "diff_step": 8,
+      "matched": 8,
+      "only_in_diff_step": [],
+      "only_in_press_release": []
+    },
+    "downgraded_I_to_II": {
+      "expected": 1,
+      "diff_step": 1,
+      "matched": 1,
+      "only_in_diff_step": [],
+      "only_in_press_release": []
+    }
+  },
+  "comparison_with_recovered_row": {
+    "new": {
+      "expected": 19,
+      "diff_step": 21,
+      "matched": 19,
+      "only_in_diff_step": [
+        "한국꼬마잠자리",
+        "화경솔밭버섯"
+      ],
+      "only_in_press_release": []
+    },
+    "removed": {
+      "expected": 4,
+      "diff_step": 6,
+      "matched": 4,
+      "only_in_diff_step": [
+        "꼬마잠자리",
+        "화경버섯"
+      ],
+      "only_in_press_release": []
+    },
+    "upgraded_II_to_I": {
+      "expected": 8,
+      "diff_step": 8,
+      "matched": 8,
+      "only_in_diff_step": [],
+      "only_in_press_release": []
+    },
+    "downgraded_I_to_II": {
+      "expected": 1,
+      "diff_step": 1,
+      "matched": 1,
+      "only_in_diff_step": [],
+      "only_in_press_release": []
+    }
+  },
+  "renamed_with_recovered_row": [
+    {
+      "from": "토끼박쥐 Plecotus auritus",
+      "to": "토끼박쥐 Plecotus ognevi"
+    },
+    {
+      "from": "수원청개구리 Hyla suweonensis",
+      "to": "수원청개구리 Dryophytes suweonensis"
+    },
+    {
+      "from": "고리도룡뇽 Hynobius yangi",
+      "to": "고리도롱뇽 Hynobius yangi"
+    },
+    {
+      "from": "닻무늬길앞잡이 Cicindela anchoralis",
+      "to": "닻무늬길앞잡이 Cicindela (Abroscelis) anchoralis"
+    },
+    {
+      "from": "비단벌레 Chrysochroa coreana",
+      "to": "비단벌레 Chrysochroa (Chrysochroa) coreana"
+    },
+    {
+      "from": "장수하늘소 Callipogon relictus",
+      "to": "장수하늘소 Callipogon (Eoxenus) relictus"
+    },
+    {
+      "from": "멋조롱박딱정벌레 Damaster mirabilissimus mirabilissimus",
+      "to": "멋조롱박딱정벌레 Acoptolabrus mirabilissimus mirabilissimus"
+    },
+    {
+      "from": "물방개 Cybister chinensis",
+      "to": "물방개 Cybister (Cybister) chinensis"
+    },
+    {
+      "from": "소똥구리 Gymnopleurus mopsus",
+      "to": "소똥구리 Gymnopleurus (Gymnopleurus) mopsus"
+    },
+    {
+      "from": "애기뿔소똥구리 Copris tripartitus",
+      "to": "애기뿔소똥구리 Copris (Copris) tripartitus"
+    },
+    {
+      "from": "참호박뒤영벌 Bombus koreanus",
+      "to": "참호박뒤영벌 Bombus (Megabombus) koreanus"
+    },
+    {
+      "from": "창언조롱박딱정벌레 Damaster changeonleei",
+      "to": "창언조롱박딱정벌레 Acoptolabrus changeonleei"
+    },
+    {
+      "from": "큰자색호랑꽃무지 Osmoderma opicum",
+      "to": "큰자색호랑꽃무지 Osmoderma caeleste"
+    },
+    {
+      "from": "나팔고둥 Charonia lampas sauliae",
+      "to": "나팔고둥 Charonia lampas"
+    },
+    {
+      "from": "두드럭조개 Lamprotula coreana",
+      "to": "두드럭조개 Aculamprotula coreana"
+    },
+    {
+      "from": "기수갈고둥 Clithon retropictus",
+      "to": "기수갈고둥 Clithon retropictum"
+    },
+    {
+      "from": "별혹산호 Verrucella stellata",
+      "to": "별혹산호 Ellisella ceratophyta"
+    },
+    {
+      "from": "흰발농게 Uca lactea",
+      "to": "흰발농게 Austruca lactea"
+    },
+    {
+      "from": "한라솜다리 Leontopodium hallaisanense",
+      "to": "한라솜다리 Leontopodium coreanum var. hallaisanense"
+    },
+    {
+      "from": "구름병아리난초 Gymnadenia cucullata",
+      "to": "구름병아리난초 Neottianthe cucullata"
+    },
+    {
+      "from": "기생꽃 Trientalis europaea ssp. arctica",
+      "to": "기생꽃 Trientalis europaea subsp. arctica"
+    },
+    {
+      "from": "백운란 Vexillabium yakusimensis var. nakaianum",
+      "to": "백운란 Kuhlhasseltia nakaiana"
+    },
+    {
+      "from": "섬개현삼 Scrophularia takesimensis",
+      "to": "섬현삼 Scrophularia takesimensis"
+    },
+    {
+      "from": "참닻꽃 Halenia corniculata",
+      "to": "참닻꽃 Halenia coreana"
+    },
+    {
+      "from": "홍월귤 Arctous alpinus var. japonicus",
+      "to": "홍월귤 Arctous rubra"
+    }
+  ],
+  "rename_classes": {
+    "source": "data/statute/amendment_2022_rename_classes.json",
+    "validated_against_press_release": false,
+    "renamed": [
+      {
+        "from": "토끼박쥐 Plecotus auritus",
+        "to": "토끼박쥐 Plecotus ognevi",
+        "class": "concept",
+        "subclass": null,
+        "note": "Korean populations assigned to P. ognevi after the split of P. auritus"
+      },
+      {
+        "from": "수원청개구리 Hyla suweonensis",
+        "to": "수원청개구리 Dryophytes suweonensis",
+        "class": "nomenclatural",
+        "subclass": null,
+        "note": "genus transfer; since v1.0.6 the IUCN relation is uncertain (southern populations described as D. flaviventris, Borzee et al. 2020)"
+      },
+      {
+        "from": "고리도룡뇽 Hynobius yangi",
+        "to": "고리도롱뇽 Hynobius yangi",
+        "class": "spelling",
+        "subclass": "korean_name_only",
+        "note": "Korean name 고리도룡뇽 -> 고리도롱뇽"
+      },
+      {
+        "from": "닻무늬길앞잡이 Cicindela anchoralis",
+        "to": "닻무늬길앞잡이 Cicindela (Abroscelis) anchoralis",
+        "class": "subgenus",
+        "subclass": null,
+        "note": null
+      },
+      {
+        "from": "비단벌레 Chrysochroa coreana",
+        "to": "비단벌레 Chrysochroa (Chrysochroa) coreana",
+        "class": "subgenus",
+        "subclass": null,
+        "note": null
+      },
+      {
+        "from": "장수하늘소 Callipogon relictus",
+        "to": "장수하늘소 Callipogon (Eoxenus) relictus",
+        "class": "subgenus",
+        "subclass": null,
+        "note": null
+      },
+      {
+        "from": "멋조롱박딱정벌레 Damaster mirabilissimus mirabilissimus",
+        "to": "멋조롱박딱정벌레 Acoptolabrus mirabilissimus mirabilissimus",
+        "class": "nomenclatural",
+        "subclass": null,
+        "note": "genus placement"
+      },
+      {
+        "from": "물방개 Cybister chinensis",
+        "to": "물방개 Cybister (Cybister) chinensis",
+        "class": "subgenus",
+        "subclass": null,
+        "note": null
+      },
+      {
+        "from": "소똥구리 Gymnopleurus mopsus",
+        "to": "소똥구리 Gymnopleurus (Gymnopleurus) mopsus",
+        "class": "subgenus",
+        "subclass": null,
+        "note": null
+      },
+      {
+        "from": "애기뿔소똥구리 Copris tripartitus",
+        "to": "애기뿔소똥구리 Copris (Copris) tripartitus",
+        "class": "subgenus",
+        "subclass": null,
+        "note": null
+      },
+      {
+        "from": "참호박뒤영벌 Bombus koreanus",
+        "to": "참호박뒤영벌 Bombus (Megabombus) koreanus",
+        "class": "subgenus",
+        "subclass": null,
+        "note": null
+      },
+      {
+        "from": "창언조롱박딱정벌레 Damaster changeonleei",
+        "to": "창언조롱박딱정벌레 Acoptolabrus changeonleei",
+        "class": "nomenclatural",
+        "subclass": null,
+        "note": "genus placement"
+      },
+      {
+        "from": "큰자색호랑꽃무지 Osmoderma opicum",
+        "to": "큰자색호랑꽃무지 Osmoderma caeleste",
+        "class": "concept",
+        "subclass": null,
+        "note": "Korean populations re-identified as O. caeleste"
+      },
+      {
+        "from": "나팔고둥 Charonia lampas sauliae",
+        "to": "나팔고둥 Charonia lampas",
+        "class": "concept",
+        "subclass": null,
+        "note": "subspecies widened to the species"
+      },
+      {
+        "from": "두드럭조개 Lamprotula coreana",
+        "to": "두드럭조개 Aculamprotula coreana",
+        "class": "nomenclatural",
+        "subclass": null,
+        "note": "genus transfer"
+      },
+      {
+        "from": "기수갈고둥 Clithon retropictus",
+        "to": "기수갈고둥 Clithon retropictum",
+        "class": "spelling",
+        "subclass": "scientific_name_spelling",
+        "note": "epithet ending"
+      },
+      {
+        "from": "별혹산호 Verrucella stellata",
+        "to": "별혹산호 Ellisella ceratophyta",
+        "class": "concept",
+        "subclass": null,
+        "note": "re-identification under another genus and epithet"
+      },
+      {
+        "from": "흰발농게 Uca lactea",
+        "to": "흰발농게 Austruca lactea",
+        "class": "nomenclatural",
+        "subclass": null,
+        "note": "genus transfer"
+      },
+      {
+        "from": "한라솜다리 Leontopodium hallaisanense",
+        "to": "한라솜다리 Leontopodium coreanum var. hallaisanense",
+        "class": "nomenclatural",
+        "subclass": "rank_change",
+        "note": "species reduced to a variety; same populations"
+      },
+      {
+        "from": "구름병아리난초 Gymnadenia cucullata",
+        "to": "구름병아리난초 Neottianthe cucullata",
+        "class": "nomenclatural",
+        "subclass": null,
+        "note": "genus transfer"
+      },
+      {
+        "from": "기생꽃 Trientalis europaea ssp. arctica",
+        "to": "기생꽃 Trientalis europaea subsp. arctica",
+        "class": "spelling",
+        "subclass": "scientific_name_spelling",
+        "note": "rank abbreviation"
+      },
+      {
+        "from": "백운란 Vexillabium yakusimensis var. nakaianum",
+        "to": "백운란 Kuhlhasseltia nakaiana",
+        "class": "nomenclatural",
+        "subclass": "rank_change",
+        "note": "new combination at species rank; variety raised to species (change of rank)"
+      },
+      {
+        "from": "섬개현삼 Scrophularia takesimensis",
+        "to": "섬현삼 Scrophularia takesimensis",
+        "class": "spelling",
+        "subclass": "korean_name_only",
+        "note": "Korean name 섬개현삼 -> 섬현삼"
+      },
+      {
+        "from": "참닻꽃 Halenia corniculata",
+        "to": "참닻꽃 Halenia coreana",
+        "class": "concept",
+        "subclass": null,
+        "note": "Korean populations treated as a separate species"
+      },
+      {
+        "from": "홍월귤 Arctous alpinus var. japonicus",
+        "to": "홍월귤 Arctous rubra",
+        "class": "concept",
+        "subclass": null,
+        "note": "re-identification; the IUCN relation of A. rubra is uncertain in this release"
+      }
+    ],
+    "counts": {
+      "concept": 6,
+      "nomenclatural": 8,
+      "spelling": 4,
+      "subgenus": 7
+    },
+    "subclass_counts": {
+      "spelling/korean_name_only": 2,
+      "spelling/scientific_name_spelling": 2,
+      "nomenclatural/rank_change": 2
+    },
+    "addition_plus_removal": [
+      {
+        "to": "Omphalotus guepiniiformis",
+        "from": "Lampteromyces japonicus",
+        "class": "nomenclatural",
+        "note": "the same fungus transferred to Omphalotus (GBIF Backbone: L. japonicus is a synonym of O. guepiniiformis); Korean name 화경버섯 -> 화경솔밭버섯"
+      },
+      {
+        "to": "Nannophya koreana",
+        "from": "Nannophya pygmaea",
+        "class": "concept",
+        "note": "the Korean populations described as a new species, N. koreana Bae, 2020 (Bae et al. 2020, J Species Res 9:1-10, doi:10.12651/JSR.2020.9.1.001); the unit narrows to Korea"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2623 @@
+{
+  "dataset_name": "K-EndangeredBench",
+  "version": "1.0.9",
+  "built_at": "2026-09-27T02:57:51+00:00",
+  "license": "CC BY-NC 4.0",
+  "provenance": {
+    "korea_annex": {
+      "instrument": "Enforcement Rule of the Wildlife Protection and Management Act, Annex 1 (List of Endangered Wildlife)",
+      "korea_annex_amended": "2022-12-09",
+      "amendment_marker": "<개정 2022. 12. 9.>",
+      "file": "statute/annex1_wildlife_act_enforcement_rule_amended_2022-12-09.pdf",
+      "original_file_name": "야생생물법_시행규칙_별표1_개정20221209.pdf",
+      "repository_path": "data/statute/야생생물법_시행규칙_별표1_개정20221209.pdf",
+      "config": "data/statute/annex1.json",
+      "bytes": 321781,
+      "sha256": "4f75d4f8f92b8d7381b345cd89757672fc2e869bb75264eec2ab580a579945b4",
+      "text_extraction": {
+        "library": "pdfplumber",
+        "version": "0.11.9",
+        "pdfminer.six": "20251230",
+        "x_tolerance": 1
+      }
+    },
+    "korea_annex_amended": "2022-12-09",
+    "retrieval_window_utc": {
+      "gbif": [
+        "2026-08-22T13:54:21+00:00",
+        "2026-09-25T14:11:35+00:00"
+      ],
+      "iucn": [
+        "2026-08-22T15:32:28+00:00",
+        "2026-09-26T06:45:24+00:00"
+      ]
+    },
+    "iucn_values_from": [
+      "iucn_api_v4_response"
+    ],
+    "gbif_backbone": {
+      "title": "GBIF Backbone Taxonomy",
+      "dataset_key": "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c",
+      "doi": "10.15468/39omei",
+      "pub_date": "2023-08-28",
+      "modified": "2023-11-17",
+      "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+      "citation": "GBIF Secretariat (2023). GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei",
+      "metadata_retrieved_utc": "2026-09-26T07:24:22+00:00"
+    },
+    "cache_mode_at_fetch": "frozen",
+    "provisional_iucn_rows": 0,
+    "iucn_none_returned_rows": 1,
+    "card_narrative_missing_rows": 0,
+    "gbif_match_rejected_rows": 0
+  },
+  "schema_notes": {
+    "id": "Record identifier: registry code (16-species file) or kd-<taxon>-<grade>-<annex row number> (census).",
+    "korean_name": "Korean vernacular name as used on the card (16-species file) or as printed in Annex 1 (census).",
+    "scientific_name": "Binomial used for GBIF matching and occurrence counts. For a taxon designated below species rank the designated name is in korea_statute_scientific_name.",
+    "english_name": "English vernacular name (16-species file); null in the census.",
+    "taxon_group": "Taxonomic group as labelled in the species registry or in Annex 1.",
+    "name_provisional": "true when the card gives only a Korean vernacular that maps to more than one taxon and the scientific name was assigned by the authors.",
+    "korea_nie_grade": "National grade under Annex 1 (I급 = Class I, II급 = Class II); null when the species carries no national designation. The name is kept for compatibility with v1.0.0 and v1.0.1; the grade is set by statute, not by the National Institute of Ecology. Identical to korea_statutory_grade.",
+    "korea_statutory_grade": "Alias of korea_nie_grade under a name that says what the value is (added in v1.0.2). New code should read this field.",
+    "korea_grade_source": "statute_verified = matched by machine against the text of Annex 1 of the Enforcement Rule of the Wildlife Protection and Management Act (as amended 2022-12-09); api = a machine-readable government endpoint (none exists at release; reserved); statute_transcribed = typed in by hand, refused by the packaging gate; none = the species carries no national designation.",
+    "korea_statute_korean_name": "Korean name as printed in the matched Annex 1 row.",
+    "korea_statute_scientific_name": "Scientific name as printed in the matched Annex 1 row, with word spacing restored; may be a subspecies or variety.",
+    "statute_rank": "Rank of the designated taxon: species | subspecies | variety | form; null when there is no national designation.",
+    "iucn_category": "Red List category code of the selected assessment; null when none was returned. Under matched_at_species_rank it is the category of the species, not of the designated subspecies or variety.",
+    "iucn_category_kr": "Korean gloss of iucn_category.",
+    "iucn_source": "iucn_api_v4 = category retrieved by a direct IUCN Red List API v4 call; iucn_via_gbif = category from the token-free GBIF redistribution of the Red List (DOI 10.15468/0qnb58, CC BY 4.0), which carries no habitat, threat or action codes; iucn_none_returned = no category was returned on the retrieval date (see iucn_match_status for why; called iucn_not_assessed before v1.0.2); registry_reference = a reference value used for checking only, refused by the packaging gate.",
+    "iucn_match_status": "API path: matched = IUCN taxon found under the designated name and assessed; matched_via_synonym = found under another name (iucn_query_name) reached through the GBIF Backbone accepted name or its synonyms, including infraspecific synonyms; matched_at_species_rank = the designated taxon is a subspecies or variety and only its species has an assessment; not_assessed = an IUCN taxon exists but has no published assessment; name_unresolved = no IUCN taxon under any name tried; via_unaccepted_gbif_match = the IUCN taxon was reached only through a name derived from a GBIF match outside the gate (FUZZY or HIGHERRANK), so any category is recorded but never compared, not even in the any-concept fields; no_current_assessment = the IUCN taxon has assessments but none is marked latest, so no category is recorded (the past assessments are listed in warnings; since v1.0.4 a designated subspecies or variety in that position falls back to its species, as one with no assessment does, and no census record carries this value). Token-free path: matched_via_gbif = a Global category found in the GBIF copy of the Red List; no_global_category_via_gbif = the Backbone match passed the gate but the checklist has no Global category (HTTP 204, empty body or NOT_EVALUATED); name_unresolved_via_gbif = no Backbone match, or a match outside the gate.",
+    "iucn_query_name": "Name under which the IUCN taxon was found; null when none was found.",
+    "iucn_concept_relation": "Relation of the unit the IUCN assessed to the designated taxon. same = the same taxon (only spelling, genus placement or rank notation differ); broader = the IUCN unit is wider: a species assessment used for a designated subspecies or variety (including a genus transfer, wider by rank only: Glaux maritima var. obtusifolia -> Lysimachia maritima, Acoptolabrus leechi yooni -> Carabus leechi), or a designated species that the GBIF Backbone treats as a synonym of another species (merge: Kirengeshoma koreana -> K. palmata, Habenaria flagellifera -> Peristylus densus, Pedicularis hallaisanensis -> P. verticillata); uncertain = the relation cannot be established: Arctous rubra -> A. erythrocarpa (reached as a synonym of the designated name, so the IUCN unit may be the same or narrower), or the Global assessment's range countries include neither KR nor KP (range check, v1.0.4: Brasenia schreberi, Ellobium chinense, Michelia compressa -> Magnolia compressa, Utricularia yakusimensis -> U. uliginosa, Lethenteron japonicus -> L. camtschaticum), or checked by hand (v1.0.6: Dryophytes suweonensis, whose IUCN assessment covers only the populations north of the Chilgap range after the southern ones were described as D. flaviventris, while Annex 1 names D. suweonensis alone; the 2022 amendment, which postdates that description, did not list D. flaviventris, so the IUCN unit is likely narrower in taxonomic concept; geographically the two only partly overlap, since the IUCN unit adds KP and omits the southern KR populations; this is not established); different_taxon = checked by hand and found to be another taxon (Lycoris chinensis var. sinuolata -> L. uydoensis; and, found by the range check, Strix aluco, whose Korean population the IUCN places in S. nivicolum, and Phoxinus phoxinus, which the IUCN restricts to western Europe). null = no IUCN taxon found. Inferred from the name pair, the resolution route and the range countries, with hand overrides (iucn_relation_basis says which); these fifteen are all the census records whose relation is not same, apart from designated subspecies and varieties that reached the assessment of their own binomial. The same rules are applied on the token-free path, where no range countries are available (there Dryophytes suweonensis reaches D. immaculatus through the GBIF Backbone synonymy, which the Backbone took from its constituent Catalogue of Life (in the Annual Checklist 2023, ChecklistBank 9910, from the ITIS sector; which reference ITIS then cited is not recoverable; Dufresnes et al. 2016 had proposed a synonymy of the two names); the IUCN and Borzee et al. 2018 and 2020 treat the two as separate species, as do ITIS and the Catalogue of Life now, and the record is different_taxon under the IUCN's concept).",
+    "iucn_relation_basis": "Where iucn_concept_relation came from (v1.0.6). inferred = derived by rule from the name pair and the resolution route; range_check = lowered by rule to uncertain because the Global assessment's range countries include neither KR nor KP; hand_override = set by hand after checking the literature and the assessment text (Lycoris chinensis var. sinuolata, Strix aluco, Phoxinus phoxinus, Dryophytes suweonensis; on the token-free path also Dryophytes suweonensis -> D. immaculatus). null when there is no relation. The packaging gate checks the value against the override tables of common/iucn_resolve.py. It marks hand decisions on the relation only. One further hand decision changes no relation, grade or divergence value: the IUCN taxon of Panthera tigris altaica was read by a hand-checked SIS identifier for the warning text (warning code iucn_taxon_hand_mapped; the relation, broader at species rank, is inferred). To exclude every record touched by a hand decision, use two conditions: iucn_relation_basis = hand_override, or iucn_taxon_hand_mapped among the warning codes.",
+    "iucn_range_includes_korea": "true when the range country list (locations) of the selected assessment includes KR or KP with any presence code, extinct and possibly extinct included; false when the list exists and includes neither; null when there is no category, no country list, or the value came from the token-free path. A Global assessment with false is never compared (iucn_concept_relation uncertain or different_taxon), and the packaging gate checks this. A European regional assessment is false by construction and is already excluded by its scope. A token-free value that is compared carries the warning iucn_range_not_checked, and the packaging gate checks that too.",
+    "iucn_counterpart": "Object, only for a record whose relation is different_taxon because the range check found a split (Strix aluco, Phoxinus phoxinus); null otherwise. Gives the IUCN taxon that corresponds to the Korean population, as checked by hand on 2026-09-26 through the IUCN Red List API v4; subfields are glossed under iucn_counterpart.*. The counterpart's category is not compared with the national grade in either divergence field.",
+    "iucn_counterpart.name": "IUCN taxon name of the counterpart; null when none was identified.",
+    "iucn_counterpart.sis_taxon_id": "IUCN SIS taxon identifier of the counterpart.",
+    "iucn_counterpart.assessment_id": "Assessment identifier of the counterpart's latest Global assessment.",
+    "iucn_counterpart.category": "Red List category of that assessment.",
+    "iucn_counterpart.year_published": "Publication year of that assessment.",
+    "iucn_counterpart.scope": "Scope of that assessment.",
+    "iucn_counterpart.range_includes_korea": "Whether that assessment lists KR or KP among its range countries.",
+    "iucn_counterpart.basis": "How the counterpart was identified, or why none was.",
+    "iucn_scope": "Scope of the selected assessment, e.g. Global or Europe. Selection prefers the latest Global assessment and falls back to the latest assessment of any scope only when no Global one exists.",
+    "iucn_assessment_id": "Assessment identifier. API path: assessment_id of the Red List API v4. Token-free path: the number after 'A' in the assessment DOI cited by the GBIF checklist; same numbering, but the checklist can cite an earlier assessment than the API's latest.",
+    "iucn_assessment_date": "Assessment date (YYYY-MM-DD) as given in the assessment record.",
+    "iucn_assessment_year": "Year the assessment was published in the Red List (int).",
+    "iucn_assessment_outdated": "true when the assessment date (or, if absent, the end of the publication year) is more than 10 years before the IUCN retrieval date, the age at which the Red List treats an assessment as needing an update; null when there is no category.",
+    "iucn_retrieved_between_utc": "UTC retrieval window of the IUCN responses read for this record, including responses for names that returned nothing.",
+    "iucn_population_trend": "Population trend of the selected assessment (API path only).",
+    "iucn_habitats": "Habitat classification labels of the selected assessment (API path only).",
+    "iucn_threats": "Threat classification labels of the selected assessment (API path only).",
+    "iucn_conservation_actions": "Conservation-action labels of the selected assessment (API path only).",
+    "no_global_assessment": "true when iucn_scope is not Global (regional-only or no assessment).",
+    "mismatch_flag": "true when severity_gap is non-zero, false when it is zero; null when mismatch_type is not_comparable or null.",
+    "mismatch_type": "korea_stricter | iucn_stricter | aligned = sign of severity_gap; not_comparable = the species has a national grade but no Global category on the ordinal scale for the same taxon (DD, NE, regional-only, none returned, iucn_concept_relation other than same, which includes a Global range without KR or KP, or an iucn_match_status other than matched, matched_via_synonym or matched_via_gbif); null = no national grade.",
+    "severity_gap": "severity(national) - severity(IUCN) on the display scale EX 8, EW 7, CR 6, EN 5, VU 4, NT 3, LC 2; Class I 6, Class II 4. DD and NE are not on the scale. Interpretable in sign and relative magnitude only; do not average, sum or treat as an interval.",
+    "mismatch_type_any_concept": "mismatch_type computed without the same-taxon condition: a species-rank or merged-synonym (broader) category is compared with the national grade as if it applied to the designated taxon. Values reached through a GBIF match outside the gate, and relations uncertain or different_taxon, stay not_comparable. Reported so that both readings are available; the primary field is mismatch_type.",
+    "severity_gap_any_concept": "severity_gap under the rule of mismatch_type_any_concept.",
+    "gbif_usage_key": "GBIF Backbone usageKey of the match of scientific_name.",
+    "gbif_accepted_name": "Accepted scientific name for that usageKey in the GBIF Backbone.",
+    "gbif_match_type": "GBIF Backbone matchType. The packaging gate refuses any 16-species record whose match is not EXACT at rank SPECIES or SUBSPECIES unless flagged in the species registry; in the census such matches are kept and carry gbif_match_accepted = false.",
+    "gbif_rank": "Rank of the GBIF Backbone match.",
+    "gbif_match_accepted": "true when the GBIF match is EXACT at rank SPECIES or SUBSPECIES. IUCN values reached through names derived from a match with false carry iucn_match_status = via_unaccepted_gbif_match.",
+    "gbif_habitats": "GBIF species-profile habitat labels (16-species file); empty in the census.",
+    "gbif_realm": "GBIF species-profile realm flags (16-species file); empty object in the census.",
+    "gbif_occurrence_kr": "GBIF occurrence count with country=KR (16-species file); null in the census.",
+    "gbif_occurrence_total": "GBIF occurrence count, unfiltered (16-species file); null in the census.",
+    "gbif_countries": "Countries in the GBIF occurrence facet, by count (16-species file); empty in the census.",
+    "gbif_source": "Per-species provenance of all gbif_* fields (object; subfields glossed under gbif_source.*). Filled in both files; in the census it covers name matching only.",
+    "gbif_source.api": "GBIF API version and host queried.",
+    "gbif_source.backbone": "Taxonomy the name was matched against (GBIF Backbone Taxonomy).",
+    "gbif_source.kingdom_hint": "Kingdom passed to the GBIF name matcher; null means no hint (seaweeds, whose kingdom differs between groups).",
+    "gbif_source.retrieved_between_utc": "UTC retrieval window [first, last] of the cached GBIF responses read for this record.",
+    "gbif_source.occurrence_basis": "16-species file only: how the occurrence counts and the country list were obtained.",
+    "gbif_source.use": "Census only: states that GBIF was used for name matching and synonym resolution, not for occurrence aggregation.",
+    "card": "BonV Lab card narrative (object; 16-species file; null in the census). Subfields are glossed under card.*. A disagreement between the printed grade and the statute is preserved in card.grade_printed_on_card and written to warnings.",
+    "card.card_id": "Identifier of the card in the BonV Lab card set.",
+    "card.habitat": "Habitat text printed on the card (Korean).",
+    "card.diet": "Diet text printed on the card (Korean).",
+    "card.ecological_role": "Ecological-role text printed on the card (Korean).",
+    "card.observation_points": "Observation cues printed on the card (Korean).",
+    "card.threats": "Threat factors printed on the card (Korean).",
+    "card.story_questions": "Open-ended classroom questions printed on the card (Korean).",
+    "card.grade_printed_on_card": "National grade as printed on the card (I급 or II급), kept as printed even where it differs from the statute.",
+    "warnings": "Build-time provenance and consistency notes: a list of objects with a machine code and a Korean message (subfields glossed under warnings[].*).",
+    "warnings[].code": "Machine-readable warning code. Values: card_grade_differs_from_statute = The grade printed on the card differs from the statutory grade.; card_narrative_missing = No card narrative was found for this species.; gbif_match_outside_gate = The GBIF Backbone match is not EXACT at rank SPECIES or SUBSPECIES.; gbif_request_failed = A GBIF request failed during the build.; gbif_values_species_rank = The statute designates a subspecies or variety; GBIF values are for the species.; iucn_assessment_outdated = The assessment is more than ten years older than the IUCN retrieval date.; iucn_category_differs_from_registry = The retrieved IUCN category differs from the reference value in the species registry.; iucn_category_not_on_scale = The category (DD or NE) is not on the ordinal scale; no divergence is computed.; iucn_concept_broader = The designated species is a synonym of another species in the GBIF Backbone (merge), so the IUCN unit is wider; mismatch_type is not_comparable and the any-concept fields compare it.; iucn_concept_rank_only = The IUCN unit is the species of a designated subspecies or variety, reached after a genus transfer; wider only by rank.; iucn_concept_different_taxon = The name reached at the IUCN belongs to a different taxon (checked by hand); nothing is compared.; iucn_concept_uncertain = The relation between the IUCN unit and the designated taxon cannot be established from the names.; iucn_matched_at_species_rank = Only the species of a designated subspecies or variety is assessed; no divergence is computed.; iucn_matched_via_synonym = The IUCN assesses the taxon under another name (iucn_query_name).; iucn_name_unresolved = No IUCN taxon was found under any name tried.; iucn_no_current_assessment = The IUCN taxon has assessments but none is marked latest; no category is recorded.; iucn_no_global_category_via_gbif = The GBIF copy of the Red List has no Global category (token-free path).; iucn_not_assessed = An IUCN taxon exists but has no published assessment.; iucn_range_excludes_korea = The range country list of the Global assessment contains neither KR nor KP; the IUCN unit may not include the Korean population, so nothing is compared.; iucn_range_not_checked = The IUCN value came from the token-free path, which has no range countries, so no range check was made; a species-concept split (as for Strix aluco) would go undetected. Check the range by hand or withhold the comparison.; iucn_regional_assessment = The category comes from a regional assessment, not a Global one; it is not compared with the national grade (see iucn_scope).; iucn_taxon_hand_mapped = The IUCN taxon of the designated subspecies is not returned by a name search and was read by a hand-checked SIS identifier (Panthera tigris altaica, SIS 15956); only the warning text depends on it.; iucn_token_missing = No IUCN API token was set; only the token-free path was used.; iucn_via_unaccepted_gbif_match = The IUCN result came only through a name derived from a GBIF match outside the gate; not compared.; statute_grade_differs_from_transcription = The statutory grade differs from the hand-transcribed seed value; the statute is used.; statute_grade_transcribed = The national grade is a hand transcription not yet checked against the annex.",
+    "warnings[].message_ko": "Human-readable message in Korean, with the values involved."
+  },
+  "cards_meta": {
+    "cards_dir": "data/bonv_cards",
+    "sources": {
+      "life": {
+        "file": "life_cards.csv",
+        "is_template": false,
+        "rows": 16,
+        "expected": 16,
+        "incomplete_rows": 0
+      },
+      "habitat": {
+        "file": "habitat_cards.csv",
+        "is_template": false,
+        "rows": 6,
+        "expected": 6,
+        "incomplete_rows": 0
+      },
+      "relation": {
+        "file": "relation_cards.csv",
+        "is_template": false,
+        "rows": 8,
+        "expected": 8,
+        "incomplete_rows": 0
+      },
+      "change": {
+        "file": "change_cards.csv",
+        "is_template": false,
+        "rows": 6,
+        "expected": 6,
+        "incomplete_rows": 0
+      },
+      "help": {
+        "file": "help_cards.csv",
+        "is_template": false,
+        "rows": 4,
+        "expected": 4,
+        "incomplete_rows": 0
+      }
+    }
+  },
+  "entries": [
+    {
+      "id": "hanuel_daramji",
+      "korean_name": "하늘다람쥐",
+      "scientific_name": "Pteromys volans",
+      "english_name": "Siberian flying squirrel",
+      "taxon_group": "포유류",
+      "name_provisional": false,
+      "korea_nie_grade": "II급",
+      "korea_statutory_grade": "II급",
+      "korea_grade_source": "statute_verified",
+      "korea_statute_korean_name": "하늘다람쥐",
+      "korea_statute_scientific_name": "Pteromys volans aluco",
+      "statute_rank": "subspecies",
+      "iucn_category": "LC",
+      "iucn_category_kr": "최소관심(Least Concern)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched_at_species_rank",
+      "iucn_query_name": "Pteromys volans",
+      "iucn_concept_relation": "broader",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 115144995,
+      "iucn_assessment_date": "2016-08-19",
+      "iucn_assessment_year": 2016,
+      "iucn_assessment_outdated": true,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:32:28+00:00",
+        "2026-09-26T01:26:06+00:00"
+      ],
+      "iucn_population_trend": "Decreasing",
+      "iucn_habitats": [
+        "Forest - Boreal",
+        "Forest - Temperate",
+        "Forest - Subarctic"
+      ],
+      "iucn_threats": [
+        "Motivation Unknown/Unrecorded",
+        "Trend Unknown/Unrecorded",
+        "Small-holder plantations",
+        "Agro-industry plantations"
+      ],
+      "iucn_conservation_actions": [
+        "Site/area management"
+      ],
+      "no_global_assessment": false,
+      "mismatch_flag": null,
+      "mismatch_type": "not_comparable",
+      "severity_gap": null,
+      "mismatch_type_any_concept": "korea_stricter",
+      "severity_gap_any_concept": 2,
+      "gbif_usage_key": 2437258,
+      "gbif_accepted_name": "Pteromys volans (Linnaeus, 1758)",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [
+        "terrestrial"
+      ],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": false,
+        "freshwater": false
+      },
+      "gbif_occurrence_kr": 324,
+      "gbif_occurrence_total": 97882,
+      "gbif_countries": [
+        "FI",
+        "EE",
+        "RU",
+        "KR",
+        "JP",
+        "BY",
+        "CN",
+        "US",
+        "KZ",
+        "KP",
+        "SE",
+        "ZZ",
+        "DE",
+        "ID",
+        "LV"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T13:54:21+00:00",
+          "2026-08-22T13:54:27+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L01",
+        "habitat": "숲",
+        "diet": "도토리·나무껍질·곤충",
+        "ecological_role": [
+          "씨앗을 옮기고 숲의 먹이그물을 연결"
+        ],
+        "observation_points": [
+          "야행성",
+          "비막으로 활공"
+        ],
+        "threats": [
+          "서식지 파괴(벌목·도로)"
+        ],
+        "story_questions": [
+          "하늘다람쥐가 살던 오래된 나무가 베어지면 누가 대신 살 곳을 잃을까요?"
+        ],
+        "grade_printed_on_card": "II급"
+      },
+      "warnings": [
+        {
+          "code": "iucn_matched_at_species_rank",
+          "message_ko": "별표는 아종 Pteromys volans aluco 을(를) 지정하나 IUCN 의 현행 평가는 종 Pteromys volans 에만 있다. 같은 단위가 아니므로 같은 분류군 비교(mismatch_type)에서는 뺀다(not_comparable). 분류군 조건 없는 비교 열(mismatch_type_any_concept)에서만 비교한다(korea_stricter, +2: 법정 등급이 IUCN 범주보다 2칸 엄격)"
+        },
+        {
+          "code": "gbif_values_species_rank",
+          "message_ko": "별표 1 은 아종 Pteromys volans aluco 을(를) 지정한다. GBIF 값은 종 Pteromys volans 의 값이다"
+        },
+        {
+          "code": "iucn_assessment_outdated",
+          "message_ko": "평가일(2016-08-19)이 조회일보다 10년 넘게 앞선다"
+        }
+      ]
+    },
+    {
+      "id": "suri_buheongi",
+      "korean_name": "수리부엉이",
+      "scientific_name": "Bubo bubo",
+      "english_name": "Eurasian eagle-owl",
+      "taxon_group": "조류",
+      "name_provisional": false,
+      "korea_nie_grade": "II급",
+      "korea_statutory_grade": "II급",
+      "korea_grade_source": "statute_verified",
+      "korea_statute_korean_name": "수리부엉이",
+      "korea_statute_scientific_name": "Bubo bubo",
+      "statute_rank": "species",
+      "iucn_category": "LC",
+      "iucn_category_kr": "최소관심(Least Concern)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Bubo bubo",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 280978716,
+      "iucn_assessment_date": "2025-05-28",
+      "iucn_assessment_year": 2025,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:35:01+00:00",
+        "2026-08-22T15:35:02+00:00"
+      ],
+      "iucn_population_trend": "Decreasing",
+      "iucn_habitats": [
+        "Artificial/Terrestrial - Pastureland",
+        "Shrubland - Temperate",
+        "Grassland - Temperate",
+        "Forest - Boreal",
+        "Forest - Temperate",
+        "Caves and Subterranean Habitats (non-aquatic) - Caves",
+        "Artificial/Terrestrial - Rural Gardens",
+        "Artificial/Terrestrial - Arable Land",
+        "Artificial/Terrestrial - Subtropical/Tropical Heavily Degraded Former Forest",
+        "Shrubland - Mediterranean-type Shrubby Vegetation"
+      ],
+      "iucn_threats": [],
+      "iucn_conservation_actions": [],
+      "no_global_assessment": false,
+      "mismatch_flag": true,
+      "mismatch_type": "korea_stricter",
+      "severity_gap": 2,
+      "mismatch_type_any_concept": "korea_stricter",
+      "severity_gap_any_concept": 2,
+      "gbif_usage_key": 5959092,
+      "gbif_accepted_name": "Bubo bubo (Linnaeus, 1758)",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [
+        "Terrestrial",
+        "terrestrial"
+      ],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": true,
+        "freshwater": false
+      },
+      "gbif_occurrence_kr": 424,
+      "gbif_occurrence_total": 192101,
+      "gbif_countries": [
+        "FR",
+        "ES",
+        "FI",
+        "SE",
+        "NL",
+        "DE",
+        "DK",
+        "PT",
+        "RU",
+        "AT",
+        "IL",
+        "NO",
+        "BE",
+        "CZ",
+        "CN"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T13:55:52+00:00",
+          "2026-08-22T13:55:58+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L02",
+        "habitat": "숲",
+        "diet": "쥐·작은 새·토끼",
+        "ecological_role": [
+          "숲 최상위 포식자로 개체수 균형 유지"
+        ],
+        "observation_points": [
+          "큰 눈과 귀깃",
+          "소리 없는 날갯짓",
+          "암벽에 둥지"
+        ],
+        "threats": [
+          "빛·소음 공해",
+          "서식지(암벽) 훼손"
+        ],
+        "story_questions": [
+          "밤에도 불빛이 꺼지지 않는다면 수리부엉이는 사냥을 할 수 있을까요?"
+        ],
+        "grade_printed_on_card": "II급"
+      },
+      "warnings": []
+    },
+    {
+      "id": "geum_gaeguri",
+      "korean_name": "금개구리",
+      "scientific_name": "Pelophylax chosenicus",
+      "english_name": "Seoul pond frog",
+      "taxon_group": "양서류",
+      "name_provisional": false,
+      "korea_nie_grade": "II급",
+      "korea_statutory_grade": "II급",
+      "korea_grade_source": "statute_verified",
+      "korea_statute_korean_name": "금개구리",
+      "korea_statute_scientific_name": "Pelophylax chosenicus",
+      "statute_rank": "species",
+      "iucn_category": "VU",
+      "iucn_category_kr": "취약(Vulnerable)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Pelophylax chosenicus",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 110101963,
+      "iucn_assessment_date": "2020-02-10",
+      "iucn_assessment_year": 2021,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:35:03+00:00",
+        "2026-08-22T15:35:04+00:00"
+      ],
+      "iucn_population_trend": "Decreasing",
+      "iucn_habitats": [
+        "Wetlands (inland) - Seasonal/Intermittent Freshwater Marshes/Pools (under 8ha)",
+        "Artificial/Aquatic - Irrigated Land (includes irrigation channels)",
+        "Artificial/Aquatic - Ponds (below 8ha)",
+        "Artificial/Aquatic - Seasonally Flooded Agricultural Land",
+        "Artificial/Aquatic - Canals and Drainage Channels, Ditches",
+        "Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands",
+        "Wetlands (inland) - Permanent Freshwater Lakes (over 8ha)",
+        "Wetlands (inland) - Permanent Freshwater Marshes/Pools (under 8ha)"
+      ],
+      "iucn_threats": [
+        "Small-holder farming",
+        "Housing & urban areas",
+        "Type Unknown/Unrecorded",
+        "Agro-industry grazing, ranching or farming",
+        "Commercial & industrial areas"
+      ],
+      "iucn_conservation_actions": [
+        "Site/area management",
+        "Site/area protection",
+        "Resource & habitat protection"
+      ],
+      "no_global_assessment": false,
+      "mismatch_flag": false,
+      "mismatch_type": "aligned",
+      "severity_gap": 0,
+      "mismatch_type_any_concept": "aligned",
+      "severity_gap_any_concept": 0,
+      "gbif_usage_key": 2426645,
+      "gbif_accepted_name": "Pelophylax chosenicus (Okada, 1931)",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": false,
+        "freshwater": false
+      },
+      "gbif_occurrence_kr": 453,
+      "gbif_occurrence_total": 489,
+      "gbif_countries": [
+        "KR",
+        "CN",
+        "KP"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T13:55:59+00:00",
+          "2026-08-22T13:56:05+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L03",
+        "habitat": "습지·논",
+        "diet": "곤충·작은 벌레",
+        "ecological_role": [
+          "논·습지 곤충 개체수 조절",
+          "수질 지표종"
+        ],
+        "observation_points": [
+          "등에 두 줄 금색 줄무늬",
+          "낮에 활동"
+        ],
+        "threats": [
+          "농약·수질 오염",
+          "논 감소"
+        ],
+        "story_questions": [
+          "금개구리가 사는 물웅덩이가 마르면 어떤 일이 생길까요?"
+        ],
+        "grade_printed_on_card": "II급"
+      },
+      "warnings": []
+    },
+    {
+      "id": "bandal_gaseumgom",
+      "korean_name": "반달가슴곰",
+      "scientific_name": "Ursus thibetanus",
+      "english_name": "Asiatic black bear",
+      "taxon_group": "포유류",
+      "name_provisional": false,
+      "korea_nie_grade": "I급",
+      "korea_statutory_grade": "I급",
+      "korea_grade_source": "statute_verified",
+      "korea_statute_korean_name": "반달가슴곰",
+      "korea_statute_scientific_name": "Ursus thibetanus ussuricus",
+      "statute_rank": "subspecies",
+      "iucn_category": "VU",
+      "iucn_category_kr": "취약(Vulnerable)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched_at_species_rank",
+      "iucn_query_name": "Ursus thibetanus",
+      "iucn_concept_relation": "broader",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 166528664,
+      "iucn_assessment_date": "2016-03-17",
+      "iucn_assessment_year": 2020,
+      "iucn_assessment_outdated": true,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:35:05+00:00",
+        "2026-09-26T06:45:20+00:00"
+      ],
+      "iucn_population_trend": "Decreasing",
+      "iucn_habitats": [
+        "Forest - Subtropical/Tropical Moist Lowland",
+        "Forest - Subtropical/Tropical Dry",
+        "Forest - Temperate",
+        "Wetlands (inland) - Shrub Dominated Wetlands",
+        "Grassland - Subtropical/Tropical High Altitude",
+        "Forest - Boreal",
+        "Shrubland - Subtropical/Tropical Dry",
+        "Artificial/Terrestrial - Subtropical/Tropical Heavily Degraded Former Forest",
+        "Artificial/Terrestrial - Plantations",
+        "Artificial/Terrestrial - Arable Land",
+        "Forest - Subtropical/Tropical Moist Montane"
+      ],
+      "iucn_threats": [
+        "Small-holder farming",
+        "Intentional use (species is the target)",
+        "Unintentional effects (species is not the target)",
+        "Persecution/control",
+        "Small-holder plantations",
+        "Agro-industry plantations",
+        "Nomadic grazing",
+        "Large dams",
+        "Agro-industry farming",
+        "Roads & railroads",
+        "Shifting agriculture",
+        "Unintentional effects: (subsistence/small scale) [harvest]",
+        "Unintentional effects: (large scale) [harvest]"
+      ],
+      "iucn_conservation_actions": [
+        "Site/area management",
+        "Non-monetary values",
+        "Market forces",
+        "Substitution",
+        "Sub-national level",
+        "National level",
+        "International level",
+        "Awareness & communications",
+        "Site/area protection"
+      ],
+      "no_global_assessment": false,
+      "mismatch_flag": null,
+      "mismatch_type": "not_comparable",
+      "severity_gap": null,
+      "mismatch_type_any_concept": "korea_stricter",
+      "severity_gap_any_concept": 2,
+      "gbif_usage_key": 9335699,
+      "gbif_accepted_name": "Ursus thibetanus G",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": false,
+        "freshwater": false
+      },
+      "gbif_occurrence_kr": 4,
+      "gbif_occurrence_total": 1900,
+      "gbif_countries": [
+        "JP",
+        "TW",
+        "CN",
+        "IN",
+        "TH",
+        "RU",
+        "KH",
+        "NP",
+        "VN",
+        "DE",
+        "LA",
+        "MM",
+        "US",
+        "BT",
+        "ZZ"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T13:56:06+00:00",
+          "2026-08-22T13:56:13+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L04",
+        "habitat": "숲",
+        "diet": "도토리·열매·곤충",
+        "ecological_role": [
+          "씨앗을 퍼뜨리고 숲의 균형을 지키는 숲의 큰 어른"
+        ],
+        "observation_points": [
+          "가슴에 흰 반달무늬",
+          "겨울잠 후 봄에 새끼를 낳음"
+        ],
+        "threats": [
+          "서식지 파괴",
+          "불법 포획(밀렵)"
+        ],
+        "story_questions": [
+          "반달가슴곰이 다니던 숲길에 도로가 생기면 곰은 어디로 가야 할까요?"
+        ],
+        "grade_printed_on_card": "I급"
+      },
+      "warnings": [
+        {
+          "code": "iucn_matched_at_species_rank",
+          "message_ko": "별표는 아종 Ursus thibetanus ussuricus 을(를) 지정하나 IUCN 의 현행 평가는 종 Ursus thibetanus 에만 있다. 같은 단위가 아니므로 같은 분류군 비교(mismatch_type)에서는 뺀다(not_comparable). 분류군 조건 없는 비교 열(mismatch_type_any_concept)에서만 비교한다(korea_stricter, +2: 법정 등급이 IUCN 범주보다 2칸 엄격)"
+        },
+        {
+          "code": "gbif_values_species_rank",
+          "message_ko": "별표 1 은 아종 Ursus thibetanus ussuricus 을(를) 지정한다. GBIF 값은 종 Ursus thibetanus 의 값이다"
+        },
+        {
+          "code": "iucn_assessment_outdated",
+          "message_ko": "평가일(2016-03-17)이 조회일보다 10년 넘게 앞선다"
+        }
+      ]
+    },
+    {
+      "id": "sudal",
+      "korean_name": "수달",
+      "scientific_name": "Lutra lutra",
+      "english_name": "Eurasian otter",
+      "taxon_group": "포유류",
+      "name_provisional": false,
+      "korea_nie_grade": "I급",
+      "korea_statutory_grade": "I급",
+      "korea_grade_source": "statute_verified",
+      "korea_statute_korean_name": "수달",
+      "korea_statute_scientific_name": "Lutra lutra",
+      "statute_rank": "species",
+      "iucn_category": "NT",
+      "iucn_category_kr": "준위협(Near Threatened)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Lutra lutra",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 218069689,
+      "iucn_assessment_date": "2020-01-31",
+      "iucn_assessment_year": 2022,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:35:07+00:00",
+        "2026-09-26T06:45:21+00:00"
+      ],
+      "iucn_population_trend": "Decreasing",
+      "iucn_habitats": [
+        "Artificial/Aquatic - Seasonally Flooded Agricultural Land",
+        "Artificial/Aquatic - Irrigated Land (includes irrigation channels)",
+        "Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls)",
+        "Wetlands (inland) - Seasonal/Intermittent Freshwater Marshes/Pools (under 8ha)",
+        "Artificial/Aquatic - Canals and Drainage Channels, Ditches",
+        "Wetlands (inland) - Permanent Inland Deltas",
+        "Marine Intertidal - Salt Marshes (Emergent Grasses)",
+        "Wetlands (inland) - Seasonal/Intermittent Saline, Brackish or Alkaline Marshes/Pools",
+        "Forest - Subtropical/Tropical Dry",
+        "Shrubland - Subtropical/Tropical Moist",
+        "Wetlands (inland) - Shrub Dominated Wetlands",
+        "Forest - Subtropical/Tropical Swamp",
+        "Grassland - Subtropical/Tropical Seasonally Wet/Flooded",
+        "Wetlands (inland) - Seasonal/Intermittent/Irregular Rivers/Streams/Creeks",
+        "Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands",
+        "Artificial/Aquatic - Water Storage Areas (over 8ha)",
+        "Artificial/Aquatic - Aquaculture Ponds",
+        "Artificial/Aquatic - Ponds (below 8ha)",
+        "Marine Coastal/Supratidal - Coastal Brackish/Saline Lagoons/Marine Lakes",
+        "Wetlands (inland) - Freshwater Springs and Oases",
+        "Forest - Subtropical/Tropical Mangrove Vegetation Above High Tide Level",
+        "Marine Coastal/Supratidal - Coastal Freshwater Lakes",
+        "Wetlands (inland) - Tundra Wetlands (incl. pools and temporary waters from snowmelt)",
+        "Wetlands (inland) - Alpine Wetlands (includes temporary waters from snowmelt)",
+        "Forest - Subtropical/Tropical Moist Lowland",
+        "Wetlands (inland) - Seasonal/Intermittent Freshwater Lakes (over 8ha)",
+        "Wetlands (inland) - Permanent Freshwater Marshes/Pools (under 8ha)",
+        "Wetlands (inland) - Permanent Freshwater Lakes (over 8ha)",
+        "Wetlands (inland) - Permanent Saline, Brackish or Alkaline Marshes/Pools",
+        "Wetlands (inland) - Permanent Saline, Brackish or Alkaline Lakes",
+        "Wetlands (inland) - Seasonal/Intermittent Saline, Brackish or Alkaline Lakes and Flats",
+        "Marine Neritic - Estuaries"
+      ],
+      "iucn_threats": [
+        "Roads & railroads",
+        "Type Unknown/Unrecorded",
+        "Type Unknown/Unrecorded",
+        "Abstraction of surface water (commercial use)",
+        "Housing & urban areas",
+        "Abstraction of surface water (domestic use)",
+        "Oil spills",
+        "Intentional use (species is the target)",
+        "Unintentional effects: (large scale) [harvest]",
+        "Persecution/control",
+        "Abstraction of surface water (agricultural use)",
+        "Abstraction of surface water (unknown use)",
+        "Dams (size unknown)",
+        "Type Unknown/Unrecorded",
+        "Habitat shifting & alteration",
+        "Commercial & industrial areas",
+        "Agro-industry farming",
+        "Droughts",
+        "Scale Unknown/Unrecorded",
+        "Herbicides and pesticides",
+        "Other impacts",
+        "Sewage",
+        "Storms & flooding"
+      ],
+      "iucn_conservation_actions": [
+        "Species recovery",
+        "Formal education",
+        "Training",
+        "Sub-national level",
+        "National level",
+        "Sub-national level",
+        "Site/area management",
+        "Habitat & natural process restoration"
+      ],
+      "no_global_assessment": false,
+      "mismatch_flag": true,
+      "mismatch_type": "korea_stricter",
+      "severity_gap": 3,
+      "mismatch_type_any_concept": "korea_stricter",
+      "severity_gap_any_concept": 3,
+      "gbif_usage_key": 2433753,
+      "gbif_accepted_name": "Lutra lutra (Linnaeus, 1758)",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [
+        "Terrestrial"
+      ],
+      "gbif_realm": {
+        "marine": true,
+        "terrestrial": false,
+        "freshwater": true
+      },
+      "gbif_occurrence_kr": 3613,
+      "gbif_occurrence_total": 320658,
+      "gbif_countries": [
+        "GB",
+        "FR",
+        "SE",
+        "NO",
+        "DK",
+        "ES",
+        "NL",
+        "FI",
+        "IE",
+        "CH",
+        "PT",
+        "KR",
+        "EE",
+        "IL",
+        "AT"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T13:56:14+00:00",
+          "2026-08-22T13:56:21+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L05",
+        "habitat": "하천",
+        "diet": "물고기·다슬기·게",
+        "ecological_role": [
+          "강 최상위 포식자",
+          "수질 지표종"
+        ],
+        "observation_points": [
+          "발에 물갈퀴",
+          "휘파람 소리로 소통"
+        ],
+        "threats": [
+          "수질 오염",
+          "하천 개발"
+        ],
+        "story_questions": [
+          "강물이 더러워지면 수달은 어디로 가야 할까요?"
+        ],
+        "grade_printed_on_card": "I급"
+      },
+      "warnings": []
+    },
+    {
+      "id": "namsaengi",
+      "korean_name": "남생이",
+      "scientific_name": "Mauremys reevesii",
+      "english_name": "Reeves' pond turtle",
+      "taxon_group": "파충류",
+      "name_provisional": false,
+      "korea_nie_grade": "II급",
+      "korea_statutory_grade": "II급",
+      "korea_grade_source": "statute_verified",
+      "korea_statute_korean_name": "남생이",
+      "korea_statute_scientific_name": "Mauremys reevesii",
+      "statute_rank": "species",
+      "iucn_category": "EN",
+      "iucn_category_kr": "위기(Endangered)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Mauremys reevesii",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 97431862,
+      "iucn_assessment_date": "2011-03-21",
+      "iucn_assessment_year": 2011,
+      "iucn_assessment_outdated": true,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:35:09+00:00",
+        "2026-08-22T15:35:10+00:00"
+      ],
+      "iucn_population_trend": "Unknown",
+      "iucn_habitats": [
+        "Wetlands (inland) - Freshwater Springs and Oases",
+        "Wetlands (inland) - Seasonal/Intermittent Freshwater Marshes/Pools (under 8ha)",
+        "Wetlands (inland) - Permanent Freshwater Marshes/Pools (under 8ha)",
+        "Wetlands (inland) - Seasonal/Intermittent Freshwater Lakes (over 8ha)",
+        "Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands",
+        "Artificial/Aquatic - Canals and Drainage Channels, Ditches",
+        "Artificial/Aquatic - Seasonally Flooded Agricultural Land",
+        "Artificial/Aquatic - Irrigated Land (includes irrigation channels)",
+        "Artificial/Aquatic - Aquaculture Ponds",
+        "Artificial/Aquatic - Ponds (below 8ha)",
+        "Artificial/Aquatic - Water Storage Areas (over 8ha)"
+      ],
+      "iucn_threats": [
+        "Housing & urban areas",
+        "Intentional use: (large scale) [harvest]",
+        "Intentional use: (subsistence/small scale) [harvest]",
+        "Type Unknown/Unrecorded",
+        "Type Unknown/Unrecorded"
+      ],
+      "iucn_conservation_actions": [
+        "Site/area management",
+        "Sub-national level",
+        "National level",
+        "Policies and regulations",
+        "National level",
+        "Awareness & communications",
+        "Site/area protection",
+        "Captive breeding/artificial propagation",
+        "Reintroduction",
+        "Species recovery",
+        "Trade management",
+        "Harvest management"
+      ],
+      "no_global_assessment": false,
+      "mismatch_flag": true,
+      "mismatch_type": "iucn_stricter",
+      "severity_gap": -1,
+      "mismatch_type_any_concept": "iucn_stricter",
+      "severity_gap_any_concept": -1,
+      "gbif_usage_key": 2443597,
+      "gbif_accepted_name": "Mauremys reevesii (Gray, 1831)",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [
+        "Freshwater; Freshwater-terrestrial",
+        "freshwater|terrestrial",
+        "terrestrial|freshwater"
+      ],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": true,
+        "freshwater": true
+      },
+      "gbif_occurrence_kr": 91,
+      "gbif_occurrence_total": 2196,
+      "gbif_countries": [
+        "JP",
+        "CN",
+        "KR",
+        "HK",
+        "TW",
+        "ES",
+        "DE",
+        "SE",
+        "US",
+        "CH",
+        "IT",
+        "NL",
+        "VN",
+        "PT",
+        "DK"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T13:56:22+00:00",
+          "2026-08-22T13:56:28+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L06",
+        "habitat": "하천",
+        "diet": "물고기·수생식물",
+        "ecological_role": [
+          "하천 생태계의 청소부",
+          "\"별주부전\"의 주인공"
+        ],
+        "observation_points": [
+          "등딱지가 둥글고 갈색",
+          "돌 위에서 일광욕"
+        ],
+        "threats": [
+          "외래종(붉은귀거북) 경쟁"
+        ],
+        "story_questions": [
+          "남생이가 살던 자리를 외래종 거북이 차지하면 무슨 일이 생길까요?"
+        ],
+        "grade_printed_on_card": "II급"
+      },
+      "warnings": [
+        {
+          "code": "iucn_assessment_outdated",
+          "message_ko": "평가일(2011-03-21)이 조회일보다 10년 넘게 앞선다"
+        }
+      ]
+    },
+    {
+      "id": "durumi",
+      "korean_name": "두루미",
+      "scientific_name": "Grus japonensis",
+      "english_name": "Red-crowned crane",
+      "taxon_group": "조류",
+      "name_provisional": false,
+      "korea_nie_grade": "I급",
+      "korea_statutory_grade": "I급",
+      "korea_grade_source": "statute_verified",
+      "korea_statute_korean_name": "두루미",
+      "korea_statute_scientific_name": "Grus japonensis",
+      "statute_rank": "species",
+      "iucn_category": "VU",
+      "iucn_category_kr": "취약(Vulnerable)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Grus japonensis",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 213488064,
+      "iucn_assessment_date": "2021-07-27",
+      "iucn_assessment_year": 2021,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:35:11+00:00",
+        "2026-09-26T06:45:23+00:00"
+      ],
+      "iucn_population_trend": "Decreasing",
+      "iucn_habitats": [
+        "Marine Coastal/Supratidal - Coastal Brackish/Saline Lagoons/Marine Lakes",
+        "Artificial/Terrestrial - Arable Land",
+        "Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls)",
+        "Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands",
+        "Wetlands (inland) - Permanent Freshwater Lakes (over 8ha)",
+        "Wetlands (inland) - Permanent Freshwater Marshes/Pools (under 8ha)",
+        "Marine Intertidal - Mud Flats and Salt Flats",
+        "Marine Intertidal - Salt Marshes (Emergent Grasses)"
+      ],
+      "iucn_threats": [
+        "Other ecosystem modifications",
+        "Intentional use (species is the target)",
+        "Persecution/control",
+        "Work & other activities",
+        "Commercial & industrial areas",
+        "Agro-industry farming",
+        "Type Unknown/Unrecorded"
+      ],
+      "iucn_conservation_actions": [
+        "National level",
+        "Captive breeding/artificial propagation",
+        "Site/area protection",
+        "Site/area protection",
+        "Site/area protection",
+        "Site/area protection",
+        "Awareness & communications",
+        "Site/area management",
+        "Site/area management",
+        "Site/area management",
+        "Invasive/problematic species control"
+      ],
+      "no_global_assessment": false,
+      "mismatch_flag": true,
+      "mismatch_type": "korea_stricter",
+      "severity_gap": 2,
+      "mismatch_type_any_concept": "korea_stricter",
+      "severity_gap_any_concept": 2,
+      "gbif_usage_key": 2474944,
+      "gbif_accepted_name": "Grus japonensis (Statius Muller, 1776)",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [
+        "Freshwater; Freshwater-terrestrial",
+        "freshwater"
+      ],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": true,
+        "freshwater": true
+      },
+      "gbif_occurrence_kr": 1372,
+      "gbif_occurrence_total": 7769,
+      "gbif_countries": [
+        "JP",
+        "KR",
+        "CN",
+        "RU",
+        "TW",
+        "US",
+        "NL",
+        "ES",
+        "DK",
+        "MN",
+        "DE",
+        "BE",
+        "ZZ",
+        "FR",
+        "GB"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T13:56:29+00:00",
+          "2026-08-22T13:56:35+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L07",
+        "habitat": "습지·논",
+        "diet": "낟알·물고기·곤충",
+        "ecological_role": [
+          "습지·논 생태계의 상징종",
+          "세계 개체수 절반이 한국에서 월동"
+        ],
+        "observation_points": [
+          "머리 위 붉은 무늬",
+          "짝과 함께 춤추듯 움직임"
+        ],
+        "threats": [
+          "습지 감소",
+          "기후변화(먹이 부족)"
+        ],
+        "story_questions": [
+          "두루미가 겨울을 나는 논이 사라지면 두루미는 어디로 가야 할까요?"
+        ],
+        "grade_printed_on_card": "I급"
+      },
+      "warnings": []
+    },
+    {
+      "id": "jeoeosae",
+      "korean_name": "저어새",
+      "scientific_name": "Platalea minor",
+      "english_name": "Black-faced spoonbill",
+      "taxon_group": "조류",
+      "name_provisional": false,
+      "korea_nie_grade": "I급",
+      "korea_statutory_grade": "I급",
+      "korea_grade_source": "statute_verified",
+      "korea_statute_korean_name": "저어새",
+      "korea_statute_scientific_name": "Platalea minor",
+      "statute_rank": "species",
+      "iucn_category": "VU",
+      "iucn_category_kr": "취약(Vulnerable)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Platalea minor",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 154689773,
+      "iucn_assessment_date": "2025-06-18",
+      "iucn_assessment_year": 2025,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:35:12+00:00",
+        "2026-09-26T06:45:24+00:00"
+      ],
+      "iucn_population_trend": "Stable",
+      "iucn_habitats": [
+        "Marine Coastal/Supratidal - Sea Cliffs and Rocky Offshore Islands",
+        "Marine Intertidal - Mud Flats and Salt Flats",
+        "Artificial/Aquatic - Aquaculture Ponds",
+        "Artificial/Aquatic - Salt Exploitation Sites",
+        "Wetlands (inland) - Permanent Freshwater Lakes (over 8ha)"
+      ],
+      "iucn_threats": [
+        "Type Unknown/Unrecorded",
+        "Unspecified species",
+        "Named species",
+        "Renewable energy",
+        "Unintentional effects (species is not the target)",
+        "Intentional use (species is the target)",
+        "Named species",
+        "Unspecified species"
+      ],
+      "iucn_conservation_actions": [
+        "Site/area protection",
+        "Resource & habitat protection"
+      ],
+      "no_global_assessment": false,
+      "mismatch_flag": true,
+      "mismatch_type": "korea_stricter",
+      "severity_gap": 2,
+      "mismatch_type_any_concept": "korea_stricter",
+      "severity_gap_any_concept": 2,
+      "gbif_usage_key": 2480805,
+      "gbif_accepted_name": "Platalea minor Temminck & Schlegel, 1849",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [],
+      "gbif_realm": {
+        "marine": true,
+        "terrestrial": true,
+        "freshwater": true
+      },
+      "gbif_occurrence_kr": 16679,
+      "gbif_occurrence_total": 94093,
+      "gbif_countries": [
+        "TW",
+        "KR",
+        "CN",
+        "HK",
+        "JP",
+        "MO",
+        "PH",
+        "TH",
+        "VN",
+        "RU",
+        "MY",
+        "KH",
+        "KP",
+        "DE",
+        "NA"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T13:56:36+00:00",
+          "2026-08-22T13:56:43+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L08",
+        "habitat": "갯벌",
+        "diet": "물고기·새우",
+        "ecological_role": [
+          "갯벌 먹이그물 상위 포식자",
+          "세계 개체수 상당수가 한국에서 번식"
+        ],
+        "observation_points": [
+          "검은 주걱 모양 부리",
+          "무인도서에서 집단 번식"
+        ],
+        "threats": [
+          "갯벌 매립",
+          "서식지 파괴"
+        ],
+        "story_questions": [
+          "저어새가 알을 낳는 무인도가 사라지면 어디서 새끼를 키울까요?"
+        ],
+        "grade_printed_on_card": "I급"
+      },
+      "warnings": []
+    },
+    {
+      "id": "jeombakyi_mulbeom",
+      "korean_name": "점박이물범",
+      "scientific_name": "Phoca largha",
+      "english_name": "Spotted seal",
+      "taxon_group": "포유류",
+      "name_provisional": false,
+      "korea_nie_grade": "I급",
+      "korea_statutory_grade": "I급",
+      "korea_grade_source": "statute_verified",
+      "korea_statute_korean_name": "물범",
+      "korea_statute_scientific_name": "Phoca largha",
+      "statute_rank": "species",
+      "iucn_category": "LC",
+      "iucn_category_kr": "최소관심(Least Concern)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Phoca largha",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 288662409,
+      "iucn_assessment_date": "2025-09-15",
+      "iucn_assessment_year": 2026,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:35:14+00:00",
+        "2026-08-22T15:35:15+00:00"
+      ],
+      "iucn_population_trend": "Stable",
+      "iucn_habitats": [
+        "Marine Oceanic - Epipelagic (0-200m)",
+        "Marine Neritic - Pelagic",
+        "Marine Intertidal - Rocky Shoreline",
+        "Marine Coastal/Supratidal - Sea Cliffs and Rocky Offshore Islands"
+      ],
+      "iucn_threats": [
+        "Problematic native species/diseases",
+        "Commercial & industrial areas",
+        "Habitat shifting & alteration",
+        "Persecution/control",
+        "Oil spills",
+        "Intentional use: (large scale) [harvest]",
+        "Unintentional effects: (large scale) [harvest]",
+        "Intentional use: (subsistence/small scale) [harvest]"
+      ],
+      "iucn_conservation_actions": [
+        "Site/area management"
+      ],
+      "no_global_assessment": false,
+      "mismatch_flag": true,
+      "mismatch_type": "korea_stricter",
+      "severity_gap": 4,
+      "mismatch_type_any_concept": "korea_stricter",
+      "severity_gap_any_concept": 4,
+      "gbif_usage_key": 2434791,
+      "gbif_accepted_name": "Phoca largha Pallas, 1811",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [],
+      "gbif_realm": {
+        "marine": true,
+        "terrestrial": false,
+        "freshwater": false
+      },
+      "gbif_occurrence_kr": 40,
+      "gbif_occurrence_total": 31996,
+      "gbif_countries": [
+        "US",
+        "RU",
+        "JP",
+        "CN",
+        "KR",
+        "KP",
+        "VN",
+        "IE",
+        "ZZ"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T13:56:44+00:00",
+          "2026-08-22T13:56:51+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L09",
+        "habitat": "바다",
+        "diet": "물고기(쥐노래미·까나리 등)",
+        "ecological_role": [
+          "해양 먹이그물 상위 포식자",
+          "깨끗한 바다의 지표종"
+        ],
+        "observation_points": [
+          "온몸에 점박이 무늬",
+          "겨울엔 중국 발해만에서 새끼를 낳음"
+        ],
+        "threats": [
+          "기후변화(해빙 감소)",
+          "불법 포획(밀렵)"
+        ],
+        "story_questions": [
+          "얼음이 녹아 없어지면 물범은 새끼를 어디서 낳을까요?"
+        ],
+        "grade_printed_on_card": "II급"
+      },
+      "warnings": [
+        {
+          "code": "card_grade_differs_from_statute",
+          "message_ko": "카드에 적힌 등급(II급)이 별표 1 의 법정 등급(I급)과 다르다. 법정 등급으로 가르칠 것"
+        }
+      ]
+    },
+    {
+      "id": "maengkkongi",
+      "korean_name": "맹꽁이",
+      "scientific_name": "Kaloula borealis",
+      "english_name": "Boreal digging frog",
+      "taxon_group": "양서류",
+      "name_provisional": false,
+      "korea_nie_grade": "II급",
+      "korea_statutory_grade": "II급",
+      "korea_grade_source": "statute_verified",
+      "korea_statute_korean_name": "맹꽁이",
+      "korea_statute_scientific_name": "Kaloula borealis",
+      "statute_rank": "species",
+      "iucn_category": "LC",
+      "iucn_category_kr": "최소관심(Least Concern)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Kaloula borealis",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 63887081,
+      "iucn_assessment_date": "2019-06-20",
+      "iucn_assessment_year": 2020,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:35:16+00:00",
+        "2026-09-26T06:45:22+00:00"
+      ],
+      "iucn_population_trend": "Decreasing",
+      "iucn_habitats": [
+        "Artificial/Aquatic - Ponds (below 8ha)",
+        "Wetlands (inland) - Permanent Freshwater Marshes/Pools (under 8ha)",
+        "Artificial/Terrestrial - Rural Gardens",
+        "Wetlands (inland) - Seasonal/Intermittent Freshwater Marshes/Pools (under 8ha)",
+        "Artificial/Terrestrial - Arable Land",
+        "Forest - Temperate",
+        "Artificial/Aquatic - Irrigated Land (includes irrigation channels)",
+        "Artificial/Aquatic - Seasonally Flooded Agricultural Land"
+      ],
+      "iucn_threats": [
+        "Housing & urban areas",
+        "Type Unknown/Unrecorded",
+        "Type Unknown/Unrecorded",
+        "Commercial & industrial areas",
+        "Agro-industry farming",
+        "Type Unknown/Unrecorded",
+        "Motivation Unknown/Unrecorded",
+        "Agro-industry grazing, ranching or farming",
+        "Tourism & recreation areas"
+      ],
+      "iucn_conservation_actions": [],
+      "no_global_assessment": false,
+      "mismatch_flag": true,
+      "mismatch_type": "korea_stricter",
+      "severity_gap": 2,
+      "mismatch_type_any_concept": "korea_stricter",
+      "severity_gap_any_concept": 2,
+      "gbif_usage_key": 2421640,
+      "gbif_accepted_name": "Kaloula borealis (Barbour, 1908)",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": false,
+        "freshwater": false
+      },
+      "gbif_occurrence_kr": 2146,
+      "gbif_occurrence_total": 3045,
+      "gbif_countries": [
+        "KR",
+        "CN",
+        "JP",
+        "PH",
+        "KP",
+        "MY"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T13:56:52+00:00",
+          "2026-08-22T13:56:58+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L10",
+        "habitat": "습지·논",
+        "diet": "곤충·지렁이",
+        "ecological_role": [
+          "장마철 곤충 개체수를 조절",
+          "도시 인근에서도 존재를 체감할 수 있는 멸종위기종"
+        ],
+        "observation_points": [
+          "몸이 동그랗고 통통",
+          "위협받으면 배를 부풀림"
+        ],
+        "threats": [
+          "습지 매립",
+          "농약·수질 오염"
+        ],
+        "story_questions": [
+          "맹꽁이가 알을 낳을 물웅덩이가 사라지면 누구에게 어떤 일이 생길까요?"
+        ],
+        "grade_printed_on_card": "II급"
+      },
+      "warnings": []
+    },
+    {
+      "id": "kkulbeol",
+      "korean_name": "꿀벌",
+      "scientific_name": "Apis mellifera",
+      "english_name": "Western honey bee",
+      "taxon_group": "곤충",
+      "name_provisional": true,
+      "korea_nie_grade": null,
+      "korea_statutory_grade": null,
+      "korea_grade_source": "none",
+      "korea_statute_korean_name": null,
+      "korea_statute_scientific_name": null,
+      "statute_rank": null,
+      "iucn_category": "DD",
+      "iucn_category_kr": "정보부족(Data Deficient)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Apis mellifera",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": false,
+      "iucn_counterpart": null,
+      "iucn_scope": "Europe",
+      "iucn_assessment_id": 277757621,
+      "iucn_assessment_date": "2025-07-17",
+      "iucn_assessment_year": 2025,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:48:31+00:00",
+        "2026-08-22T15:48:32+00:00"
+      ],
+      "iucn_population_trend": "Decreasing",
+      "iucn_habitats": [
+        "Artificial/Terrestrial - Rural Gardens",
+        "Marine Coastal/Supratidal - Coastal Sand Dunes",
+        "Forest - Temperate",
+        "Artificial/Terrestrial - Arable Land",
+        "Artificial/Terrestrial - Pastureland",
+        "Artificial/Terrestrial - Plantations",
+        "Other",
+        "Shrubland - Boreal",
+        "Shrubland - Temperate",
+        "Forest - Boreal",
+        "Shrubland - Mediterranean-type Shrubby Vegetation",
+        "Grassland - Temperate",
+        "Artificial/Terrestrial - Urban Areas",
+        "Wetlands (inland) - Shrub Dominated Wetlands"
+      ],
+      "iucn_threats": [
+        "Scale Unknown/Unrecorded",
+        "Herbicides and pesticides",
+        "Scale Unknown/Unrecorded",
+        "Scale Unknown/Unrecorded",
+        "Housing & urban areas",
+        "Named species",
+        "Named species",
+        "Named species"
+      ],
+      "iucn_conservation_actions": [],
+      "no_global_assessment": true,
+      "mismatch_flag": null,
+      "mismatch_type": null,
+      "severity_gap": null,
+      "mismatch_type_any_concept": null,
+      "severity_gap_any_concept": null,
+      "gbif_usage_key": 1341976,
+      "gbif_accepted_name": "Apis mellifera Linnaeus, 1758",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [
+        "Terrestrial",
+        "terrestrial"
+      ],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": false,
+        "freshwater": false
+      },
+      "gbif_occurrence_kr": 6388,
+      "gbif_occurrence_total": 1281350,
+      "gbif_countries": [
+        "US",
+        "NL",
+        "PL",
+        "DE",
+        "GB",
+        "FR",
+        "CA",
+        "AU",
+        "BR",
+        "MX",
+        "BE",
+        "ZA",
+        "AT",
+        "SE",
+        "ES"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T15:47:13+00:00",
+          "2026-08-22T15:47:20+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L11",
+        "habitat": "들판·우리동네",
+        "diet": "꽃가루·꿀",
+        "ecological_role": [
+          "꽃가루받이(수분)로 식물 번식을 도움",
+          "생태계 필수 매개자"
+        ],
+        "observation_points": [
+          "뒷다리에 꽃가루 주머니",
+          "8자 춤으로 소통"
+        ],
+        "threats": [
+          "관계유형: 수분(꽃가루받이)"
+        ],
+        "story_questions": [
+          "꿀벌이 사라지면 들판의 꽃들은, 그리고 우리 식탁은 어떻게 될까요?"
+        ],
+        "grade_printed_on_card": null
+      },
+      "warnings": [
+        {
+          "code": "iucn_regional_assessment",
+          "message_ko": "IUCN 범주가 전 지구 평가가 아니라 Europe 지역 평가에서 왔다 (평가 277757621). 법정 등급과 비교하지 않는다(`iucn_scope` 열 참고). 전 지구 범주만 쓰는 연구는 제외할 것"
+        }
+      ]
+    },
+    {
+      "id": "mindeulle",
+      "korean_name": "민들레",
+      "scientific_name": "Taraxacum officinale",
+      "english_name": "Common dandelion",
+      "taxon_group": "식물",
+      "name_provisional": true,
+      "korea_nie_grade": null,
+      "korea_statutory_grade": null,
+      "korea_grade_source": "none",
+      "korea_statute_korean_name": null,
+      "korea_statute_scientific_name": null,
+      "statute_rank": null,
+      "iucn_category": "LC",
+      "iucn_category_kr": "최소관심(Least Concern)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Taraxacum officinale",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": false,
+      "iucn_counterpart": null,
+      "iucn_scope": "Europe",
+      "iucn_assessment_id": 209187924,
+      "iucn_assessment_date": "2023-03-13",
+      "iucn_assessment_year": 2026,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:48:33+00:00",
+        "2026-08-22T15:48:34+00:00"
+      ],
+      "iucn_population_trend": "Stable",
+      "iucn_habitats": [
+        "Marine Coastal/Supratidal - Coastal Sand Dunes",
+        "Artificial/Terrestrial - Pastureland",
+        "Artificial/Terrestrial - Rural Gardens",
+        "Artificial/Terrestrial - Urban Areas",
+        "Grassland - Temperate"
+      ],
+      "iucn_threats": [],
+      "iucn_conservation_actions": [],
+      "no_global_assessment": true,
+      "mismatch_flag": null,
+      "mismatch_type": null,
+      "severity_gap": null,
+      "mismatch_type_any_concept": null,
+      "severity_gap_any_concept": null,
+      "gbif_usage_key": 5394163,
+      "gbif_accepted_name": "Taraxacum officinale Weber ex F.H.Wigg.",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [
+        "Terrestrial",
+        "bmh-PM, bmh-MB, bh-MB, bs-MB, bh-MB",
+        "terrestrial"
+      ],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": true,
+        "freshwater": false
+      },
+      "gbif_occurrence_kr": 4049,
+      "gbif_occurrence_total": 492019,
+      "gbif_countries": [
+        "NL",
+        "FR",
+        "US",
+        "DE",
+        "PL",
+        "RU",
+        "BE",
+        "CA",
+        "GB",
+        "CZ",
+        "UA",
+        "MX",
+        "KR",
+        "EE",
+        "AT"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Plantae",
+        "retrieved_between_utc": [
+          "2026-08-23T02:33:39+00:00",
+          "2026-09-25T14:11:35+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L12",
+        "habitat": "들판·우리동네",
+        "diet": "햇빛(광합성)",
+        "ecological_role": [
+          "초기 정착 식물",
+          "척박한 땅에도 뿌리내리는 생명력"
+        ],
+        "observation_points": [
+          "홀씨(씨앗)가 바람에 날림",
+          "보도블록 틈에서도 관찰 가능"
+        ],
+        "threats": [
+          "관계유형: 산포(씨앗 퍼뜨리기)"
+        ],
+        "story_questions": [
+          "우리 동네가 다 포장되면 민들레는 씨앗을 어디에 내릴까요?"
+        ],
+        "grade_printed_on_card": null
+      },
+      "warnings": [
+        {
+          "code": "iucn_regional_assessment",
+          "message_ko": "IUCN 범주가 전 지구 평가가 아니라 Europe 지역 평가에서 왔다 (평가 209187924). 법정 등급과 비교하지 않는다(`iucn_scope` 열 참고). 전 지구 범주만 쓰는 연구는 제외할 것"
+        }
+      ]
+    },
+    {
+      "id": "jireongi",
+      "korean_name": "지렁이",
+      "scientific_name": "Eisenia fetida",
+      "english_name": "Red wiggler",
+      "taxon_group": "무척추동물",
+      "name_provisional": true,
+      "korea_nie_grade": null,
+      "korea_statutory_grade": null,
+      "korea_grade_source": "none",
+      "korea_statute_korean_name": null,
+      "korea_statute_scientific_name": null,
+      "statute_rank": null,
+      "iucn_category": null,
+      "iucn_category_kr": null,
+      "iucn_source": "iucn_none_returned",
+      "iucn_match_status": "name_unresolved",
+      "iucn_query_name": null,
+      "iucn_concept_relation": null,
+      "iucn_relation_basis": null,
+      "iucn_range_includes_korea": null,
+      "iucn_counterpart": null,
+      "iucn_scope": null,
+      "iucn_assessment_id": null,
+      "iucn_assessment_date": null,
+      "iucn_assessment_year": null,
+      "iucn_assessment_outdated": null,
+      "iucn_retrieved_between_utc": [
+        "2026-09-26T01:26:33+00:00",
+        "2026-09-26T01:26:47+00:00"
+      ],
+      "iucn_population_trend": null,
+      "iucn_habitats": [],
+      "iucn_threats": [],
+      "iucn_conservation_actions": [],
+      "no_global_assessment": true,
+      "mismatch_flag": null,
+      "mismatch_type": null,
+      "severity_gap": null,
+      "mismatch_type_any_concept": null,
+      "severity_gap_any_concept": null,
+      "gbif_usage_key": 5815560,
+      "gbif_accepted_name": "Eisenia fetida (Savigny, 1826)",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [
+        "Freshwater",
+        "Freshwater; Freshwater-terrestrial",
+        "Terrestrial",
+        "terrestrial"
+      ],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": true,
+        "freshwater": true
+      },
+      "gbif_occurrence_kr": 34,
+      "gbif_occurrence_total": 4044,
+      "gbif_countries": [
+        "NL",
+        "GB",
+        "US",
+        "EE",
+        "RU",
+        "SE",
+        "DE",
+        "CA",
+        "FR",
+        "NO",
+        "FI",
+        "NZ",
+        "UA",
+        "IE",
+        "TR"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T15:47:39+00:00",
+          "2026-08-22T15:47:45+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L13",
+        "habitat": "들판·우리동네",
+        "diet": "낙엽·유기물",
+        "ecological_role": [
+          "분해자",
+          "흙에 공기와 영양분을 공급하는 \"땅의 농부\""
+        ],
+        "observation_points": [
+          "비 온 뒤 땅 위로 자주 나옴",
+          "몸마디로 이동"
+        ],
+        "threats": [
+          "관계유형: 분해"
+        ],
+        "story_questions": [
+          "지렁이가 사라진 땅에서는 식물이 잘 자랄 수 있을까요?"
+        ],
+        "grade_printed_on_card": null
+      },
+      "warnings": []
+    },
+    {
+      "id": "chamsae",
+      "korean_name": "참새",
+      "scientific_name": "Passer montanus",
+      "english_name": "Eurasian tree sparrow",
+      "taxon_group": "조류",
+      "name_provisional": false,
+      "korea_nie_grade": null,
+      "korea_statutory_grade": null,
+      "korea_grade_source": "none",
+      "korea_statute_korean_name": null,
+      "korea_statute_scientific_name": null,
+      "statute_rank": null,
+      "iucn_category": "LC",
+      "iucn_category_kr": "최소관심(Least Concern)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Passer montanus",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 137421099,
+      "iucn_assessment_date": "2025-06-12",
+      "iucn_assessment_year": 2025,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:48:36+00:00",
+        "2026-08-22T15:48:37+00:00"
+      ],
+      "iucn_population_trend": "Unknown",
+      "iucn_habitats": [
+        "Forest - Temperate",
+        "Shrubland - Temperate",
+        "Artificial/Terrestrial - Urban Areas",
+        "Artificial/Terrestrial - Rural Gardens",
+        "Artificial/Terrestrial - Pastureland",
+        "Artificial/Terrestrial - Arable Land"
+      ],
+      "iucn_threats": [
+        "Agro-industry farming",
+        "Herbicides and pesticides"
+      ],
+      "iucn_conservation_actions": [
+        "Site/area management",
+        "Resource & habitat protection"
+      ],
+      "no_global_assessment": false,
+      "mismatch_flag": null,
+      "mismatch_type": null,
+      "severity_gap": null,
+      "mismatch_type_any_concept": null,
+      "severity_gap_any_concept": null,
+      "gbif_usage_key": 5231198,
+      "gbif_accepted_name": "Passer montanus (Linnaeus, 1758)",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [
+        "Terrestrial",
+        "terrestrial"
+      ],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": true,
+        "freshwater": false
+      },
+      "gbif_occurrence_kr": 95055,
+      "gbif_occurrence_total": 4316212,
+      "gbif_countries": [
+        "SE",
+        "TW",
+        "NO",
+        "DE",
+        "ES",
+        "DK",
+        "FI",
+        "NL",
+        "JP",
+        "GB",
+        "RU",
+        "FR",
+        "CN",
+        "US",
+        "KR"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T15:47:48+00:00",
+          "2026-08-22T15:47:54+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L14",
+        "habitat": "들판·우리동네",
+        "diet": "곡식·곤충",
+        "ecological_role": [
+          "도시·농촌 곤충 개체수 조절"
+        ],
+        "observation_points": [
+          "처마 밑",
+          "나무 구멍에 둥지"
+        ],
+        "threats": [
+          "서식지 감소(옛 건물 감소로 둥지 부족)"
+        ],
+        "story_questions": [
+          "둥지 지을 처마가 없는 우리 동네에서 참새는 어디에 살까요?"
+        ],
+        "grade_printed_on_card": null
+      },
+      "warnings": []
+    },
+    {
+      "id": "jebi",
+      "korean_name": "제비",
+      "scientific_name": "Hirundo rustica",
+      "english_name": "Barn swallow",
+      "taxon_group": "조류",
+      "name_provisional": false,
+      "korea_nie_grade": null,
+      "korea_statutory_grade": null,
+      "korea_grade_source": "none",
+      "korea_statute_korean_name": null,
+      "korea_statute_scientific_name": null,
+      "statute_rank": null,
+      "iucn_category": "LC",
+      "iucn_category_kr": "최소관심(Least Concern)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Hirundo rustica",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": true,
+      "iucn_counterpart": null,
+      "iucn_scope": "Global",
+      "iucn_assessment_id": 137668645,
+      "iucn_assessment_date": "2018-11-05",
+      "iucn_assessment_year": 2019,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:48:38+00:00",
+        "2026-08-22T15:48:39+00:00"
+      ],
+      "iucn_population_trend": "Decreasing",
+      "iucn_habitats": [
+        "Wetlands (inland) - Permanent Freshwater Marshes/Pools (under 8ha)",
+        "Wetlands (inland) - Seasonal/Intermittent Freshwater Lakes (over 8ha)",
+        "Wetlands (inland) - Permanent Freshwater Lakes (over 8ha)",
+        "Wetlands (inland) - Bogs, Marshes, Swamps, Fens, Peatlands",
+        "Artificial/Terrestrial - Arable Land",
+        "Artificial/Terrestrial - Arable Land",
+        "Artificial/Terrestrial - Pastureland",
+        "Artificial/Terrestrial - Pastureland",
+        "Artificial/Terrestrial - Rural Gardens",
+        "Artificial/Terrestrial - Urban Areas",
+        "Artificial/Aquatic - Canals and Drainage Channels, Ditches",
+        "Savanna - Dry",
+        "Shrubland - Subtropical/Tropical Dry",
+        "Grassland - Temperate",
+        "Grassland - Subtropical/Tropical Dry",
+        "Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls)"
+      ],
+      "iucn_threats": [
+        "Agro-industry grazing, ranching or farming",
+        "Abstraction of surface water (agricultural use)",
+        "Herbicides and pesticides",
+        "Temperature extremes",
+        "Intentional use (species is the target)",
+        "Persecution/control",
+        "Named species"
+      ],
+      "iucn_conservation_actions": [
+        "Captive breeding/artificial propagation",
+        "Site/area management"
+      ],
+      "no_global_assessment": false,
+      "mismatch_flag": null,
+      "mismatch_type": null,
+      "severity_gap": null,
+      "mismatch_type_any_concept": null,
+      "severity_gap_any_concept": null,
+      "gbif_usage_key": 9515886,
+      "gbif_accepted_name": "Hirundo rustica Linnaeus, 1758",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [
+        "Espacio aéreo | Pastos | Vivienda",
+        "Grassland",
+        "Savana",
+        "Vegetación acuática, zonas abiertas"
+      ],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": true,
+        "freshwater": false
+      },
+      "gbif_occurrence_kr": 25727,
+      "gbif_occurrence_total": 17486880,
+      "gbif_countries": [
+        "US",
+        "ES",
+        "CA",
+        "SE",
+        "FR",
+        "GB",
+        "FI",
+        "DK",
+        "NL",
+        "ZA",
+        "TW",
+        "NO",
+        "IN",
+        "PL",
+        "DE"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T15:47:57+00:00",
+          "2026-08-22T15:48:04+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L15",
+        "habitat": "들판·우리동네",
+        "diet": "날아다니는 곤충",
+        "ecological_role": [
+          "도시 해충 개체수 조절",
+          "봄의 지표종"
+        ],
+        "observation_points": [
+          "갈래진 꼬리",
+          "진흙·지푸라기로 둥지"
+        ],
+        "threats": [
+          "서식지 감소",
+          "기후변화(도래 시기 변화)"
+        ],
+        "story_questions": [
+          "제비가 둥지 지을 곳이 사라지면 봄은 어떻게 달라질까요?"
+        ],
+        "grade_printed_on_card": null
+      },
+      "warnings": []
+    },
+    {
+      "id": "baechuhinnabi",
+      "korean_name": "배추흰나비",
+      "scientific_name": "Pieris rapae",
+      "english_name": "Small white butterfly",
+      "taxon_group": "곤충",
+      "name_provisional": false,
+      "korea_nie_grade": null,
+      "korea_statutory_grade": null,
+      "korea_grade_source": "none",
+      "korea_statute_korean_name": null,
+      "korea_statute_scientific_name": null,
+      "statute_rank": null,
+      "iucn_category": "LC",
+      "iucn_category_kr": "최소관심(Least Concern)",
+      "iucn_source": "iucn_api_v4",
+      "iucn_match_status": "matched",
+      "iucn_query_name": "Pieris rapae",
+      "iucn_concept_relation": "same",
+      "iucn_relation_basis": "inferred",
+      "iucn_range_includes_korea": false,
+      "iucn_counterpart": null,
+      "iucn_scope": "Europe",
+      "iucn_assessment_id": 211416733,
+      "iucn_assessment_date": "2023-04-18",
+      "iucn_assessment_year": 2025,
+      "iucn_assessment_outdated": false,
+      "iucn_retrieved_between_utc": [
+        "2026-08-22T15:48:40+00:00",
+        "2026-08-22T15:48:41+00:00"
+      ],
+      "iucn_population_trend": "Decreasing",
+      "iucn_habitats": [
+        "Artificial/Terrestrial - Rural Gardens",
+        "Grassland - Temperate",
+        "Artificial/Terrestrial - Urban Areas",
+        "Artificial/Terrestrial - Arable Land",
+        "Artificial/Terrestrial - Pastureland",
+        "Artificial/Terrestrial - Plantations"
+      ],
+      "iucn_threats": [],
+      "iucn_conservation_actions": [],
+      "no_global_assessment": true,
+      "mismatch_flag": null,
+      "mismatch_type": null,
+      "severity_gap": null,
+      "mismatch_type_any_concept": null,
+      "severity_gap_any_concept": null,
+      "gbif_usage_key": 1920496,
+      "gbif_accepted_name": "Pieris rapae (Linnaeus, 1758)",
+      "gbif_match_type": "EXACT",
+      "gbif_rank": "SPECIES",
+      "gbif_match_accepted": true,
+      "gbif_habitats": [
+        "Terrestrial",
+        "terrestrial"
+      ],
+      "gbif_realm": {
+        "marine": false,
+        "terrestrial": true,
+        "freshwater": false
+      },
+      "gbif_occurrence_kr": 10254,
+      "gbif_occurrence_total": 3717305,
+      "gbif_countries": [
+        "GB",
+        "NL",
+        "BE",
+        "FR",
+        "US",
+        "CH",
+        "DE",
+        "CA",
+        "ES",
+        "DK",
+        "SE",
+        "IL",
+        "IE",
+        "AU",
+        "FI"
+      ],
+      "gbif_source": {
+        "api": "GBIF API v1 (api.gbif.org)",
+        "backbone": "GBIF Backbone Taxonomy",
+        "kingdom_hint": "Animalia",
+        "retrieved_between_utc": [
+          "2026-08-22T15:48:07+00:00",
+          "2026-08-22T15:48:13+00:00"
+        ],
+        "occurrence_basis": "occurrence/search count; country=KR for gbif_occurrence_kr, unfiltered for gbif_occurrence_total; country facet for gbif_countries"
+      },
+      "card": {
+        "card_id": "L16",
+        "habitat": "들판·우리동네",
+        "diet": "(애벌레)배추·유채잎 / (성충)꽃꿀",
+        "ecological_role": [
+          "수분을 돕고, 새와 곤충의 먹이가 되는 먹이사슬 연결자"
+        ],
+        "observation_points": [
+          "알→애벌레→번데기→성충",
+          "완전탈바꿈을 눈으로 관찰 가능"
+        ],
+        "threats": [
+          "관계유형: 번식(생애주기)"
+        ],
+        "story_questions": [
+          "나비가 자라는 4단계 중 하나라도 사라지면 나비는 어른이 될 수 있을까요?"
+        ],
+        "grade_printed_on_card": null
+      },
+      "warnings": [
+        {
+          "code": "iucn_regional_assessment",
+          "message_ko": "IUCN 범주가 전 지구 평가가 아니라 Europe 지역 평가에서 왔다 (평가 211416733). 법정 등급과 비교하지 않는다(`iucn_scope` 열 참고). 전 지구 범주만 쓰는 연구는 제외할 것"
+        }
+      ]
+    }
+  ],
+  "other_cards": {
+    "habitat": [
+      {
+        "card_id": "H01",
+        "card_name": "숲",
+        "description": "다층 구조의 산림, 대표 지역: 지리산",
+        "linked_species": [
+          "하늘다람쥐",
+          "수리부엉이",
+          "반달가슴곰"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "구분": "특별한 서식지",
+          "대표색상": "진한 녹색",
+          "앞면문장": "나무들이 빽빽하게 우거져 많은 생물이 함께 사는 곳이에요"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "H02",
+        "card_name": "하천",
+        "description": "상류-중류-하류로 환경이 달라짐, 수질에 따라 사는 생물이 달라짐",
+        "linked_species": [
+          "수달",
+          "남생이"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "구분": "특별한 서식지",
+          "대표색상": "파란색",
+          "앞면문장": "쉬지 않고 흐르며 생물들을 이어주는 물길이에요"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "H03",
+        "card_name": "습지·논",
+        "description": "대표 지역: 철원평야",
+        "linked_species": [
+          "금개구리",
+          "두루미",
+          "맹꽁이"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "구분": "특별한 서식지",
+          "대표색상": "청록색",
+          "앞면문장": "물과 땅이 만나 가장 다양한 생물이 모이는 곳이에요"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "H04",
+        "card_name": "갯벌",
+        "description": "세계적으로 희귀한 생태계, 철새의 번식·기착지(인천 무인도서)",
+        "linked_species": [
+          "저어새"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "구분": "특별한 서식지",
+          "대표색상": "갈색",
+          "앞면문장": "밀물과 썰물이 오가며 다양한 생물을 품는 땅이에요"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "H05",
+        "card_name": "바다",
+        "description": "대표 지역: 백령도",
+        "linked_species": [
+          "점박이물범"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "구분": "특별한 서식지",
+          "대표색상": "남색",
+          "앞면문장": "깊고 넓은 바다에도 우리가 지켜야 할 생물이 살아요"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "H06",
+        "card_name": "들판·우리동네",
+        "description": "가장 접근하기 쉬운 서식지 — 관찰 활동의 출발점",
+        "linked_species": [
+          "꿀벌",
+          "민들레",
+          "지렁이",
+          "참새",
+          "제비",
+          "배추흰나비"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "구분": "가까운 서식지",
+          "대표색상": "연두색",
+          "앞면문장": "학교 화단과 골목에도 생명이 촘촘히 살고 있어요"
+        },
+        "incomplete": false
+      }
+    ],
+    "relation": [
+      {
+        "card_id": "R01",
+        "card_name": "먹기(포식)",
+        "description": "한 생물이 다른 생물을 먹이로 삼는 관계",
+        "linked_species": [
+          "수리부엉이",
+          "하늘다람쥐",
+          "참새",
+          "배추흰나비"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "나는 너를 먹고 살아요",
+          "카드조합예시": "수리부엉이 + 하늘다람쥐 (또는 참새 + 배추흰나비)",
+          "활동방법": "먹이사슬 줄 잇기 놀이"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "R02",
+        "card_name": "수분(꽃가루받이)",
+        "description": "곤충이 꽃가루를 옮겨 식물의 번식을 돕는 관계",
+        "linked_species": [
+          "꿀벌",
+          "민들레"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "꽃가루를 옮겨 새 생명을 이어줘요",
+          "카드조합예시": "꿀벌 + 민들레",
+          "활동방법": "짝 찾기 카드 게임"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "R03",
+        "card_name": "분해",
+        "description": "생물이 죽은 것이나 배설물을 분해해 영양분으로 되돌리는 관계",
+        "linked_species": [
+          "지렁이"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "죽은 것을 흙으로 되돌려줘요",
+          "카드조합예시": "지렁이 + 낙엽",
+          "활동방법": "순환 고리 만들기"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "R04",
+        "card_name": "은신(보호)",
+        "description": "한 생물이 다른 생물에게 숨을 공간을 제공하는 관계",
+        "linked_species": [
+          "금개구리"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "숨을 곳을 내어줘요",
+          "카드조합예시": "습지식물 + 금개구리",
+          "활동방법": "서식지 지도에 은신처 표시"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "R05",
+        "card_name": "이동(이주)",
+        "description": "생물이 먹이·번식·계절 변화에 따라 이동하는 관계",
+        "linked_species": [
+          "두루미",
+          "제비"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "계절과 상황에 따라 자리를 옮겨요",
+          "카드조합예시": "두루미 + 계절 변화 (또는 제비 + 봄)",
+          "활동방법": "이동 경로 그리기"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "R06",
+        "card_name": "공생",
+        "description": "두 생물이 같은 환경을 공유하며 서로 영향을 주고받는 관계",
+        "linked_species": [
+          "수달",
+          "남생이"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "서로 도우며 함께 살아요",
+          "카드조합예시": "수달 + 남생이(같은 하천 환경)",
+          "활동방법": "짝꿍 생물 찾기"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "R07",
+        "card_name": "산포(씨앗 퍼뜨리기)",
+        "description": "바람·동물이 씨앗을 옮겨 새로운 곳에 뿌리내리게 하는 관계",
+        "linked_species": [
+          "민들레"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "멀리멀리 씨앗을 실어 날라요",
+          "카드조합예시": "민들레 + 바람",
+          "활동방법": "씨앗 여행 시뮬레이션"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "R08",
+        "card_name": "번식(둥지짓기·생애주기)",
+        "description": "생물이 알을 낳거나 새끼를 기르기 위한 공간을 마련하거나 몸을 바꾸는 관계",
+        "linked_species": [
+          "저어새",
+          "제비",
+          "배추흰나비"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "다음 세대를 위한 자리를 마련해요",
+          "카드조합예시": "저어새 + 무인도서 (또는 제비 + 처마, 배추흰나비의 4단계)",
+          "활동방법": "둥지 재료 매칭 게임 / 나비 한살이 순서 맞추기"
+        },
+        "incomplete": false
+      }
+    ],
+    "change": [
+      {
+        "card_id": "C01",
+        "card_name": "서식지 파괴",
+        "description": "벌목·도로공사·매립 등으로 서식 공간이 없어지는 변화",
+        "linked_species": [
+          "하늘다람쥐",
+          "저어새",
+          "참새"
+        ],
+        "story_questions": [
+          "살던 곳이 사라진 생물은 어디로 가야 할까요?"
+        ],
+        "extra_columns": {
+          "앞면문장": "살 곳이 사라지고 있어요",
+          "강남중매핑": "서식지 파괴"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "C02",
+        "card_name": "기후변화",
+        "description": "가뭄·기온상승·해빙 감소 등으로 서식 환경이 바뀌는 변화",
+        "linked_species": [
+          "두루미",
+          "점박이물범",
+          "제비"
+        ],
+        "story_questions": [
+          "얼음이 녹아 없어지면 물범은 새끼를 어디서 낳을까요?"
+        ],
+        "extra_columns": {
+          "앞면문장": "날씨가 예측할 수 없이 변하고 있어요",
+          "강남중매핑": "기후변화"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "C03",
+        "card_name": "외래종 유입",
+        "description": "원래 살지 않던 생물이 들어와 기존 생태계 균형을 깨뜨리는 변화",
+        "linked_species": [
+          "남생이"
+        ],
+        "story_questions": [
+          "낯선 거북이 우리 자리를 차지하면 남생이는 어떻게 될까요?"
+        ],
+        "extra_columns": {
+          "앞면문장": "낯선 생물이 나타나 균형이 흔들려요",
+          "강남중매핑": "외래종 침입"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "C04",
+        "card_name": "불법 포획",
+        "description": "보호종을 허가 없이 잡거나 채취하는 변화",
+        "linked_species": [
+          "반달가슴곰",
+          "점박이물범"
+        ],
+        "story_questions": [
+          "누군가 몰래 동물을 잡아간다면 무리 전체는 어떻게 될까요?"
+        ],
+        "extra_columns": {
+          "앞면문장": "몰래 잡아가는 사람들이 있어요",
+          "강남중매핑": "불법 포획"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "C05",
+        "card_name": "빛·소음 공해",
+        "description": "인공조명과 소음이 야행성·번식 활동을 방해하는 변화",
+        "linked_species": [
+          "수리부엉이"
+        ],
+        "story_questions": [
+          "밤에도 불이 꺼지지 않으면 부엉이는 사냥을 할 수 있을까요?"
+        ],
+        "extra_columns": {
+          "앞면문장": "밤에도 쉬지 못하고 시끄러워요",
+          "강남중매핑": "빛·소음 공해"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "C06",
+        "card_name": "농약·수질 오염",
+        "description": "농약과 오염물질이 물과 토양에 스며들어 생물에게 해를 끼치는 변화",
+        "linked_species": [
+          "금개구리",
+          "맹꽁이",
+          "지렁이",
+          "꿀벌"
+        ],
+        "story_questions": [
+          "농약을 많이 뿌린 논에서 개구리와 꿀벌은 안전할까요?"
+        ],
+        "extra_columns": {
+          "앞면문장": "물과 흙이 병들고 있어요",
+          "강남중매핑": "농약·수질 오염"
+        },
+        "incomplete": false
+      }
+    ],
+    "help": [
+      {
+        "card_id": "S01",
+        "card_name": "서식지 복원·보전",
+        "description": "숲·습지를 보호구역으로 지정하거나 훼손된 곳을 복원하는 행동",
+        "linked_species": [
+          "반달가슴곰",
+          "저어새"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "살 곳을 지키고 되살려요",
+          "대응변화카드": "서식지 파괴|기후변화"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "S02",
+        "card_name": "생태통로 연결",
+        "description": "도로로 끊긴 서식지를 생태통로나 물길로 다시 연결하는 행동",
+        "linked_species": [
+          "하늘다람쥐",
+          "남생이"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "끊어진 길을 다시 이어줘요",
+          "대응변화카드": "서식지 파괴|외래종 유입"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "S03",
+        "card_name": "친환경 실천(농약 줄이기·불 끄기)",
+        "description": "농약 사용을 줄이고 밤에는 불을 끄는 등 생활 속 실천",
+        "linked_species": [
+          "금개구리",
+          "꿀벌",
+          "수리부엉이"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "작은 습관이 큰 변화를 만들어요",
+          "대응변화카드": "농약·수질 오염|빛·소음 공해"
+        },
+        "incomplete": false
+      },
+      {
+        "card_id": "S04",
+        "card_name": "함께 지키기(감시·신고)",
+        "description": "불법 포획을 감시하고 신고하며 함께 지키는 시민 행동",
+        "linked_species": [
+          "반달가슴곰",
+          "점박이물범"
+        ],
+        "story_questions": [],
+        "extra_columns": {
+          "앞면문장": "우리가 지켜보고 있어요",
+          "대응변화카드": "불법 포획|외래종 유입"
+        },
+        "incomplete": false
+      }
+    ]
+  }
+}

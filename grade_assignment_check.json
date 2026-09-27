@@ -1,0 +1,179 @@
+{
+  "annex": "야생생물법_시행규칙_별표1_개정20221209.pdf",
+  "census_method": "pdfplumber heading position",
+  "bench_method": "pypdf numbering reset",
+  "pdfplumber": {
+    "rows": 282,
+    "disagreements": 0,
+    "totals": {
+      "heading": {
+        "I급": 68,
+        "II급": 214
+      },
+      "reset": {
+        "I급": 68,
+        "II급": 214
+      }
+    },
+    "disagreeing_rows": []
+  },
+  "pypdf": {
+    "rows": 282,
+    "disagreements": 41,
+    "disagreeing_rows_by_taxon": {
+      "조류": 13,
+      "어류": 5,
+      "육상식물": 9,
+      "해조류": 2,
+      "고등균류": 12
+    },
+    "numbering_reset_differs_from_census": 64,
+    "numbering_reset_differs_by_taxon": {
+      "어류": 25,
+      "곤충류": 6,
+      "육상식물": 20,
+      "해조류": 2,
+      "고등균류": 11
+    }
+  },
+  "ten_designated": [
+    {
+      "korean_name": "하늘다람쥐",
+      "scientific_name": "Pteromys volans",
+      "statute_scientific_name": "Pteromys volans aluco",
+      "pypdf_heading": "II급",
+      "pypdf_reset": "II급",
+      "pdfplumber_heading": "II급",
+      "pdfplumber_reset": "II급",
+      "released_16_species": "II급"
+    },
+    {
+      "korean_name": "수리부엉이",
+      "scientific_name": "Bubo bubo",
+      "statute_scientific_name": "Bubo bubo",
+      "pypdf_heading": "II급",
+      "pypdf_reset": "II급",
+      "pdfplumber_heading": "II급",
+      "pdfplumber_reset": "II급",
+      "released_16_species": "II급"
+    },
+    {
+      "korean_name": "금개구리",
+      "scientific_name": "Pelophylax chosenicus",
+      "statute_scientific_name": "Pelophylax chosenicus",
+      "pypdf_heading": "II급",
+      "pypdf_reset": "II급",
+      "pdfplumber_heading": "II급",
+      "pdfplumber_reset": "II급",
+      "released_16_species": "II급"
+    },
+    {
+      "korean_name": "반달가슴곰",
+      "scientific_name": "Ursus thibetanus",
+      "statute_scientific_name": "Ursus thibetanus ussuricus",
+      "pypdf_heading": "I급",
+      "pypdf_reset": "I급",
+      "pdfplumber_heading": "I급",
+      "pdfplumber_reset": "I급",
+      "released_16_species": "I급"
+    },
+    {
+      "korean_name": "수달",
+      "scientific_name": "Lutra lutra",
+      "statute_scientific_name": "Lutra lutra",
+      "pypdf_heading": "I급",
+      "pypdf_reset": "I급",
+      "pdfplumber_heading": "I급",
+      "pdfplumber_reset": "I급",
+      "released_16_species": "I급"
+    },
+    {
+      "korean_name": "남생이",
+      "scientific_name": "Mauremys reevesii",
+      "statute_scientific_name": "Mauremys reevesii",
+      "pypdf_heading": "II급",
+      "pypdf_reset": "II급",
+      "pdfplumber_heading": "II급",
+      "pdfplumber_reset": "II급",
+      "released_16_species": "II급"
+    },
+    {
+      "korean_name": "두루미",
+      "scientific_name": "Grus japonensis",
+      "statute_scientific_name": "Grus japonensis",
+      "pypdf_heading": "II급",
+      "pypdf_reset": "I급",
+      "pdfplumber_heading": "I급",
+      "pdfplumber_reset": "I급",
+      "released_16_species": "I급"
+    },
+    {
+      "korean_name": "저어새",
+      "scientific_name": "Platalea minor",
+      "statute_scientific_name": "Platalea minor",
+      "pypdf_heading": "II급",
+      "pypdf_reset": "I급",
+      "pdfplumber_heading": "I급",
+      "pdfplumber_reset": "I급",
+      "released_16_species": "I급"
+    },
+    {
+      "korean_name": "점박이물범",
+      "scientific_name": "Phoca largha",
+      "statute_scientific_name": "Phoca largha",
+      "pypdf_heading": "I급",
+      "pypdf_reset": "I급",
+      "pdfplumber_heading": "I급",
+      "pdfplumber_reset": "I급",
+      "released_16_species": "I급"
+    },
+    {
+      "korean_name": "맹꽁이",
+      "scientific_name": "Kaloula borealis",
+      "statute_scientific_name": "Kaloula borealis",
+      "pypdf_heading": "II급",
+      "pypdf_reset": "II급",
+      "pdfplumber_heading": "II급",
+      "pdfplumber_reset": "II급",
+      "released_16_species": "II급"
+    }
+  ],
+  "pypdf_heading_wrong_among_ten": 2,
+  "extraction": {
+    "library": "pdfplumber",
+    "version": "0.11.9",
+    "pdfminer.six": "20251230",
+    "x_tolerance": 1
+  },
+  "totals": {
+    "I급": 68,
+    "II급": 214
+  },
+  "expected_totals": {
+    "I급": 68,
+    "II급": 214
+  },
+  "expected_totals_source": "Ministry of Environment (Biodiversity Division), press release of 9 December 2022, '멸종위기 야생생물, 267종에서 282종으로 개정', attached PDF (https://www.korea.kr/common/download.do?fileId=197531828&tblKey=GMN; copy data/statute/moe_press_release_2022-12-09_endangered_wildlife_282.pdf, SHA256 19c7f5912d64d5aef5799d2b62ddc80824be018189f57b633d931db2d66efab5), page 3: 'I급 68종과 Ⅱ급 214종 등 최종 282종', and the table by group on page 4. Transcribed changes: data/statute/amendment_2022_expected_changes.json.",
+  "diff_against_previous": {
+    "new": [],
+    "removed": [],
+    "grade_changed": [],
+    "renamed": [],
+    "previous": "designated_species_v1.0.2.json"
+  },
+  "visual_check": {
+    "n": 30,
+    "disagreements": 0,
+    "seed": 20260926,
+    "checked_on": "2026-09-26",
+    "rows_matching_current_parse": 30,
+    "upper95_error_rate": 0.09503385285530419,
+    "designated_rows_added": {
+      "n": 7,
+      "disagreements": 0,
+      "rows_matching_current_parse": 7
+    },
+    "designated_rows_not_read": []
+  },
+  "problems": []
+}

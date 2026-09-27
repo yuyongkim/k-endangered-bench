@@ -1,0 +1,611 @@
+{
+ "description": "Visual check of 30 parsed Annex 1 rows against rendered page images of the pinned PDF (pypdfium2, scale 2.2). Rows drawn with random.Random(20260926).sample over the 282 parsed rows. For each row the row number, Korean name, scientific name (including spacing and rank markers) and the class table it sits under were compared with the parsed values by the authors with AI assistance.",
+ "annex_sha256": "4f75d4f8f92b8d7381b345cd89757672fc2e869bb75264eec2ab580a579945b4",
+ "seed": 20260926,
+ "checked_on": "2026-09-26",
+ "checked_by": "the authors, reading rendered page images with AI assistance",
+ "n": 30,
+ "disagreements": 0,
+ "rows": [
+  {
+   "row_index": 6,
+   "page": 1,
+   "taxon": "포유류",
+   "grade": "I급",
+   "no": 7,
+   "korean_name": "사향노루",
+   "scientific_name": "Moschus moschiferus",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 8,
+   "page": 1,
+   "taxon": "포유류",
+   "grade": "I급",
+   "no": 9,
+   "korean_name": "수달",
+   "scientific_name": "Lutra lutra",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 18,
+   "page": 1,
+   "taxon": "포유류",
+   "grade": "II급",
+   "no": 5,
+   "korean_name": "토끼박쥐",
+   "scientific_name": "Plecotus ognevi",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 23,
+   "page": 2,
+   "taxon": "조류",
+   "grade": "I급",
+   "no": 4,
+   "korean_name": "노랑부리백로",
+   "scientific_name": "Egretta eulophotes",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 26,
+   "page": 2,
+   "taxon": "조류",
+   "grade": "I급",
+   "no": 7,
+   "korean_name": "먹황새",
+   "scientific_name": "Ciconia nigra",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 37,
+   "page": 2,
+   "taxon": "조류",
+   "grade": "II급",
+   "no": 2,
+   "korean_name": "검은머리갈매기",
+   "scientific_name": "Larus saundersi",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 58,
+   "page": 2,
+   "taxon": "조류",
+   "grade": "II급",
+   "no": 23,
+   "korean_name": "뿔종다리",
+   "scientific_name": "Galerida cristata",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 63,
+   "page": 2,
+   "taxon": "조류",
+   "grade": "II급",
+   "no": 28,
+   "korean_name": "쇠검은머리쑥새",
+   "scientific_name": "Emberiza yessoensis",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 65,
+   "page": 2,
+   "taxon": "조류",
+   "grade": "II급",
+   "no": 30,
+   "korean_name": "수리부엉이",
+   "scientific_name": "Bubo bubo",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 83,
+   "page": 3,
+   "taxon": "조류",
+   "grade": "II급",
+   "no": 48,
+   "korean_name": "흑기러기",
+   "scientific_name": "Branta bernicla",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 94,
+   "page": 3,
+   "taxon": "양서류·파충류",
+   "grade": "II급",
+   "no": 4,
+   "korean_name": "남생이",
+   "scientific_name": "Mauremys reevesii",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 98,
+   "page": 3,
+   "taxon": "어류",
+   "grade": "I급",
+   "no": 2,
+   "korean_name": "꼬치동자개",
+   "scientific_name": "Pseudobagrus brevicorpus",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 102,
+   "page": 4,
+   "taxon": "어류",
+   "grade": "I급",
+   "no": 6,
+   "korean_name": "얼룩새코미꾸리",
+   "scientific_name": "Koreocobitis naktongensis",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 115,
+   "page": 4,
+   "taxon": "어류",
+   "grade": "II급",
+   "no": 8,
+   "korean_name": "묵납자루",
+   "scientific_name": "Acheilognathus signifer",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 117,
+   "page": 4,
+   "taxon": "어류",
+   "grade": "II급",
+   "no": 10,
+   "korean_name": "부안종개",
+   "scientific_name": "Iksookimia pumila",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 122,
+   "page": 4,
+   "taxon": "어류",
+   "grade": "II급",
+   "no": 15,
+   "korean_name": "칠성장어",
+   "scientific_name": "Lethenteron japonicus",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 126,
+   "page": 4,
+   "taxon": "곤충류",
+   "grade": "I급",
+   "no": 1,
+   "korean_name": "닻무늬길앞잡이",
+   "scientific_name": "Cicindela (Abroscelis) anchoralis",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 128,
+   "page": 4,
+   "taxon": "곤충류",
+   "grade": "I급",
+   "no": 3,
+   "korean_name": "비단벌레",
+   "scientific_name": "Chrysochroa (Chrysochroa) coreana",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 158,
+   "page": 5,
+   "taxon": "무척추동물",
+   "grade": "I급",
+   "no": 4,
+   "korean_name": "두드럭조개",
+   "scientific_name": "Aculamprotula coreana",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 165,
+   "page": 5,
+   "taxon": "무척추동물",
+   "grade": "II급",
+   "no": 7,
+   "korean_name": "대추귀고둥",
+   "scientific_name": "Ellobium chinense",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 172,
+   "page": 5,
+   "taxon": "무척추동물",
+   "grade": "II급",
+   "no": 14,
+   "korean_name": "선침거미불가사리",
+   "scientific_name": "Ophiacantha linea",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 176,
+   "page": 5,
+   "taxon": "무척추동물",
+   "grade": "II급",
+   "no": 18,
+   "korean_name": "유착나무돌산호",
+   "scientific_name": "Dendrophyllia cribrosa",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 190,
+   "page": 6,
+   "taxon": "육상식물",
+   "grade": "I급",
+   "no": 4,
+   "korean_name": "만년콩",
+   "scientific_name": "Euchresta japonica",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 209,
+   "page": 6,
+   "taxon": "육상식물",
+   "grade": "II급",
+   "no": 10,
+   "korean_name": "끈끈이귀개",
+   "scientific_name": "Drosera peltata var. nipponica",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 216,
+   "page": 6,
+   "taxon": "육상식물",
+   "grade": "II급",
+   "no": 17,
+   "korean_name": "노랑붓꽃",
+   "scientific_name": "Iris koreana",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 230,
+   "page": 7,
+   "taxon": "육상식물",
+   "grade": "II급",
+   "no": 31,
+   "korean_name": "백양더부살이",
+   "scientific_name": "Orobanche filicicola",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 253,
+   "page": 7,
+   "taxon": "육상식물",
+   "grade": "II급",
+   "no": 54,
+   "korean_name": "으름난초",
+   "scientific_name": "Cyrtosia septentrionalis",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 258,
+   "page": 7,
+   "taxon": "육상식물",
+   "grade": "II급",
+   "no": 59,
+   "korean_name": "제비동자꽃",
+   "scientific_name": "Lychnis wilfordii",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 268,
+   "page": 8,
+   "taxon": "육상식물",
+   "grade": "II급",
+   "no": 69,
+   "korean_name": "칠보치마",
+   "scientific_name": "Metanarthecium luteo-viride",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  },
+  {
+   "row_index": 278,
+   "page": 8,
+   "taxon": "육상식물",
+   "grade": "II급",
+   "no": 79,
+   "korean_name": "홍월귤",
+   "scientific_name": "Arctous rubra",
+   "checked": {
+    "row_number": true,
+    "korean_name": true,
+    "scientific_name": true,
+    "class_table": true
+   },
+   "agrees": true
+  }
+ ],
+ "designated_rows_added": {
+  "description": "The seven designated species of the 16-species file that the random sample did not include (the sample already held the otter, the eagle-owl and Reeves' pond turtle), compared in the same way on 2026-09-26 by the authors with AI assistance. Not part of the random sample and not used for the upper bound.",
+  "checked_on": "2026-09-26",
+  "n": 7,
+  "disagreements": 0,
+  "rows": [
+   {
+    "row_index": 3,
+    "page": 1,
+    "taxon": "포유류",
+    "grade": "I급",
+    "no": 4,
+    "korean_name": "물범",
+    "scientific_name": "Phoca largha",
+    "checked": {
+     "row_number": true,
+     "korean_name": true,
+     "scientific_name": true,
+     "class_table": true
+    },
+    "agrees": true
+   },
+   {
+    "row_index": 4,
+    "page": 1,
+    "taxon": "포유류",
+    "grade": "I급",
+    "no": 5,
+    "korean_name": "반달가슴곰",
+    "scientific_name": "Ursus thibetanus ussuricus",
+    "checked": {
+     "row_number": true,
+     "korean_name": true,
+     "scientific_name": true,
+     "class_table": true
+    },
+    "agrees": true
+   },
+   {
+    "row_index": 19,
+    "page": 1,
+    "taxon": "포유류",
+    "grade": "II급",
+    "no": 6,
+    "korean_name": "하늘다람쥐",
+    "scientific_name": "Pteromys volans aluco",
+    "checked": {
+     "row_number": true,
+     "korean_name": true,
+     "scientific_name": true,
+     "class_table": true
+    },
+    "agrees": true
+   },
+   {
+    "row_index": 25,
+    "page": 2,
+    "taxon": "조류",
+    "grade": "I급",
+    "no": 6,
+    "korean_name": "두루미",
+    "scientific_name": "Grus japonensis",
+    "checked": {
+     "row_number": true,
+     "korean_name": true,
+     "scientific_name": true,
+     "class_table": true
+    },
+    "agrees": true
+   },
+   {
+    "row_index": 28,
+    "page": 2,
+    "taxon": "조류",
+    "grade": "I급",
+    "no": 9,
+    "korean_name": "저어새",
+    "scientific_name": "Platalea minor",
+    "checked": {
+     "row_number": true,
+     "korean_name": true,
+     "scientific_name": true,
+     "class_table": true
+    },
+    "agrees": true
+   },
+   {
+    "row_index": 93,
+    "page": 3,
+    "taxon": "양서류·파충류",
+    "grade": "II급",
+    "no": 3,
+    "korean_name": "금개구리",
+    "scientific_name": "Pelophylax chosenicus",
+    "checked": {
+     "row_number": true,
+     "korean_name": true,
+     "scientific_name": true,
+     "class_table": true
+    },
+    "agrees": true
+   },
+   {
+    "row_index": 95,
+    "page": 3,
+    "taxon": "양서류·파충류",
+    "grade": "II급",
+    "no": 5,
+    "korean_name": "맹꽁이",
+    "scientific_name": "Kaloula borealis",
+    "checked": {
+     "row_number": true,
+     "korean_name": true,
+     "scientific_name": true,
+     "class_table": true
+    },
+    "agrees": true
+   }
+  ]
+ }
+}

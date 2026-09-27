@@ -1,0 +1,3105 @@
+{
+  "description": "python paper02_bench/scripts/scorer_validation.py",
+  "scorer_sha256": "8a23e5b9eaf513d236c728b63d26b6c5d125e13dbbbe953a3556f92eda0b6302",
+  "frozen_copy_matches_recorded_sha256": true,
+  "models_population": {
+    "gemini-2.5-flash": 1,
+    "deepseek-v4-flash": 10,
+    "deepseek-chat": 273
+  },
+  "models_sample": {
+    "deepseek-v4-flash": 2,
+    "deepseek-chat": 58
+  },
+  "population": 284,
+  "seed": 20260926,
+  "n": 60,
+  "labelled_by": "the authors with AI assistance (see the Generative AI disclosure)",
+  "labelled_on": "2026-09-26",
+  "all": {
+    "iucn_extraction": {
+      "agree": 51,
+      "n": 60,
+      "ci95": [
+        0.73426,
+        0.929044
+      ]
+    },
+    "national_extraction": {
+      "agree": 60,
+      "n": 60,
+      "ci95": [
+        0.940371,
+        1.0
+      ]
+    },
+    "unclassed_flag": {
+      "agree": 50,
+      "n": 60,
+      "ci95": [
+        0.714781,
+        0.917071
+      ]
+    },
+    "iucn_verdict": {
+      "agree": 51,
+      "n": 60,
+      "ci95": [
+        0.73426,
+        0.929044
+      ]
+    },
+    "precision_correct": {
+      "tp": 30,
+      "n": 30,
+      "ci95": [
+        0.884297,
+        1.0
+      ]
+    },
+    "precision_wrong": {
+      "tp": 13,
+      "n": 13,
+      "ci95": [
+        0.752947,
+        1.0
+      ]
+    },
+    "precision_unverified": {
+      "tp": 8,
+      "n": 8,
+      "ci95": [
+        0.630583,
+        1.0
+      ]
+    }
+  },
+  "word_order_subset": {
+    "iucn_extraction": {
+      "agree": 31,
+      "n": 34,
+      "ci95": [
+        0.763225,
+        0.98142
+      ]
+    },
+    "national_extraction": {
+      "agree": 34,
+      "n": 34,
+      "ci95": [
+        0.897182,
+        1.0
+      ]
+    },
+    "unclassed_flag": {
+      "agree": 34,
+      "n": 34,
+      "ci95": [
+        0.897182,
+        1.0
+      ]
+    },
+    "iucn_verdict": {
+      "agree": 31,
+      "n": 34,
+      "ci95": [
+        0.763225,
+        0.98142
+      ]
+    },
+    "precision_correct": {
+      "tp": 21,
+      "n": 21,
+      "ci95": [
+        0.838902,
+        1.0
+      ]
+    },
+    "precision_wrong": {
+      "tp": 7,
+      "n": 7,
+      "ci95": [
+        0.590384,
+        1.0
+      ]
+    },
+    "precision_unverified": {
+      "tp": 3,
+      "n": 3,
+      "ci95": [
+        0.292402,
+        1.0
+      ]
+    }
+  },
+  "class_precision_recall": {
+    "unclassed_frozen": {
+      "true_positive": 5,
+      "predicted": 15,
+      "labelled": 5,
+      "precision": [
+        5,
+        15
+      ],
+      "precision_ci95": [
+        0.118241,
+        0.616196
+      ],
+      "recall": [
+        5,
+        5
+      ],
+      "recall_ci95": [
+        0.478176,
+        1.0
+      ]
+    },
+    "unclassed_released": {
+      "true_positive": 5,
+      "predicted": 13,
+      "labelled": 5,
+      "precision": [
+        5,
+        13
+      ],
+      "precision_ci95": [
+        0.138579,
+        0.684222
+      ],
+      "recall": [
+        5,
+        5
+      ],
+      "recall_ci95": [
+        0.478176,
+        1.0
+      ]
+    },
+    "ne_frozen": {
+      "true_positive": 12,
+      "predicted": 12,
+      "labelled": 20,
+      "precision": [
+        12,
+        12
+      ],
+      "precision_ci95": [
+        0.735352,
+        1.0
+      ],
+      "recall": [
+        12,
+        20
+      ],
+      "recall_ci95": [
+        0.360543,
+        0.80881
+      ]
+    },
+    "ne_released": {
+      "true_positive": 12,
+      "predicted": 12,
+      "labelled": 20,
+      "precision": [
+        12,
+        12
+      ],
+      "precision_ci95": [
+        0.735352,
+        1.0
+      ],
+      "recall": [
+        12,
+        20
+      ],
+      "recall_ci95": [
+        0.360543,
+        0.80881
+      ]
+    }
+  },
+  "pool_korean_agency_red_list": {
+    "answers": [
+      "a131",
+      "a132",
+      "a150",
+      "a157",
+      "a165",
+      "a229",
+      "a230",
+      "a231",
+      "a242",
+      "a243",
+      "a248",
+      "a250",
+      "a255",
+      "a256",
+      "a266",
+      "a268",
+      "a274",
+      "a277",
+      "a281",
+      "a285",
+      "a288",
+      "a294"
+    ],
+    "n": 22,
+    "population": 284,
+    "in_sample": [
+      "a132",
+      "a266",
+      "a277",
+      "a288"
+    ],
+    "frozen_scorer_reads_as_iucn": {
+      "a231": {
+        "frozen": [
+          [
+            "CR",
+            "VU"
+          ],
+          "wrong"
+        ],
+        "released": [
+          [
+            "VU"
+          ],
+          "wrong"
+        ]
+      },
+      "a242": {
+        "frozen": [
+          [
+            "LC",
+            "NE"
+          ],
+          "wrong"
+        ],
+        "released": [
+          [
+            "NE"
+          ],
+          "correct"
+        ]
+      },
+      "a243": {
+        "frozen": [
+          [
+            "CR",
+            "NE"
+          ],
+          "ambiguous"
+        ],
+        "released": [
+          [
+            "NE"
+          ],
+          "wrong"
+        ]
+      },
+      "a250": {
+        "frozen": [
+          [
+            "CR",
+            "LC",
+            "NE"
+          ],
+          "unverified"
+        ],
+        "released": [
+          [
+            "LC",
+            "NE"
+          ],
+          "unverified"
+        ]
+      },
+      "a255": {
+        "frozen": [
+          [
+            "CR",
+            "NE"
+          ],
+          "wrong"
+        ],
+        "released": [
+          [
+            "NE"
+          ],
+          "correct"
+        ]
+      },
+      "a274": {
+        "frozen": [
+          [
+            "CR",
+            "DD"
+          ],
+          "unverified"
+        ],
+        "released": [
+          [
+            "DD"
+          ],
+          "unverified"
+        ]
+      },
+      "a277": {
+        "frozen": [
+          [
+            "CR",
+            "NE"
+          ],
+          "ambiguous"
+        ],
+        "released": [
+          [
+            "NE"
+          ],
+          "wrong"
+        ]
+      },
+      "a294": {
+        "frozen": [
+          [
+            "CR",
+            "NE"
+          ],
+          "unverified"
+        ],
+        "released": [
+          [
+            "NE"
+          ],
+          "unverified"
+        ]
+      }
+    }
+  },
+  "pool_released_vs_frozen": {
+    "unclassed": [
+      {
+        "answer_id": "a150",
+        "model": "deepseek-chat",
+        "frozen": true,
+        "released": false
+      },
+      {
+        "answer_id": "a188",
+        "model": "deepseek-chat",
+        "frozen": true,
+        "released": false
+      },
+      {
+        "answer_id": "a193",
+        "model": "deepseek-chat",
+        "frozen": true,
+        "released": false
+      },
+      {
+        "answer_id": "a198",
+        "model": "deepseek-chat",
+        "frozen": true,
+        "released": false
+      },
+      {
+        "answer_id": "a199",
+        "model": "deepseek-chat",
+        "frozen": true,
+        "released": false
+      },
+      {
+        "answer_id": "a202",
+        "model": "deepseek-chat",
+        "frozen": true,
+        "released": false
+      },
+      {
+        "answer_id": "a214",
+        "model": "deepseek-chat",
+        "frozen": true,
+        "released": false
+      },
+      {
+        "answer_id": "a216",
+        "model": "deepseek-chat",
+        "frozen": true,
+        "released": false
+      },
+      {
+        "answer_id": "a218",
+        "model": "deepseek-chat",
+        "frozen": true,
+        "released": false
+      },
+      {
+        "answer_id": "a229",
+        "model": "deepseek-chat",
+        "frozen": true,
+        "released": false
+      },
+      {
+        "answer_id": "a248",
+        "model": "deepseek-chat",
+        "frozen": true,
+        "released": false
+      }
+    ],
+    "iucn_extraction": [
+      "a231",
+      "a242",
+      "a243",
+      "a250",
+      "a255",
+      "a274",
+      "a277",
+      "a279",
+      "a294"
+    ],
+    "iucn_verdict": [
+      "a242",
+      "a243",
+      "a255",
+      "a277",
+      "a279"
+    ]
+  },
+  "pool_omitted_by_unclassed_exclusions": {
+    "names_iucn_or_red_list": [],
+    "national_red_list": [
+      "a146",
+      "a150",
+      "a153",
+      "a165",
+      "a174",
+      "a224",
+      "a229",
+      "a230",
+      "a231",
+      "a237",
+      "a242",
+      "a245",
+      "a248",
+      "a250",
+      "a252",
+      "a255",
+      "a256",
+      "a260",
+      "a261",
+      "a265",
+      "a272",
+      "a274",
+      "a277",
+      "a279",
+      "a281",
+      "a285",
+      "a288",
+      "a290",
+      "a294",
+      "a295",
+      "a297",
+      "a298",
+      "a300",
+      "a301",
+      "a306",
+      "a313"
+    ]
+  },
+  "marine_protected_species": {
+    "heldout": {
+      "n": 17,
+      "released_clears": 8,
+      "frozen_flags": 17,
+      "reversed_name": 0,
+      "still_flagged_by_reason": {
+        "negation": 2,
+        "class_numeral_not_read": 1,
+        "other_cue_same_sentence": 4,
+        "later_sentence_national_status": 2
+      },
+      "answers": [
+        {
+          "answer_id": "a188",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": false,
+          "reason_still_flagged": null,
+          "sentence": null
+        },
+        {
+          "answer_id": "a193",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": false,
+          "reason_still_flagged": null,
+          "sentence": null
+        },
+        {
+          "answer_id": "a194",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": true,
+          "reason_still_flagged": "negation",
+          "sentence": "However, in South Korea, this species is not listed under any specific national conservation designation (e.g., Endangered Species or Marine Protected Species)."
+        },
+        {
+          "answer_id": "a196",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": true,
+          "reason_still_flagged": "class_numeral_not_read",
+          "sentence": "In South Korea, this cold-water coral species is designated as a marine protected species under the Ministry of Oceans and Fisheries, classified as an \"Endangered Marine Species\" (Category II)."
+        },
+        {
+          "answer_id": "a198",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": false,
+          "reason_still_flagged": null,
+          "sentence": null
+        },
+        {
+          "answer_id": "a199",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": false,
+          "reason_still_flagged": null,
+          "sentence": null
+        },
+        {
+          "answer_id": "a201",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": true,
+          "reason_still_flagged": "other_cue_same_sentence",
+          "sentence": "In South Korea, this soft coral species is designated as a **Marine Protected Species** under the Ministry of Oceans and Fisheries, specifically listed as an endangered marine organism."
+        },
+        {
+          "answer_id": "a202",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": false,
+          "reason_still_flagged": null,
+          "sentence": null
+        },
+        {
+          "answer_id": "a205",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": true,
+          "reason_still_flagged": "other_cue_same_sentence",
+          "sentence": "In South Korea, this soft coral species is designated as a **Marine Protected Species** under the Ministry of Oceans and Fisheries, specifically listed as an endangered marine organism."
+        },
+        {
+          "answer_id": "a208",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": true,
+          "reason_still_flagged": "later_sentence_national_status",
+          "sentence": "This national status means it is legally protected from harvesting, trade, and habitat destruction."
+        },
+        {
+          "answer_id": "a210",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": true,
+          "reason_still_flagged": "other_cue_same_sentence",
+          "sentence": "In South Korea, this soft coral species is designated as a **Marine Protected Species** under the Ministry of Oceans and Fisheries, specifically classified as an endangered marine organism."
+        },
+        {
+          "answer_id": "a211",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": true,
+          "reason_still_flagged": "other_cue_same_sentence",
+          "sentence": "In South Korea, this stony coral is designated as a **Marine Protected Species** under the Ministry of Oceans and Fisheries, specifically listed as an endangered marine organism."
+        },
+        {
+          "answer_id": "a214",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": false,
+          "reason_still_flagged": null,
+          "sentence": null
+        },
+        {
+          "answer_id": "a216",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": false,
+          "reason_still_flagged": null,
+          "sentence": null
+        },
+        {
+          "answer_id": "a217",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": true,
+          "reason_still_flagged": "later_sentence_national_status",
+          "sentence": "This national listing aims to protect its tidal flat habitats, which are threatened by coastal development and pollution."
+        },
+        {
+          "answer_id": "a218",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": false,
+          "reason_still_flagged": null,
+          "sentence": null
+        },
+        {
+          "answer_id": "a311",
+          "model": "deepseek-chat",
+          "reversed_name": false,
+          "frozen_unclassed": true,
+          "released_unclassed": true,
+          "reason_still_flagged": "negation",
+          "sentence": "In South Korea, it is not listed under the national protected species designations (e.g., Endangered Wildlife or Marine Protected Species)."
+        }
+      ]
+    },
+    "section3": {
+      "n": 0,
+      "released_clears": 0,
+      "frozen_flags": 0,
+      "reversed_name": 0,
+      "still_flagged_by_reason": {},
+      "answers": []
+    }
+  },
+  "korea_cue_breadth": {
+    "broad_cue": "\\b(korea|korean|national|nationally|ministry)\\b|대한민국|국내|환경부",
+    "narrow_cue": "\\b(korea|korean)\\b|대한민국|국내|환경부|\\bministry\\s+of\\s+(?:the\\s+)?environment\\b|\\bnational\\s+designation\\b",
+    "heldout": {
+      "population": 284,
+      "changes_with_narrow_cue": [
+        {
+          "answer_id": "a106",
+          "model": "deepseek-chat",
+          "broad": true,
+          "narrow": false,
+          "sentences": [
+            "228** and classified as an **Endangered Species** under the national wildlife protection law."
+          ]
+        },
+        {
+          "answer_id": "a208",
+          "model": "deepseek-chat",
+          "broad": true,
+          "narrow": false,
+          "sentences": [
+            "This national status means it is legally protected from harvesting, trade, and habitat destruction."
+          ]
+        },
+        {
+          "answer_id": "a217",
+          "model": "deepseek-chat",
+          "broad": true,
+          "narrow": false,
+          "sentences": [
+            "This national listing aims to protect its tidal flat habitats, which are threatened by coastal development and pollution."
+          ]
+        }
+      ]
+    },
+    "section3": {
+      "population": 30,
+      "changes_with_narrow_cue": []
+    }
+  },
+  "unclassed_suppressed_by_class_elsewhere": {
+    "heldout": {
+      "population": 284,
+      "answers": [
+        "a034",
+        "a035",
+        "a039",
+        "a042",
+        "a045",
+        "a049",
+        "a051",
+        "a057",
+        "a058",
+        "a059",
+        "a067",
+        "a071",
+        "a076",
+        "a079",
+        "a081",
+        "a085",
+        "a087",
+        "a088",
+        "a094",
+        "a096",
+        "a097",
+        "a100",
+        "a102",
+        "a105",
+        "a107",
+        "a108",
+        "a111",
+        "a118",
+        "a135",
+        "a160",
+        "a163",
+        "a170",
+        "a179",
+        "a180",
+        "a207",
+        "a222",
+        "a226",
+        "a232",
+        "a254",
+        "a264",
+        "a275",
+        "a280",
+        "a283",
+        "a292",
+        "a303"
+      ],
+      "n": 45
+    },
+    "section3": {
+      "population": 30,
+      "answers": [
+        "a006",
+        "a009"
+      ],
+      "n": 2
+    }
+  },
+  "section3_omitted_by_unclassed_exclusions": {
+    "names_iucn_or_red_list": [],
+    "national_red_list": []
+  },
+  "released_scorer_same_sample_not_independent": {
+    "sha256": "0e4bdcba8b8d001bea9b2140940db2a9a6a80a34a92c5e693a9b1c1f9f82f593",
+    "iucn_extraction": 52,
+    "national_extraction": 60,
+    "unclassed_flag": 52,
+    "iucn_verdict": 52,
+    "n": 60
+  },
+  "label_verdicts": {
+    "correct": 34,
+    "wrong": 16,
+    "unverified": 10,
+    "not_stated": 0,
+    "ambiguous": 0
+  },
+  "disagreements": [
+    {
+      "answer_id": "a124",
+      "model": "deepseek-chat",
+      "species": "Sibynophis chinensis",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "I급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": true,
+      "released_iucn": [],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a132",
+      "model": "deepseek-chat",
+      "species": "Microphysogobio koreensis",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "EN",
+      "record_class": "I급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a152",
+      "model": "deepseek-chat",
+      "species": "Phoxinus phoxinus",
+      "record_status": "matched",
+      "record_relation": "different_taxon",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "unverified",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": false,
+      "released_iucn": [],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a188",
+      "model": "deepseek-chat",
+      "species": "Charonia lampas",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "I급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a202",
+      "model": "deepseek-chat",
+      "species": "Ellisella ceratophyta",
+      "record_status": "name_unresolved",
+      "record_relation": null,
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "unverified",
+      "scorer_verdict": "unverified",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [],
+      "released_unclassed": false,
+      "released_verdict": "unverified"
+    },
+    {
+      "answer_id": "a209",
+      "model": "deepseek-chat",
+      "species": "Nacospatangus alta",
+      "record_status": "name_unresolved",
+      "record_relation": null,
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "unverified",
+      "scorer_verdict": "unverified",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "unverified"
+    },
+    {
+      "answer_id": "a217",
+      "model": "deepseek-chat",
+      "species": "Austruca lactea",
+      "record_status": "name_unresolved",
+      "record_relation": null,
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "unverified",
+      "scorer_verdict": "unverified",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "unverified"
+    },
+    {
+      "answer_id": "a234",
+      "model": "deepseek-chat",
+      "species": "Eleutherococcus senticosus",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": false,
+      "released_iucn": [],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a241",
+      "model": "deepseek-chat",
+      "species": "Drosera peltata var. nipponica",
+      "record_status": "matched_at_species_rank",
+      "record_relation": "broader",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": true,
+      "released_iucn": [],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a246",
+      "model": "deepseek-chat",
+      "species": "Viola mirabilis",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": false,
+      "released_iucn": [],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a266",
+      "model": "deepseek-chat",
+      "species": "Viburnum burejaeticum",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a277",
+      "model": "deepseek-chat",
+      "species": "Aconitum austrokoreense",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "NT",
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "CR",
+        "NE"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "ambiguous",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a298",
+      "model": "deepseek-chat",
+      "species": "Isoetes coreana",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": false,
+      "released_iucn": [],
+      "released_national": [],
+      "released_unclassed": false,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a308",
+      "model": "deepseek-chat",
+      "species": "Habenaria radiata",
+      "record_status": "name_unresolved",
+      "record_relation": null,
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "unverified",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": true,
+      "released_iucn": [],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a311",
+      "model": "deepseek-chat",
+      "species": "Dictyosphaeria cavernosa",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": false,
+      "released_iucn": [],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "not_stated"
+    }
+  ],
+  "rows": [
+    {
+      "answer_id": "a036",
+      "model": "deepseek-v4-flash",
+      "species": "Lutra lutra",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "NT",
+      "record_class": "I급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a038",
+      "model": "deepseek-v4-flash",
+      "species": "Platalea minor",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "VU",
+      "record_class": "I급",
+      "label_iucn": [
+        "EN"
+      ],
+      "scorer_iucn": [
+        "EN"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "EN"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a042",
+      "model": "deepseek-chat",
+      "species": "Cervus nippon hortulorum",
+      "record_status": "matched_at_species_rank",
+      "record_relation": "broader",
+      "record_category": "LC",
+      "record_class": "I급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a048",
+      "model": "deepseek-chat",
+      "species": "Lynx lynx",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "I급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a049",
+      "model": "deepseek-chat",
+      "species": "Vulpes vulpes peculiosa",
+      "record_status": "matched_at_species_rank",
+      "record_relation": "broader",
+      "record_category": "LC",
+      "record_class": "I급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a050",
+      "model": "deepseek-chat",
+      "species": "Murina ussuriensis",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "I급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a053",
+      "model": "deepseek-chat",
+      "species": "Martes flavigula",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a056",
+      "model": "deepseek-chat",
+      "species": "Eumetopias jubatus",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "NT",
+      "record_class": "II급",
+      "label_iucn": [
+        "NT"
+      ],
+      "scorer_iucn": [
+        "NT"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "NT"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a061",
+      "model": "deepseek-chat",
+      "species": "Egretta eulophotes",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "VU",
+      "record_class": "I급",
+      "label_iucn": [
+        "VU"
+      ],
+      "scorer_iucn": [
+        "VU"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "VU"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a067",
+      "model": "deepseek-chat",
+      "species": "Dryocopus javensis",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "I급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a071",
+      "model": "deepseek-chat",
+      "species": "Haliaeetus albicilla",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "I급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a075",
+      "model": "deepseek-chat",
+      "species": "Emberiza aureola",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "CR",
+      "record_class": "II급",
+      "label_iucn": [
+        "CR"
+      ],
+      "scorer_iucn": [
+        "CR"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "CR"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a082",
+      "model": "deepseek-chat",
+      "species": "Aegypius monachus",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "NT",
+      "record_class": "II급",
+      "label_iucn": [
+        "NT"
+      ],
+      "scorer_iucn": [
+        "NT"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": true,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NT"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a084",
+      "model": "deepseek-chat",
+      "species": "Gallicrex cinerea",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a085",
+      "model": "deepseek-chat",
+      "species": "Falco peregrinus",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a088",
+      "model": "deepseek-chat",
+      "species": "Pernis ptilorhynchus",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a090",
+      "model": "deepseek-chat",
+      "species": "Accipiter soloensis",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a093",
+      "model": "deepseek-chat",
+      "species": "Synthliboramphus wumizusume",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "VU",
+      "record_class": "II급",
+      "label_iucn": [
+        "VU"
+      ],
+      "scorer_iucn": [
+        "VU"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": true,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "VU"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a095",
+      "model": "deepseek-chat",
+      "species": "Accipiter nisus",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a106",
+      "model": "deepseek-chat",
+      "species": "Grus vipio",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "VU",
+      "record_class": "II급",
+      "label_iucn": [
+        "VU"
+      ],
+      "scorer_iucn": [
+        "VU"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": true,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "VU"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a109",
+      "model": "deepseek-chat",
+      "species": "Accipiter gentilis",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a110",
+      "model": "deepseek-chat",
+      "species": "Halcyon pileata",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "VU",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a113",
+      "model": "deepseek-chat",
+      "species": "Ixobrychus eurhythmus",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "NT",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a119",
+      "model": "deepseek-chat",
+      "species": "Grus monacha",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "VU",
+      "record_class": "II급",
+      "label_iucn": [
+        "VU"
+      ],
+      "scorer_iucn": [
+        "VU"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "VU"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a121",
+      "model": "deepseek-chat",
+      "species": "Charadrius placidus",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a124",
+      "model": "deepseek-chat",
+      "species": "Sibynophis chinensis",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "I급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": true,
+      "released_iucn": [],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a127",
+      "model": "deepseek-chat",
+      "species": "Elaphe schrenckii",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a128",
+      "model": "deepseek-chat",
+      "species": "Eremias argus",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a132",
+      "model": "deepseek-chat",
+      "species": "Microphysogobio koreensis",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "EN",
+      "record_class": "I급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a145",
+      "model": "deepseek-chat",
+      "species": "Gobiobotia brevibarba",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "VU"
+      ],
+      "scorer_iucn": [
+        "VU"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "VU"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a147",
+      "model": "deepseek-chat",
+      "species": "Acheilognathus signifer",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NT"
+      ],
+      "scorer_iucn": [
+        "NT"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "NT"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a148",
+      "model": "deepseek-chat",
+      "species": "Rhynchocypris semotilus",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a152",
+      "model": "deepseek-chat",
+      "species": "Phoxinus phoxinus",
+      "record_status": "matched",
+      "record_relation": "different_taxon",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "unverified",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": false,
+      "released_iucn": [],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a156",
+      "model": "deepseek-chat",
+      "species": "Rhodeus pseudosericeus",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "VU",
+      "record_class": "II급",
+      "label_iucn": [
+        "VU"
+      ],
+      "scorer_iucn": [
+        "VU"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "VU"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a158",
+      "model": "deepseek-chat",
+      "species": "Cicindela (Abroscelis) anchoralis",
+      "record_status": "name_unresolved",
+      "record_relation": null,
+      "record_category": null,
+      "record_class": "I급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "unverified",
+      "scorer_verdict": "unverified",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "unverified"
+    },
+    {
+      "answer_id": "a168",
+      "model": "deepseek-chat",
+      "species": "Libellula angelina",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "CR",
+      "record_class": "II급",
+      "label_iucn": [
+        "CR"
+      ],
+      "scorer_iucn": [
+        "CR"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": true,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "CR"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a183",
+      "model": "deepseek-chat",
+      "species": "Acoptolabrus changeonleei",
+      "record_status": "via_unaccepted_gbif_match",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "unverified",
+      "scorer_verdict": "unverified",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "unverified"
+    },
+    {
+      "answer_id": "a188",
+      "model": "deepseek-chat",
+      "species": "Charonia lampas",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "I급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a195",
+      "model": "deepseek-chat",
+      "species": "Clithon retropictum",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "LC"
+      ],
+      "scorer_iucn": [
+        "LC"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "LC"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a202",
+      "model": "deepseek-chat",
+      "species": "Ellisella ceratophyta",
+      "record_status": "name_unresolved",
+      "record_relation": null,
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "unverified",
+      "scorer_verdict": "unverified",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [],
+      "released_unclassed": false,
+      "released_verdict": "unverified"
+    },
+    {
+      "answer_id": "a206",
+      "model": "deepseek-chat",
+      "species": "Koreanomelania nodifila",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "DD"
+      ],
+      "scorer_iucn": [
+        "DD"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": true,
+      "scorer_unclassed": true,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "DD"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a209",
+      "model": "deepseek-chat",
+      "species": "Nacospatangus alta",
+      "record_status": "name_unresolved",
+      "record_relation": null,
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "unverified",
+      "scorer_verdict": "unverified",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "unverified"
+    },
+    {
+      "answer_id": "a213",
+      "model": "deepseek-chat",
+      "species": "Koreanohadra koreana",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a217",
+      "model": "deepseek-chat",
+      "species": "Austruca lactea",
+      "record_status": "name_unresolved",
+      "record_relation": null,
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "unverified",
+      "scorer_verdict": "unverified",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "unverified"
+    },
+    {
+      "answer_id": "a220",
+      "model": "deepseek-chat",
+      "species": "Gastrochilus fuscopunctatus",
+      "record_status": "name_unresolved",
+      "record_relation": null,
+      "record_category": null,
+      "record_class": "I급",
+      "label_iucn": [
+        "CR"
+      ],
+      "scorer_iucn": [
+        "CR"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "unverified",
+      "scorer_verdict": "unverified",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "CR"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "unverified"
+    },
+    {
+      "answer_id": "a222",
+      "model": "deepseek-chat",
+      "species": "Euchresta japonica",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "I급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a234",
+      "model": "deepseek-chat",
+      "species": "Eleutherococcus senticosus",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": false,
+      "released_iucn": [],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a239",
+      "model": "deepseek-chat",
+      "species": "Neottianthe cucullata",
+      "record_status": "matched_via_synonym",
+      "record_relation": "same",
+      "record_category": "EN",
+      "record_class": "II급",
+      "label_iucn": [
+        "EN"
+      ],
+      "scorer_iucn": [
+        "EN"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "EN"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a241",
+      "model": "deepseek-chat",
+      "species": "Drosera peltata var. nipponica",
+      "record_status": "matched_at_species_rank",
+      "record_relation": "broader",
+      "record_category": "LC",
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": true,
+      "released_iucn": [],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a246",
+      "model": "deepseek-chat",
+      "species": "Viola mirabilis",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": false,
+      "released_iucn": [],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a249",
+      "model": "deepseek-chat",
+      "species": "Asplenium wrightii",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a260",
+      "model": "deepseek-chat",
+      "species": "Habenaria flagellifera",
+      "record_status": "not_assessed",
+      "record_relation": "broader",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "unverified",
+      "scorer_verdict": "unverified",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [],
+      "released_unclassed": false,
+      "released_verdict": "unverified"
+    },
+    {
+      "answer_id": "a266",
+      "model": "deepseek-chat",
+      "species": "Viburnum burejaeticum",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "correct",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "correct"
+    },
+    {
+      "answer_id": "a277",
+      "model": "deepseek-chat",
+      "species": "Aconitum austrokoreense",
+      "record_status": "matched",
+      "record_relation": "same",
+      "record_category": "NT",
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "CR",
+        "NE"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "ambiguous",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a283",
+      "model": "deepseek-chat",
+      "species": "Thalictrum coreanum",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "EN"
+      ],
+      "scorer_iucn": [
+        "EN"
+      ],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "EN"
+      ],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a288",
+      "model": "deepseek-chat",
+      "species": "Dysophylla yatabeana",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "CR"
+      ],
+      "scorer_iucn": [
+        "CR"
+      ],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "wrong",
+      "scorer_verdict": "wrong",
+      "word_order_phrasing": false,
+      "released_iucn": [
+        "CR"
+      ],
+      "released_national": [],
+      "released_unclassed": false,
+      "released_verdict": "wrong"
+    },
+    {
+      "answer_id": "a298",
+      "model": "deepseek-chat",
+      "species": "Isoetes coreana",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "correct",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": false,
+      "released_iucn": [],
+      "released_national": [],
+      "released_unclassed": false,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a308",
+      "model": "deepseek-chat",
+      "species": "Habenaria radiata",
+      "record_status": "name_unresolved",
+      "record_relation": null,
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [
+        "I급"
+      ],
+      "scorer_national": [
+        "I급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "unverified",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": true,
+      "released_iucn": [],
+      "released_national": [
+        "I급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a311",
+      "model": "deepseek-chat",
+      "species": "Dictyosphaeria cavernosa",
+      "record_status": "not_assessed",
+      "record_relation": "same",
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [],
+      "label_national": [],
+      "scorer_national": [],
+      "label_unclassed": false,
+      "scorer_unclassed": true,
+      "label_verdict": "correct",
+      "scorer_verdict": "not_stated",
+      "word_order_phrasing": false,
+      "released_iucn": [],
+      "released_national": [],
+      "released_unclassed": true,
+      "released_verdict": "not_stated"
+    },
+    {
+      "answer_id": "a312",
+      "model": "deepseek-chat",
+      "species": "Coccophora langsdorfii",
+      "record_status": "name_unresolved",
+      "record_relation": null,
+      "record_category": null,
+      "record_class": "II급",
+      "label_iucn": [
+        "NE"
+      ],
+      "scorer_iucn": [
+        "NE"
+      ],
+      "label_national": [
+        "II급"
+      ],
+      "scorer_national": [
+        "II급"
+      ],
+      "label_unclassed": false,
+      "scorer_unclassed": false,
+      "label_verdict": "unverified",
+      "scorer_verdict": "unverified",
+      "word_order_phrasing": true,
+      "released_iucn": [
+        "NE"
+      ],
+      "released_national": [
+        "II급"
+      ],
+      "released_unclassed": false,
+      "released_verdict": "unverified"
+    }
+  ]
+}
